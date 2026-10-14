@@ -1,0 +1,75 @@
+# Vigilancia de cronogramas de cortes de luz (mismo modelo que el scraper de Mazar).
+# Cada 3 horas entre 6:00 y 22:00 de Ecuador (UTC-5). Hace commit de data/ y abre
+# un issue cuando hay datos nuevos (código 10) o algo que revisar (código 20).
+# El buscador en Xalok lee data/cortes_luz_publicado.json desde raw.githubusercontent.com.
+name: Vigilar cortes de luz
+
+on:
+  schedule:
+    - cron: "0 2,11,14,17,20,23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: datos-cortes        # compartido con aprobar.yml: nunca escriben a la vez
+  cancel-in-progress: false
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pasada de vigilancia
+        id: vigilar
+        run: |
+          set +e
+          python -m pipeline.vigilar
+          echo "codigo=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Guardar datos en el repositorio
+        if: steps.vigilar.outputs.codigo != '2'
+        run: |
+          # GitHub desactiva los cron de repos públicos tras 60 días sin actividad:
+          # si no hubo commits en 30 días, se deja un latido.
+          if [ $(( $(date +%s) - $(git log -1 --format=%ct) )) -gt 2592000 ]; then
+            date -u +%FT%TZ > data/latido.txt
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Sin cambios en data/."
+          else
+            git commit -m "datos: vigilancia $(date -u +%F' '%H:%M) UTC (código ${{ steps.vigilar.outputs.codigo }})"
+            git push
+          fi
+
+      - name: Abrir issue
+        if: steps.vigilar.outputs.codigo == '10' || steps.vigilar.outputs.codigo == '20'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ steps.vigilar.outputs.codigo }}" = "10" ]; then t="Datos nuevos"; else t="Revisión necesaria"; fi
+          {
+            cat salida/vigilancia/alerta.md
+            echo
+            echo "---"
+            echo "Para publicar el candidato: pestaña **Actions → Aprobar publicación → Run workflow**."
+          } > cuerpo.md
+          gh issue create --title "Cortes de luz · $t · $(date -u +%F)" --body-file cuerpo.md
+
+      - name: Fallar si hubo error
+        if: steps.vigilar.outputs.codigo == '2'
+        run: exit 1

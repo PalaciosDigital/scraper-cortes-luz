@@ -1,0 +1,13 @@
+# Generado en cada ejecución (PDFs descargados, alertas, reportes)
+salida/
+linea_base/
+cuerpo.md
+
+# Entorno local
+.venv/
+venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store

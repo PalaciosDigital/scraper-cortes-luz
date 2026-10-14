@@ -1,0 +1,109 @@
+# Configuración del pipeline de cortes de luz.
+
+fuente:
+  # PENDIENTE: URL fija del PDF con el cronograma de cortes.
+  pdf_url: ""
+  # Si son varios PDFs (uno por distribuidora), úsalos aquí y deja pdf_url vacío.
+  pdfs: []
+  #  - url: "https://…/cronograma.pdf"
+  #    distribuidora: "CNEL Guayaquil"
+  user_agent: "PRIMICIAS-datos/1.0 (+https://www.primicias.ec)"
+  timeout_s: 60
+
+# Listados web que publican los PDFs (prototipo: python -m pipeline.scrapear).
+# tipo = módulo en pipeline/fuentes. patron_pdf filtra por nombre de archivo
+# para no recoger PDFs del menú del sitio (p. ej. el Plan Estratégico).
+fuentes_web:
+  - id: cnel-santa-elena
+    tipo: cnel_emergentes
+    url: "https://www.cnelep.gob.ec/trabajos-emergentes/"
+    provincia: "SANTA ELENA"
+    distribuidora: "CNEL EP Santa Elena"
+    patron_pdf: "cronograma|corte"
+  - id: cnel-esmeraldas
+    tipo: cnel_emergentes
+    url: "https://www.cnelep.gob.ec/trabajos-emergentes-esmeraldas/"
+    provincia: "ESMERALDAS"
+    distribuidora: "CNEL EP Esmeraldas"
+    patron_pdf: "cronograma|corte"
+
+# Vigilancia (python -m pipeline.vigilar): páginas candidatas donde podría
+# aparecer el cronograma. La primera pasada registra lo existente como línea base.
+# texto_vacio: si este aviso desaparece, se pide revisión aunque no haya PDF.
+vigilancia:
+  estado: "data/vigilancia/estado.json"   # se versiona en GitHub: es la línea base
+  # revision: los datos nuevos esperan el botón «Aprobar publicación» en GitHub Actions.
+  # directa: se publican solos (cuando el flujo esté probado).
+  publicacion: revision
+  paginas:
+    - id: cnel-programados
+      tipo: cnel_emergentes          # formato de PDF que se prueba primero
+      url: "https://www.cnelep.gob.ec/trabajos-programados/?unidad={unidad}"
+      distribuidora: "CNEL EP"
+      patron_pdf: "^(?!.*plan-estrat)"   # cualquier PDF salvo el del menú
+      texto_vacio: "no contamos con Trabajos Programados"
+      unidades:
+        bolivar:       ["Bolívar", "BOLÍVAR"]
+        eloro:         ["El Oro", "EL ORO"]
+        esmeralda:     ["Esmeraldas", "ESMERALDAS"]
+        guayaquil:     ["Guayaquil", "GUAYAS"]
+        guayaslosrios: ["Guayas Los Ríos", "GUAYAS"]
+        losrios:       ["Los Ríos", "LOS RÍOS"]
+        manabi:        ["Manabí", "MANABÍ"]
+        milagro:       ["Milagro", "GUAYAS"]
+        santaelena:    ["Santa Elena", "SANTA ELENA"]
+        santodomingo:  ["Santo Domingo", "SANTO DOMINGO DE LOS TSÁCHILAS"]
+        sucumbios:     ["Sucumbíos", "SUCUMBÍOS"]
+    - id: cnel-emergentes-santa-elena
+      tipo: cnel_emergentes
+      url: "https://www.cnelep.gob.ec/trabajos-emergentes/"
+      provincia: "SANTA ELENA"
+      distribuidora: "CNEL EP Santa Elena"
+      patron_pdf: "cronograma|corte"
+    - id: cnel-emergentes-esmeraldas
+      tipo: cnel_emergentes
+      url: "https://www.cnelep.gob.ec/trabajos-emergentes-esmeraldas/"
+      provincia: "ESMERALDAS"
+      distribuidora: "CNEL EP Esmeraldas"
+      patron_pdf: "cronograma|corte"
+    - id: cnel-cenace
+      tipo: cnel_emergentes
+      url: "https://www.cnelep.gob.ec/interrupciones-controladas-por-el-cenace/"
+      distribuidora: "CNEL EP"
+      patron_pdf: "^(?!.*plan-estrat)"
+
+# Encabezados posibles de cada columna en el PDF (se comparan sin tildes ni mayúsculas).
+# Ajusta después de ejecutar --inspeccionar con un PDF real.
+columnas:
+  provincia:    ["provincia"]
+  canton:       ["canton", "cantón", "ciudad"]
+  alimentador:  ["alimentador", "codigo alimentador"]
+  fecha:        ["fecha", "fecha de corte"]
+  dia:          ["dia", "día"]
+  horario:      ["horario", "hora", "horas", "horario de corte"]
+  hora_inicio:  ["desde", "hora inicio", "inicio"]
+  hora_fin:     ["hasta", "hora fin", "fin"]
+  tipo_trabajo: ["tipo de trabajo", "trabajo", "actividad", "motivo"]
+  zona_cortes:  ["zona", "zona de cortes", "zona de corte"]
+  sectores:     ["sectores", "sectores afectados", "sector", "barrios"]
+
+s3:
+  bucket: "primicias"
+  region: "us-east-1"
+  prefijo: "editorial/2026/Cortes de Luz 2026"
+  actual: "cortes_luz_actual.json"
+  staging: "cortes_luz_staging.json"
+  historico: "historico"
+  estado: "estado.json"
+  cache_control: "public, max-age=300"
+
+# staging | produccion. Produccion escribe en el JSON que lee el buscador.
+modo: staging
+
+validacion:
+  min_registros: 5
+  # Rechaza si el total cae más de este % respecto a la publicación anterior.
+  caida_maxima_pct: 70
+  # Fechas aceptadas respecto a hoy.
+  dias_pasado_max: 7
+  dias_futuro_max: 60

@@ -1,0 +1,178 @@
+{
+ "paginas": {
+  "cnel-programados-bolivar": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-eloro": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-esmeralda": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-guayaquil": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-guayaslosrios": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-losrios": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-manabi": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-milagro": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-santaelena": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-santodomingo": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-programados-sucumbios": {
+   "pdfs": {},
+   "inicializada": true,
+   "vacia": true
+  },
+  "cnel-emergentes-santa-elena": {
+   "pdfs": {
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-21.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-20.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-19.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-18.03.26-NUEVO.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-17.03.26-NUEVO.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/2-CRONOGRAMA-16.03.26-3.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-15.03.26-NUEVO.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-14.03.26-NUEVO.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-13.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-12.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-11.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-10.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-09.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-08.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-07.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/CRONOGRAMA-06.03.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/STE-EDITABLE-CORTE-5-MARZO.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/03/STE-EDITABLE-CORTE-4-MARZO-1.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    }
+   },
+   "inicializada": true,
+   "vacia": null
+  },
+  "cnel-emergentes-esmeraldas": {
+   "pdfs": {
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/CRONOGRAMA-14.5.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/CRONOGRAMA-15.5.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/CRONOGRAMA-16.5.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/CRONOGRAMA-17.5.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/CRONOGRAMA-18.5.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    },
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/CRONOGRAMA-19.5.26.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    }
+   },
+   "inicializada": true,
+   "vacia": null
+  },
+  "cnel-cenace": {
+   "pdfs": {
+    "https://www.cnelep.gob.ec/wp-content/uploads/2026/05/Corte-1.pdf": {
+     "estado": "linea_base",
+     "visto_en": "2026-10-14"
+    }
+   },
+   "inicializada": true,
+   "vacia": null
+  }
+ },
+ "dataset_sha256": null
+}

@@ -1,0 +1,45 @@
+# Botón «Aprobar publicación»: copia el candidato (data/cortes_luz_vigentes.json)
+# al JSON que lee el buscador (data/cortes_luz_publicado.json).
+# Uso: pestaña Actions → Aprobar publicación → Run workflow.
+name: Aprobar publicación
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmo:
+        description: "Revisé data/cortes_luz_vigentes.json y quiero publicarlo"
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: datos-cortes
+  cancel-in-progress: false
+
+jobs:
+  aprobar:
+    if: inputs.confirmo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - run: python -m pipeline.vigilar --aprobar
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && { echo "Nada que publicar: ya estaba aprobado."; exit 0; }
+          git commit -m "datos: publicación aprobada por ${{ github.actor }}"
+          git push
