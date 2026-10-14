@@ -56,19 +56,28 @@ jobs:
             git push
           fi
 
-      - name: Abrir issue
+      - name: Avisar (un solo issue abierto; los avisos siguientes van como comentario)
         if: steps.vigilar.outputs.codigo == '10' || steps.vigilar.outputs.codigo == '20'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if [ "${{ steps.vigilar.outputs.codigo }}" = "10" ]; then t="Datos nuevos"; else t="Revisión necesaria"; fi
           {
+            echo "### $t · $(date -u +%F' '%H:%M) UTC"
+            echo
             cat salida/vigilancia/alerta.md
             echo
             echo "---"
             echo "Para publicar el candidato: pestaña **Actions → Aprobar publicación → Run workflow**."
+            echo "Alimentadores sin cantón: edita \`data/alimentadores_centrosur.csv\` (columnas canton y provincia)."
           } > cuerpo.md
-          gh issue create --title "Cortes de luz · $t · $(date -u +%F)" --body-file cuerpo.md
+          gh label create vigilancia --color 04A4DE --description "Avisos del scraper de cortes" 2>/dev/null || true
+          abierto=$(gh issue list --label vigilancia --state open --limit 1 --json number --jq '.[0].number')
+          if [ -n "$abierto" ]; then
+            gh issue comment "$abierto" --body-file cuerpo.md
+          else
+            gh issue create --title "Cortes de luz · avisos de vigilancia" --label vigilancia --body-file cuerpo.md
+          fi
 
       - name: Fallar si hubo error
         if: steps.vigilar.outputs.codigo == '2'

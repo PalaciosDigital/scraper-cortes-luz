@@ -67,6 +67,23 @@ candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`
 3. Si publican imágenes o posts en redes: el aviso de "página cambiada" lo
    detecta, pero hace falta OCR o extracción asistida (ver `docs/PLAN.md`, fase 1).
 
+## Fuentes tipo tabla (CentroSur)
+
+CentroSur no publica PDFs: su página incrusta una tabla GeneXus con lo programado
+de hoy a hoy+3 días. Se lee por HTTP con el user agent honesto de `config.yaml`
+(el sitio bloquea navegadores sin interfaz y **no se debe esquivar ese bloqueo**).
+Detalle técnico en `pipeline/fuentes/centrosur.py`.
+
+- Cada pasada **reemplaza la foto** anterior; no hay línea base.
+- Se excluyen los estados de `excluir_estados` (ANU = anulado, por confirmar con CentroSur).
+- **Cantón**: 1) "Cantón X" en la dirección o la descripción (solo nombres del
+  catálogo); 2) `data/alimentadores_centrosur.csv`; 3) si no hay nada, el corte
+  no se publica y el alimentador se añade al CSV con el cantón vacío y direcciones
+  de ejemplo. Una persona completa `canton` y `provincia` desde la web de GitHub.
+- Un mismo alimentador puede servir a dos cantones (0500140V01: Santa Isabel y
+  Saraguro); por eso el texto manda sobre la tabla.
+- Si GeneXus cambia sus tokens o la forma de la respuesta → aviso de revisión (código 20).
+
 ## Publicación y aprobación
 
 `config.yaml → vigilancia.publicacion`:

@@ -35,3 +35,10 @@ eliminan, porque el buscador publicado los usa.
   "advertencias": []
 }
 ```
+
+Campos de trazabilidad (opcionales, el buscador no los usa):
+
+| Campo | Ejemplo | Notas |
+|---|---|---|
+| `consignacion` | `39504` | Número de consignación de CentroSur. |
+| `estado_origen` | `PRO` | Estado en CentroSur: PRO, EMM o PAR (ANU se excluye). |

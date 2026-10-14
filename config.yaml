@@ -36,6 +36,15 @@ vigilancia:
   # directa: se publican solos (cuando el flujo esté probado).
   publicacion: revision
   paginas:
+    # CentroSur (Azuay, Cañar, Morona Santiago): tabla GeneXus en su extranet, no PDF.
+    # Se lee por HTTP con el user_agent de arriba (ver pipeline/fuentes/centrosur.py).
+    - id: centrosur
+      tipo: centrosur_tabla
+      url: "https://extranet.centrosur.gob.ec/PartesDiario/gob.ec.webtrabajosprogramados"
+      pagina_publica: "https://www.centrosur.gob.ec/trabajos-programados/"
+      distribuidora: "CentroSur"
+      excluir_estados: ["ANU"]          # ANU = anulado (pendiente de confirmar con CentroSur)
+      alimentadores: "data/alimentadores_centrosur.csv"   # alimentador → cantón, se completa a mano
     - id: cnel-programados
       tipo: cnel_emergentes          # formato de PDF que se prueba primero
       url: "https://www.cnelep.gob.ec/trabajos-programados/?unidad={unidad}"

@@ -34,7 +34,7 @@ import requests
 
 from . import extraer as extractor_generico
 from .descargar import descargar_pdf, sha256
-from .fuentes import cnel
+from .fuentes import centrosur, cnel
 from .main import RAIZ, SALIDA, cargar_config, cargar_env
 from .normalizar import cargar_catalogo, normalizar_todo
 from .texto import clave
@@ -44,6 +44,9 @@ SIN_NOVEDADES, DATOS_NUEVOS, REVISION, ERROR = 0, 10, 20, 2
 CARPETA = SALIDA / "vigilancia"      # PDFs descargados y alerta.md (no se suben al repo)
 DATOS = RAIZ / "data"                 # estado, registros y JSON (sí se suben: los lee el buscador)
 EXTRACTORES = {"cnel_emergentes": cnel}
+# Fuentes "tabla": no publican PDFs sino una foto de lo programado que cambia a diario.
+# Cada pasada reemplaza la foto anterior; no hay línea base (lo que muestran está vigente).
+TABLAS = {"centrosur_tabla": centrosur}
 
 
 # ---------- configuración ----------
@@ -108,6 +111,75 @@ def procesar_pdf(ruta: Path, pagina: dict, titulo: str, cfg: dict, catalogo) -> 
 
 # ---------- pasada ----------
 
+def registrar_alimentadores(ruta: Path, pendientes: dict[str, list[str]]) -> list[str]:
+    """Añade al CSV los alimentadores nuevos sin cantón (con direcciones de ejemplo).
+
+    Devuelve los que se añadieron en esta pasada. Una persona completa la columna
+    canton (y provincia) desde la web de GitHub; desde la pasada siguiente se publican.
+    """
+    import csv
+    filas = list(csv.DictReader(open(ruta, encoding="utf-8"))) if ruta.exists() else []
+    conocidos = {f["alimentador"].strip().upper() for f in filas}
+    nuevos = sorted(a for a in pendientes if a not in conocidos)
+    if nuevos:
+        ruta.parent.mkdir(parents=True, exist_ok=True)
+        escribir_cabecera = not ruta.exists() or ruta.stat().st_size == 0
+        with open(ruta, "a", encoding="utf-8", newline="") as f:
+            w = csv.writer(f)
+            if escribir_cabecera:
+                w.writerow(["alimentador", "canton", "provincia", "ejemplos"])
+            for a in nuevos:
+                w.writerow([a, "", "", " | ".join(pendientes[a][:3])])
+    return nuevos
+
+
+def procesar_tabla(pagina: dict, cfg: dict, catalogo, ep: dict, hoy: date, resumen: dict) -> None:
+    """Lee una fuente tipo tabla (CentroSur) y reemplaza su foto en data/vigilancia/registros/."""
+    mod = TABLAS[pagina["tipo"]]
+    ua, timeout = cfg["fuente"]["user_agent"], cfg["fuente"].get("timeout_s", 60)
+    try:
+        filas = mod.leer_tabla(pagina["url"], ua, timeout)
+    except requests.RequestException as e:
+        resumen["errores"].append(f"{pagina['id']}: no se pudo leer {pagina['url']} ({e})")
+        return
+    except RuntimeError as e:                         # la aplicación de la fuente cambió
+        resumen["revision"].append(f"{pagina['id']}: {e} Revisa {pagina.get('pagina_publica', pagina['url'])}")
+        return
+
+    ruta_alim = RAIZ / pagina["alimentadores"]
+    crudos, pendientes, excluidas = mod.a_crudos(filas, mod.cargar_alimentadores(ruta_alim), catalogo,
+                                                 tuple(pagina.get("excluir_estados", ["ANU"])))
+    regs, errs = normalizar_todo(crudos, catalogo, pagina.get("distribuidora"))
+    huella = hashlib.sha256(json.dumps(regs, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    previo = next(iter(ep["pdfs"].values()), {})
+    ep["inicializada"] = True
+
+    nuevos_alim = registrar_alimentadores(ruta_alim, pendientes)
+    sin_canton = sum(len(v) for v in pendientes.values())
+    if nuevos_alim:
+        resumen["revision"].append(
+            f"{pagina['id']}: {len(nuevos_alim)} alimentador(es) nuevo(s) sin cantón. Complétalos en "
+            f"`{pagina['alimentadores']}` (columna canton y provincia): " + ", ".join(nuevos_alim))
+    if errs:
+        resumen["revision"].append(f"{pagina['id']}: {len(errs)} filas descartadas: " + "; ".join(errs[:5]))
+
+    if huella == previo.get("sha256"):
+        return
+    destino = DATOS / "vigilancia" / "registros" / f"{huella}.json"
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    destino.write_text(json.dumps(regs, ensure_ascii=False), encoding="utf-8")
+    if previo.get("sha256") and previo["sha256"] != huella:   # la foto anterior ya no sirve
+        (DATOS / "vigilancia" / "registros" / f"{previo['sha256']}.json").unlink(missing_ok=True)
+    ep["pdfs"] = {pagina["url"]: {"estado": "ok", "formato": pagina["tipo"], "sha256": huella,
+                                  "visto_en": hoy.isoformat(), "registros": len(regs),
+                                  "filas_fuente": len(filas), "excluidas": excluidas, "sin_canton": sin_canton}}
+    fechas = sorted(r["fecha"] for r in regs)
+    rango = f"{fechas[0]} → {fechas[-1]}" if fechas else "sin fechas"
+    resumen["nuevos"].append(
+        f"{pagina['id']}: tabla actualizada → {len(regs)} cortes publicables ({rango}); "
+        f"{excluidas} excluidos por estado; {sin_canton} sin cantón en {len(pendientes)} alimentador(es)")
+
+
 def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | None = None) -> dict:
     """Recorre las páginas y actualiza `estado`. Devuelve el resumen de la pasada."""
     ua, timeout = cfg["fuente"]["user_agent"], cfg["fuente"].get("timeout_s", 60)
@@ -118,6 +190,9 @@ def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | No
         if solo and not pagina["id"].startswith(solo):
             continue
         ep = estado["paginas"].setdefault(pagina["id"], {"pdfs": {}, "inicializada": False, "vacia": None})
+        if pagina.get("tipo") in TABLAS:
+            procesar_tabla(pagina, cfg, catalogo, ep, hoy, resumen)
+            continue
         htmls: list[str] = []
         try:
             pdfs = cnel.listar_pdfs(pagina["url"], ua, pagina.get("patron_pdf", "."), timeout, htmls=htmls)
@@ -206,7 +281,7 @@ def escribir_alerta(resumen: dict, vigentes: list, res, codigo: int, destino: st
         lineas.append(f"- Rango: {vigentes[0]['fecha']} → {vigentes[-1]['fecha']}")
     if destino:
         lineas.append(f"- Resultado: {destino}")
-    for clave_, nombre in (("nuevos", "PDFs nuevos procesados"), ("revision", "Para revisar"),
+    for clave_, nombre in (("nuevos", "Fuentes con datos nuevos"), ("revision", "Para revisar"),
                            ("errores", "Errores de lectura"), ("linea_base", "Línea base registrada")):
         if resumen[clave_]:
             lineas += ["", f"## {nombre}", *[f"- {x}" for x in resumen[clave_]]]
@@ -285,7 +360,9 @@ def main(argv=None) -> int:
                 destino = "publicado en data/cortes_luz_publicado.json"
             else:
                 destino = "candidato en data/cortes_luz_vigentes.json · pendiente de aprobación"
-        else:
+        elif huella != estado.get("rechazado_sha256"):
+            # Avisar una sola vez por candidato rechazado (no cada 3 horas).
+            estado["rechazado_sha256"] = huella
             codigo = REVISION
     elif cambio and not vigentes and estado.get("dataset_registros"):
         # Se acabaron los cortes vigentes. No vaciamos el JSON publicado sin una persona.

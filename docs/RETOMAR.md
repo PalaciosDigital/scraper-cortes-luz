@@ -1,4 +1,4 @@
-# Retomar el proyecto (estado al 14 de octubre de 2026)
+# Retomar el proyecto (estado al 14 de octubre de 2026, tarde)
 
 ## Dónde vive
 
@@ -20,12 +20,20 @@ El buscador en Xalok lee
 `https://raw.githubusercontent.com/<cuenta>/scraper-cortes-luz/main/data/cortes_luz_publicado.json`.
 `config.yaml → vigilancia.publicacion: revision` (los datos nuevos esperan aprobación).
 
+## CentroSur (primera fuente oficial, 2026-10-14)
+
+- Tabla GeneXus de su extranet, leída por HTTP (`pipeline/fuentes/centrosur.py`). 65 filas, 8 ANU excluidos.
+- **Bloqueante para publicar:** solo 2 de 57 cortes traen el cantón en el texto. Hay que completar
+  `data/alimentadores_centrosur.csv` (21 alimentadores con direcciones de ejemplo).
+- Pendiente de confirmar con CentroSur: significado de PRO / EMM / PAR / ANU.
+
 ## Siguientes pasos
 
 1. Subir el repo a GitHub siguiendo `docs/GITHUB.md`. Falta definir la **cuenta** (¿la de Mazar, `tefaceli`?).
 2. Buscador HTML (`01_HTML/PROTOTIPO.html`): `DATA_URL` → la URL de arriba, y después `/inyecta_a_Xalok`.
-3. **Link oficial con todas las subcentrales** → añadirlo a `config.yaml → vigilancia.paginas`,
-   `python -m pipeline.scrapear --listar`, inspeccionar un PDF real, guardar un fixture + test.
+3. Completar `data/alimentadores_centrosur.csv` (cantón de cada alimentador).
+4. Más subcentrales/distribuidoras: añadir a `config.yaml → vigilancia.paginas`; si el formato es nuevo,
+   crear un módulo en `pipeline/fuentes/` + un fixture real + un test.
 
 ## Entorno
 

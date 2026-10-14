@@ -2,22 +2,79 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Registro de corte de luz programado",
   "type": "object",
-  "required": ["provincia", "canton", "alimentador", "fecha", "dia", "horario",
-               "tipo_trabajo", "zona_cortes", "sectores"],
+  "required": [
+    "provincia",
+    "canton",
+    "alimentador",
+    "fecha",
+    "dia",
+    "horario",
+    "tipo_trabajo",
+    "zona_cortes",
+    "sectores"
+  ],
   "properties": {
-    "provincia":    {"type": "string", "minLength": 2},
-    "canton":       {"type": "string", "minLength": 2},
-    "alimentador":  {"type": "string"},
-    "fecha":        {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
-    "dia":          {"enum": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]},
-    "horario":      {"type": "string", "pattern": "^\\d{2}:\\d{2} a \\d{2}:\\d{2}$"},
-    "tipo_trabajo": {"type": "string"},
-    "zona_cortes":  {"type": "string"},
-    "sectores":     {"type": "string", "minLength": 2},
-
-    "cantones":           {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "provincia_original": {"type": "string"},
-    "distribuidora":      {"type": "string"}
+    "provincia": {
+      "type": "string",
+      "minLength": 2
+    },
+    "canton": {
+      "type": "string",
+      "minLength": 2
+    },
+    "alimentador": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "dia": {
+      "enum": [
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes",
+        "Sábado",
+        "Domingo"
+      ]
+    },
+    "horario": {
+      "type": "string",
+      "pattern": "^\\d{2}:\\d{2} a \\d{2}:\\d{2}$"
+    },
+    "tipo_trabajo": {
+      "type": "string"
+    },
+    "zona_cortes": {
+      "type": "string"
+    },
+    "sectores": {
+      "type": "string",
+      "minLength": 2
+    },
+    "cantones": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "provincia_original": {
+      "type": "string"
+    },
+    "distribuidora": {
+      "type": "string"
+    },
+    "consignacion": {
+      "type": "string",
+      "description": "Número de consignación de la distribuidora (CentroSur)"
+    },
+    "estado_origen": {
+      "type": "string",
+      "description": "Estado en la fuente (CentroSur: PRO, EMM, PAR)"
+    }
   },
   "additionalProperties": false
 }

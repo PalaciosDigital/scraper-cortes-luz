@@ -73,6 +73,7 @@ copia embebida, igual que hoy. Pasos (con Claude):
 |---|---|
 | Llega un issue **"Datos nuevos"** | Abre `data/cortes_luz_vigentes.json` en el repo y revisa. Luego **Actions → Aprobar publicación → Run workflow**, marca la casilla de confirmación y pulsa Run. En ≤ 5 min está en el buscador. Cierra el issue. |
 | Llega un issue **"Revisión necesaria"** | Léelo: formato desconocido, filas descartadas, página cambiada o caída. Pásaselo a Claude: "Retomemos el pipeline de cortes de luz, llegó este aviso: …". |
+| El aviso pide **asignar alimentadores** (CentroSur) | Abre `data/alimentadores_centrosur.csv` en GitHub (lápiz ✏️). En cada fila vacía escribe el `canton` y la `provincia` (MAYÚSCULAS) guiándote por la columna `ejemplos`. Commit. En la pasada siguiente entran esos cortes. |
 | Cambia la página oficial | Edita `config.yaml` desde la web (lápiz ✏️ → Commit changes). La primera pasada sobre la URL nueva registra lo existente como línea base. Si ya hay un cronograma vigente que quieres publicar, pide a Claude una primera carga con `--simular`. |
 | El flujo ya es confiable | En `config.yaml`, cambia `publicacion: revision` por `publicacion: directa`. Los datos nuevos válidos se publican sin aprobación (con código 20 nunca se publica). |
 | Una ejecución sale en rojo | Abre la ejecución en Actions, copia el error y pásaselo a Claude. |
@@ -81,4 +82,6 @@ copia embebida, igual que hoy. Pasos (con Claude):
 
 - GitHub desactiva los cron de repos públicos tras 60 días sin commits. El
   workflow deja un latido (`data/latido.txt`) si pasan 30 días sin cambios.
-- No edites a mano lo que hay en `data/`, salvo `cantones_ecuador.csv`.
+- No edites a mano lo que hay en `data/`, salvo `cantones_ecuador.csv` y `alimentadores_centrosur.csv`.
+- Los avisos llegan a **un solo issue abierto** (etiqueta `vigilancia`), como comentarios. Ciérralo cuando
+  esté todo resuelto; el siguiente aviso abrirá otro.

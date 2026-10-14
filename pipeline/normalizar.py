@@ -143,6 +143,10 @@ def normalizar_registro(crudo: dict[str, str], catalogo: Catalogo,
         registro["provincia_original"] = prov_pdf
     if distribuidora:
         registro["distribuidora"] = distribuidora
+    # Campos de trazabilidad que algunas fuentes traen (CentroSur).
+    for extra in ("consignacion", "estado_origen"):
+        if crudo.get(extra):
+            registro[extra] = crudo[extra]
     return registro
 
 

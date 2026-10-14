@@ -3,7 +3,7 @@
 Mantiene actualizado el buscador de cortes de luz de PRIMICIAS (en Xalok), con el
 mismo modelo que el scraper de Mazar:
 
-**páginas de CNEL → GitHub Actions cada 3 h → `data/cortes_luz_publicado.json` → buscador en Xalok**
+**páginas de CNEL y CentroSur → GitHub Actions cada 3 h → `data/cortes_luz_publicado.json` → buscador en Xalok**
 
 El buscador lee el JSON desde:
 
@@ -44,6 +44,8 @@ python -m pipeline.vigilar                   # una pasada (escribe data/: no hag
 config.yaml               páginas vigiladas, columnas, reglas de validación, modo de publicación
 pipeline/vigilar.py       vigilancia + candidato + aprobación
 pipeline/fuentes/cnel.py  listado y extractor de los PDFs de CNEL
+pipeline/fuentes/centrosur.py  tabla GeneXus de CentroSur (HTTP)
+data/alimentadores_centrosur.csv  alimentador → cantón (se completa a mano)
 pipeline/                 descargar → extraer → normalizar → validar
 data/                     estado y JSON versionados (los escribe GitHub Actions)
 data/cantones_ecuador.csv catálogo cantón → provincia
