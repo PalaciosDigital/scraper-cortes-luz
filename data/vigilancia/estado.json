@@ -193,5 +193,5 @@
  "dataset_sha256": "0f5e7513bb7bb98e05e99d8e72072852facdb3698b8ef1f57ab4c573f0959fdc",
  "rechazado_sha256": "866f65a60107aa5950c7c10066a31d2648928e9e628646f0798dfa6a73bf9e2b",
  "dataset_registros": 54,
- "pendiente_aprobacion": true
+ "pendiente_aprobacion": false
 }
