@@ -50,7 +50,7 @@ Cada aviso (datos nuevos o revisión) llega como un issue a tu correo.
 
 Debe terminar en verde. Como la línea base ya va en el repo
 (`data/vigilancia/estado.json`), lo normal es "Sin cambios en data/".
-A partir de aquí corre solo cada 3 horas (6:00–22:00 de Ecuador). GitHub puede
+A partir de aquí corre solo cada hora (6:00–22:00 de Ecuador; se cambia en la línea `cron` de `.github/workflows/vigilar.yml`). GitHub puede
 retrasar los cron unos minutos.
 
 ## 6. Conectar el buscador

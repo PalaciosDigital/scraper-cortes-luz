@@ -1,12 +1,13 @@
 # Vigilancia de cronogramas de cortes de luz (mismo modelo que el scraper de Mazar).
-# Cada 3 horas entre 6:00 y 22:00 de Ecuador (UTC-5). Hace commit de data/ y abre
+# Cada hora entre 6:00 y 22:00 de Ecuador (UTC-5), al minuto 7 (GitHub congestiona los
+# cron en punto). Para cambiar la frecuencia, editar solo la línea `cron`. Hace commit de data/ y abre
 # un issue cuando hay datos nuevos (código 10) o algo que revisar (código 20).
 # El buscador en Xalok lee data/cortes_luz_publicado.json desde raw.githubusercontent.com.
 name: Vigilar cortes de luz
 
 on:
   schedule:
-    - cron: "0 2,11,14,17,20,23 * * *"
+    - cron: "7 0-3,11-23 * * *"      # UTC: 11:07–23:07 y 00:07–03:07 = 6:07–22:07 en Ecuador
   workflow_dispatch:
 
 permissions:

@@ -3,7 +3,7 @@
 Mantiene actualizado el buscador de cortes de luz de PRIMICIAS (en Xalok), con el
 mismo modelo que el scraper de Mazar:
 
-**páginas de CNEL y CentroSur → GitHub Actions cada 3 h → `data/cortes_luz_publicado.json` → buscador en Xalok**
+**páginas de CNEL y CentroSur → GitHub Actions cada hora → `data/cortes_luz_publicado.json` → buscador en Xalok**
 
 El buscador lee el JSON desde:
 

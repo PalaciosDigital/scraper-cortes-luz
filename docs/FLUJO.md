@@ -4,7 +4,7 @@ La fuente oficial definitiva es incierta, así que el pipeline **vigila páginas
 candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`.
 
 ```
- cada 3 h (6:00–22:00)
+ cada hora (6:00–22:00)
         │
         ▼
  ┌──────────────┐   14 páginas de CNEL (config.yaml → vigilancia.paginas)

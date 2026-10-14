@@ -361,7 +361,7 @@ def main(argv=None) -> int:
             else:
                 destino = "candidato en data/cortes_luz_vigentes.json · pendiente de aprobación"
         elif huella != estado.get("rechazado_sha256"):
-            # Avisar una sola vez por candidato rechazado (no cada 3 horas).
+            # Avisar una sola vez por candidato rechazado (no en cada pasada).
             estado["rechazado_sha256"] = huella
             codigo = REVISION
     elif cambio and not vigentes and estado.get("dataset_registros"):

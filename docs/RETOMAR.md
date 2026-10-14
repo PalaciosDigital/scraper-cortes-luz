@@ -11,7 +11,7 @@
   (marzo) y Esmeraldas (mayo) → 815 registros, sin descartes.
 - **Vigilante** (`python -m pipeline.vigilar`): 14 páginas de CNEL, línea base en
   `data/vigilancia/estado.json`, un candidato y una aprobación. Ver `docs/FLUJO.md`.
-- **Workflows**: `vigilar.yml` (cron cada 3 h, commit de `data/`, issue) y `aprobar.yml` (botón).
+- **Workflows**: `vigilar.yml` (cron cada hora de 6:00 a 22:00, commit de `data/`, issue) y `aprobar.yml` (botón).
 - 52 tests (`pytest -q`).
 
 ## Modelo de publicación (como Mazar)

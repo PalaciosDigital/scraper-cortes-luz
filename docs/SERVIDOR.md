@@ -17,13 +17,13 @@ por cron, un directorio servido por web y las alertas del equipo.
 
 ```bash
 cd /ruta/scraper-cortes-luz
-python -m pipeline.vigilar          # una pasada; cron cada 3 h entre 6:00 y 22:00 (America/Guayaquil)
+python -m pipeline.vigilar          # una pasada; cron cada hora entre 6:00 y 22:00 (America/Guayaquil)
 ```
 
 Crontab de ejemplo (hora local de Ecuador):
 
 ```
-0 6,9,12,15,18,21 * * *  cd /ruta/scraper-cortes-luz && .venv/bin/python -m pipeline.vigilar >> salida/vigilancia/registro.log 2>&1; /ruta/avisar.sh $?
+7 6-22 * * *  cd /ruta/scraper-cortes-luz && .venv/bin/python -m pipeline.vigilar >> salida/vigilancia/registro.log 2>&1; /ruta/avisar.sh $?
 ```
 
 Una sola ejecución a la vez (por ejemplo, `flock -n /tmp/cortes.lock …`): la pasada y la aprobación
@@ -87,4 +87,4 @@ Si se edita en el servidor, conviene llevar esos cambios también al repositorio
 
 - User agent honesto (`config.yaml → fuente.user_agent`). CentroSur bloquea navegadores sin
   interfaz: **no cambiar el user agent para parecer un navegador**.
-- Ritmo bajo: una visita por página cada 3 horas; los PDFs ya vistos no se descargan otra vez.
+- Ritmo bajo: una visita por página cada hora; los PDFs ya vistos no se descargan otra vez.
