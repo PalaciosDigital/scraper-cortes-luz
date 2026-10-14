@@ -1,22 +1,22 @@
 alimentador,canton,provincia,ejemplos
-0500030V02,,,ORFEO Y LA CUMANDA P#13055 | JOSE MARTI Y BENITO JUAREZ P#51093 | CORICANCHA Y SAGSAY HUAMAN P#20307
-0500030V03,,,AV 10 DE AGOSTO Y AV 27 DE FEBRERO | Los Fresnos y Amancay | 27 de Febrero y Jacinto Flores
-0500030V05,,,HUAGRA HUMA Y RIO CUTUCU P#456665R5 | RIO ZAMORA Y LA COLTA P#453430
-0500040V03,,,Av. Del Chofer y Espadaña
-0500040V04,,,Calle Madrid y Aranjuez P#250485
-0500040V07,,,"Mayancela, Centro | La Playa de Checa"
-0500050V04,,,MIRADOR EL CALVARIO
-0500050V05,,,PAGUANCAY
-0500050V06,,,Av. de las Américas y Alfonso Andrade | Av. de las Américas y Guillermo Medina
-0500050V10,,,Francisco Cisneros y Carlos Arízaga Vega | Francisco Cisneros y General Escandón
-0500070V01,,,CORAZÓN DE JESÚS - RICAURTE | LAS VERTIENTES Y CAMINO A OCHOA LEÓN | BARRIO VIRGEN DE LA NUBE - RICAURTE
-0500080V01,,,1ero de Mayo y Calle S/N (una cuadra antes de Felipe II) | 1ero de Mayo y Pasaje Primero de Mayo | Av. 10 de Agosto y Juan Cuesta
-0500080V03,,,SANTISIMA TRINIDAD
-0500090V01,,,SAN JOSE EL SALTO ALTO | MOSQUERA ENTRADA AL BUESTE | YANACOCHA
-0500120V01,,,NULTI | LLAYZHATAN
-0500140V01,,,SECTOR VIRGEN DE LAS MERCEDES | SECTOR AZHIDEL ALTO | CENTRO CANTANO DE PUCARÁ
-0500140V02,,,SANTA LUCIA
-0500140V05,,,CORRALEJA
-0500170V01,,,Vía a Bellavista
-0500170V03,,,Calle sin nombre
-0500180V02,,,JAHUTAMBO
+0500030V02,Cuenca,Azuay,ORFEO Y LA CUMANDA P#13055 | JOSE MARTI Y BENITO JUAREZ P#51093 | CORICANCHA Y SAGSAY HUAMAN P#20307
+0500030V03,Cuenca,Azuay,AV 10 DE AGOSTO Y AV 27 DE FEBRERO | Los Fresnos y Amancay | 27 de Febrero y Jacinto Flores
+0500030V05,Cuenca,Azuay,HUAGRA HUMA Y RIO CUTUCU P#456665R5 | RIO ZAMORA Y LA COLTA P#453430
+0500040V03,Cuenca,Azuay,Av. Del Chofer y Espadaña
+0500040V04,Cuenca,Azuay,Calle Madrid y Aranjuez P#250485
+0500040V07,Cuenca,Azuay,"Mayancela, Centro | La Playa de Checa"
+0500050V04,Cuenca,Azuay,MIRADOR EL CALVARIO
+0500050V05,Cuenca,Azuay,PAGUANCAY
+0500050V06,Cuenca,Azuay,Av. de las Américas y Alfonso Andrade | Av. de las Américas y Guillermo Medina
+0500050V10,Cuenca,Azuay,Francisco Cisneros y Carlos Arízaga Vega | Francisco Cisneros y General Escandón
+0500070V01,Cuenca,Azuay,CORAZÓN DE JESÚS - RICAURTE | LAS VERTIENTES Y CAMINO A OCHOA LEÓN | BARRIO VIRGEN DE LA NUBE - RICAURTE
+0500080V01,Cuenca,Azuay,1ero de Mayo y Calle S/N (una cuadra antes de Felipe II) | 1ero de Mayo y Pasaje Primero de Mayo | Av. 10 de Agosto y Juan Cuesta
+0500080V03,Cuenca,Azuay,SANTISIMA TRINIDAD
+0500090V01,Azogues,Cañar,SAN JOSE EL SALTO ALTO | MOSQUERA ENTRADA AL BUESTE | YANACOCHA
+0500120V01,Cuenca,Azuay,NULTI | LLAYZHATAN
+0500140V01,Santa Isabel/ Pucará,Azuay,SECTOR VIRGEN DE LAS MERCEDES | SECTOR AZHIDEL ALTO | CENTRO CANTANO DE PUCARÁ
+0500140V02,Santa Isabel,Azuay,SANTA LUCIA
+0500140V05,Santa Isabel,Azuay,CORRALEJA
+0500170V01,Cuenca,Azuay,Vía a Bellavista
+0500170V03,Cuenca,Azuay,Calle sin nombre
+0500180V02,El Tambo,Cañar,JAHUTAMBO
