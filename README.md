@@ -21,6 +21,7 @@ https://raw.githubusercontent.com/<cuenta>/<repo>/main/data/cortes_luz_publicado
 
 Detalle del flujo, avisos y reglas: [`docs/FLUJO.md`](docs/FLUJO.md).
 Puesta en marcha en GitHub: [`docs/GITHUB.md`](docs/GITHUB.md).
+Producción en servidores propios: [`docs/SERVIDOR.md`](docs/SERVIDOR.md).
 
 ## Cambiar la fuente
 
