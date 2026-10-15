@@ -1,4 +1,4 @@
-# Retomar el proyecto (estado al 14 de octubre de 2026, noche)
+# Retomar el proyecto (estado al 15 de octubre de 2026)
 
 ## Dónde vive
 
@@ -21,6 +21,14 @@
   sus cambios se replican en _PRE, nunca al revés.
 - 52 tests (`pytest -q`).
 
+## Novedades del 15 de octubre
+
+- 4 alimentadores nuevos con cantón: 0500020S05, 0500030V01, 0500040V06 → Cuenca; 0500140V04 (El Manzano) → **Nabón**
+  (la subestación no basta para deducir el cantón).
+- Los avisos del issue mencionan a @DiegoPalacios1 (variable de repo `AVISAR` para cambiarlo) para que GitHub notifique.
+- 15:09 UTC: candidato de 35 cortes (15 → 18 oct) **pendiente de aprobación**.
+- GitHub atrasa o se salta corridas del cron horario; en producción, los servidores del equipo.
+
 ## Acuerdos
 
 - Claude integra links nuevos de fuentes y hace push directo (credenciales en el llavero de macOS):
@@ -33,7 +41,8 @@
 1. **Links nuevos de fuentes** (los traerá Diego): revisar formato → `config.yaml` o un extractor nuevo + fixture + test.
 2. **Limpieza de sectores de CentroSur** (ofrecida, sin respuesta): quitar códigos de poste (`P#13055`) y el
    «Cantón X», pasar las MAYÚSCULAS a formato normal y evitar que las comas partan un sector.
-3. Confirmar con CentroSur qué significan PRO / EMM / PAR / ANU (hoy se excluye ANU).
+3. ~~Códigos CentroSur~~ (resuelto 2026-10-15, significados aportados por Diego, no oficiales): PRO = programado,
+   PAR = parcial (ramal o sector), EMM = emergencia o trabajo técnico → se publican; ANU = anulado → se excluye.
 4. Probar en un borrador real de Xalok (1440 / 992 / 767), decidir si se ve el footer del sitio y mover a
    producción en los servidores del equipo.
 
