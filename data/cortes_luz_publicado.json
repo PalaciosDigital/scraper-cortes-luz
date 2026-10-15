@@ -104,6 +104,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500040V06",
+  "fecha": "2026-10-15",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500040V06",
+  "sectores": "Carlos Tosi y calle Primera, Parque Industrial",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39670",
+  "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500040V07",
   "fecha": "2026-10-15",
   "dia": "Jueves",
@@ -343,6 +360,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500030V01",
+  "fecha": "2026-10-16",
+  "dia": "Viernes",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500030V01",
+  "sectores": "luis moreno mora Eduardo malo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39684",
+  "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500120V01",
   "fecha": "2026-10-16",
   "dia": "Viernes",
@@ -390,6 +424,23 @@
   "distribuidora": "CentroSur",
   "consignacion": "39613",
   "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500020S05",
+  "fecha": "2026-10-16",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500020S05",
+  "sectores": "Inés Salcedo y Agustín Cueva",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39685",
+  "estado_origen": "PAR"
  },
  {
   "provincia": "AZUAY",
@@ -528,5 +579,22 @@
   "distribuidora": "CentroSur",
   "consignacion": "39618",
   "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Nabón",
+  "alimentador": "0500140V04",
+  "fecha": "2026-10-18",
+  "dia": "Domingo",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500140V04",
+  "sectores": "SECTOR EL MANZANO",
+  "cantones": [
+   "Nabón"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39547",
+  "estado_origen": "PRO"
  }
 ]
