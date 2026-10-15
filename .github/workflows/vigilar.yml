@@ -61,6 +61,9 @@ jobs:
         if: steps.vigilar.outputs.codigo == '10' || steps.vigilar.outputs.codigo == '20'
         env:
           GH_TOKEN: ${{ github.token }}
+          # Usuario(s) de GitHub a mencionar para que les llegue la notificación (correo y campana).
+          # Se cambia sin tocar este archivo con la variable de repositorio AVISAR (Settings → Variables).
+          AVISAR: ${{ vars.AVISAR || '@DiegoPalacios1' }}
         run: |
           if [ "${{ steps.vigilar.outputs.codigo }}" = "10" ]; then t="Datos nuevos"; else t="Revisión necesaria"; fi
           {
@@ -71,6 +74,8 @@ jobs:
             echo "---"
             echo "Para publicar el candidato: pestaña **Actions → Aprobar publicación → Run workflow**."
             echo "Alimentadores sin cantón: edita \`data/alimentadores_centrosur.csv\` (columnas canton y provincia)."
+            echo
+            echo "Aviso para $AVISAR"
           } > cuerpo.md
           gh label create vigilancia --color 04A4DE --description "Avisos del scraper de cortes" 2>/dev/null || true
           abierto=$(gh issue list --label vigilancia --state open --limit 1 --json number --jq '.[0].number')
