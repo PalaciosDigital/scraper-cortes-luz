@@ -327,6 +327,40 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500030V04",
+  "fecha": "2026-10-19",
+  "dia": "Lunes",
+  "horario": "08:30 a 12:30",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500030V04",
+  "sectores": "PUMAPUNGO Y RAUL ANDRADE",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39612",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V04",
+  "fecha": "2026-10-19",
+  "dia": "Lunes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500170V04",
+  "sectores": "Av. Ordoñez Lasso",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39651",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500030V02",
   "fecha": "2026-10-19",
   "dia": "Lunes",
