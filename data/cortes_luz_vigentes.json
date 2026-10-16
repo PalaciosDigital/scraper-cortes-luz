@@ -344,6 +344,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500040V04",
+  "fecha": "2026-10-19",
+  "dia": "Lunes",
+  "horario": "08:45 a 10:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500040V04",
+  "sectores": "Av. Gil Ramirez Davalos y Sevilla P#271583",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39652",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500170V04",
   "fecha": "2026-10-19",
   "dia": "Lunes",
@@ -357,6 +374,40 @@
   "distribuidora": "CentroSur",
   "consignacion": "39651",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V01",
+  "fecha": "2026-10-19",
+  "dia": "Lunes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes BV_MV",
+  "zona_cortes": "0500170V01",
+  "sectores": "Del Culantro",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39702",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V02",
+  "fecha": "2026-10-19",
+  "dia": "Lunes",
+  "horario": "09:00 a 15:00",
+  "tipo_trabajo": "Mejora de redes BV_MV",
+  "zona_cortes": "0500040V02",
+  "sectores": "Av. Américas y Av. De la independencia",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39619",
+  "estado_origen": "EMM"
  },
  {
   "provincia": "AZUAY",
