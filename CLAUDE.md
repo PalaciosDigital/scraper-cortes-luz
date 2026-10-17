@@ -127,9 +127,11 @@ y Energía publica "Mantenimientos de Contingencia" en
 siempre, con 301, a la URL del mes vigente). Agrupa un PDF por distribuidora;
 el formato, el OCR para los PDFs escaneados (p. ej. EERSSA) y el límite que no
 cubre (el PDF de subestaciones) están documentados en `pipeline/fuentes/mae.py`.
-Es la única página marcada `prioridad: true`: sus cortes reemplazan a los de
-las demás fuentes para el mismo cantón y fecha (`armar_vigentes` en
-`pipeline/vigilar.py`).
+Segunda página de la misma fuente: `cnel-unidades` (un PDF por unidad de
+negocio de CNEL, formato de texto distinto, sin columnas —
+`pipeline/fuentes/cnel_unidades.py`). Ambas marcadas `prioridad: true`: sus
+cortes reemplazan a los de las demás fuentes para el mismo cantón y fecha
+(`armar_vigentes` en `pipeline/vigilar.py`).
 
 
 ## Pendientes

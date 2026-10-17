@@ -81,6 +81,14 @@ EERSSA, CentroSur…) más uno de subestaciones/transmisión.
 - La URL vigilada (sin el mes) redirige siempre, con 301, a la del mes
   vigente —por eso no hace falta actualizarla cada mes.
 
+Misma fuente oficial, segunda página: `cnel-unidades` (agregada el 2026-10-17
+a pedido de Diego), un PDF por unidad de negocio de CNEL (Guayaquil, El Oro,
+Los Ríos, Guayas-Los Ríos, Esmeraldas, Milagro, Manabí, Sucumbíos…). También
+`prioridad: true`. Formato de texto distinto al de `mae-mantenimientos` (por
+párrafos, sin columnas: "PROVINCIA HORARIO" / cantón + horario / tipo de
+trabajo / SECTORES) — extractor aparte, `pipeline/fuentes/cnel_unidades.py`.
+URL estable, sin redirección mensual.
+
 ## Si aparece otra fuente nueva
 
 1. Si es otra página de CNEL: añadirla a `vigilancia.paginas` (mismo `tipo`).

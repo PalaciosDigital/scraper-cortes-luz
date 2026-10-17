@@ -34,7 +34,7 @@ import requests
 
 from . import extraer as extractor_generico
 from .descargar import descargar_pdf, sha256
-from .fuentes import centrosur, cnel, mae
+from .fuentes import centrosur, cnel, cnel_unidades, mae
 from .main import RAIZ, SALIDA, cargar_config, cargar_env
 from .normalizar import cargar_catalogo, normalizar_todo
 from .texto import clave
@@ -43,7 +43,7 @@ from .validar import validar
 SIN_NOVEDADES, DATOS_NUEVOS, REVISION, ERROR = 0, 10, 20, 2
 CARPETA = SALIDA / "vigilancia"      # PDFs descargados y alerta.md (no se suben al repo)
 DATOS = RAIZ / "data"                 # estado, registros y JSON (sí se suben: los lee el buscador)
-EXTRACTORES = {"cnel_emergentes": cnel, "mae_mantenimientos": mae}
+EXTRACTORES = {"cnel_emergentes": cnel, "mae_mantenimientos": mae, "cnel_unidades": cnel_unidades}
 # Fuentes "tabla": no publican PDFs sino una foto de lo programado que cambia a diario.
 # Cada pasada reemplaza la foto anterior; no hay línea base (lo que muestran está vigente).
 TABLAS = {"centrosur_tabla": centrosur}
