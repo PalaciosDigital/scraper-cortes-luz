@@ -23,8 +23,8 @@ candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`
         │
         ▼
  ┌──────────────┐   une todos los PDFs procesados, solo fechas de hoy en adelante,
- │ 4. Armar     │   deduplica (el PDF más nuevo gana) y valida con validar.py
- └──────┬───────┘
+ │ 4. Armar     │   deduplica (el PDF más nuevo gana, salvo la fuente prioritaria,
+ └──────┬───────┘   que siempre gana) y valida con validar.py
         │
         ▼
  ┌──────────────┐   local: salida/vigilancia/cortes_luz_vigentes.json
@@ -58,7 +58,26 @@ candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`
   vencimiento. Los cambios de formato se detectan PDF por PDF.
 - **Solo PDFs del propio dominio**: el pie de CNEL enlaza documentos de otros sitios.
 
-## Cuando aparezca la fuente oficial
+## Fuente prioritaria (Ministerio de Ambiente y Energía)
+
+Confirmada por Diego el 2026-10-17: es la fuente oficial. Página vigilada
+`mae-mantenimientos` (`config.yaml`, extractor `pipeline/fuentes/mae.py`), con
+`prioridad: true`. Agrupa un PDF por distribuidora (EEQ, ELEPCO, EEASA,
+EERSSA, CentroSur…) más uno de subestaciones/transmisión.
+
+- **Qué significa `prioridad: true`**: en el paso 4 (Armar), si esta página
+  tiene algún corte para un cantón y fecha dados, los cortes de las DEMÁS
+  páginas para ese mismo cantón y fecha se descartan por completo —aunque el
+  texto de sectores no coincida—, en vez de aplicar la regla general de "el
+  PDF más nuevo gana". Ver `armar_vigentes` y `paginas_prioritarias` en
+  `pipeline/vigilar.py`.
+- **No cubre todo**: el PDF de subestaciones (sin "sectores" por barrio) y los
+  PDFs escaneados sin texto (p. ej. EERSSA) no tienen extractor → caen a
+  "formato desconocido" (revisión humana), igual que cualquier otra fuente.
+- La URL vigilada (sin el mes) redirige siempre, con 301, a la del mes
+  vigente —por eso no hace falta actualizarla cada mes.
+
+## Si aparece otra fuente nueva
 
 1. Si es otra página de CNEL: añadirla a `vigilancia.paginas` (mismo `tipo`).
 2. Si es otra distribuidora o formato: crear `pipeline/fuentes/<nombre>.py` con

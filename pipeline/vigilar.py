@@ -34,7 +34,7 @@ import requests
 
 from . import extraer as extractor_generico
 from .descargar import descargar_pdf, sha256
-from .fuentes import centrosur, cnel
+from .fuentes import centrosur, cnel, mae
 from .main import RAIZ, SALIDA, cargar_config, cargar_env
 from .normalizar import cargar_catalogo, normalizar_todo
 from .texto import clave
@@ -43,7 +43,7 @@ from .validar import validar
 SIN_NOVEDADES, DATOS_NUEVOS, REVISION, ERROR = 0, 10, 20, 2
 CARPETA = SALIDA / "vigilancia"      # PDFs descargados y alerta.md (no se suben al repo)
 DATOS = RAIZ / "data"                 # estado, registros y JSON (sí se suben: los lee el buscador)
-EXTRACTORES = {"cnel_emergentes": cnel}
+EXTRACTORES = {"cnel_emergentes": cnel, "mae_mantenimientos": mae}
 # Fuentes "tabla": no publican PDFs sino una foto de lo programado que cambia a diario.
 # Cada pasada reemplaza la foto anterior; no hay línea base (lo que muestran está vigente).
 TABLAS = {"centrosur_tabla": centrosur}
@@ -251,24 +251,54 @@ def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | No
     return resumen
 
 
-def armar_vigentes(estado: dict, hoy: date, dias_futuro: int) -> list[dict]:
-    """Une los registros de todos los PDFs procesados con fecha de hoy en adelante."""
+def paginas_prioritarias(cfg_vig: dict) -> set[str]:
+    """IDs de página (ya expandidos) marcados `prioridad: true` en config.yaml.
+
+    Hoy, el Ministerio de Ambiente y Energía (mae-mantenimientos): es la fuente
+    oficial, así que sus cortes mandan sobre los de las demás páginas para el
+    mismo cantón y fecha (ver `armar_vigentes`).
+    """
+    return {p["id"] for p in expandir_paginas(cfg_vig) if p.get("prioridad")}
+
+
+def armar_vigentes(estado: dict, hoy: date, dias_futuro: int,
+                   prioritarias: frozenset[str] = frozenset()) -> list[dict]:
+    """Une los registros de todos los PDFs procesados con fecha de hoy en adelante.
+
+    Si una página prioritaria (`prioridad: true`) tiene algún corte para un
+    cantón y fecha dados, los cortes de las DEMÁS páginas para ese mismo
+    cantón y fecha se descartan por completo — aunque el texto de sectores no
+    coincida —, porque se la considera la fuente oficial y no tendría sentido
+    mostrar dos versiones distintas del mismo corte.
+    """
     tope = (hoy + timedelta(days=dias_futuro)).isoformat()
+
+    def registros_de(pagina_id: str):
+        ep = estado["paginas"].get(pagina_id, {})
+        for info in ep.get("pdfs", {}).values():
+            if info.get("estado") != "ok":
+                continue
+            ruta = DATOS / "vigilancia" / "registros" / f"{info['sha256']}.json"
+            if not ruta.exists():
+                continue
+            for r in json.loads(ruta.read_text(encoding="utf-8")):
+                if hoy.isoformat() <= r["fecha"] <= tope:
+                    yield info["visto_en"], r
+
+    claves_prioritarias = {(r["canton"], r["fecha"])
+                           for pid in prioritarias for _, r in registros_de(pid)}
+
     vistos, salida = set(), []
+    todas = [(pid, visto_en, r) for pid in estado["paginas"] for visto_en, r in registros_de(pid)]
     # Recorremos del PDF más nuevo al más viejo: si un PDF "-NUEVO" reemplaza a otro,
     # la versión más reciente gana en la deduplicación.
-    infos = [i for ep in estado["paginas"].values() for i in ep["pdfs"].values() if i.get("estado") == "ok"]
-    for info in sorted(infos, key=lambda i: i["visto_en"], reverse=True):
-        ruta = DATOS / "vigilancia" / "registros" / f"{info['sha256']}.json"
-        if not ruta.exists():
+    for pid, _visto_en, r in sorted(todas, key=lambda t: t[1], reverse=True):
+        if pid not in prioritarias and (r["canton"], r["fecha"]) in claves_prioritarias:
             continue
-        for r in json.loads(ruta.read_text(encoding="utf-8")):
-            if not (hoy.isoformat() <= r["fecha"] <= tope):
-                continue
-            k = (r["canton"], r["fecha"], r["horario"], r["sectores"])
-            if k not in vistos:
-                vistos.add(k)
-                salida.append(r)
+        k = (r["canton"], r["fecha"], r["horario"], r["sectores"])
+        if k not in vistos:
+            vistos.add(k)
+            salida.append(r)
     return sorted(salida, key=lambda r: (r["fecha"], r["provincia"], r["canton"], r["horario"]))
 
 
@@ -330,7 +360,8 @@ def main(argv=None) -> int:
         return SIN_NOVEDADES
 
     resumen = vigilar(cfg, estado, hoy, args.simular, args.solo)
-    vigentes = armar_vigentes(estado, hoy, cfg["validacion"].get("dias_futuro_max", 60))
+    vigentes = armar_vigentes(estado, hoy, cfg["validacion"].get("dias_futuro_max", 60),
+                              paginas_prioritarias(cfg["vigilancia"]))
     huella = hashlib.sha256(json.dumps(vigentes, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     cambio = huella != estado.get("dataset_sha256")
 

@@ -1,6 +1,7 @@
 """Flujo de vigilancia con un sitio falso (sin red) y PDFs reales de CNEL."""
 import json
 import shutil
+from datetime import date
 from pathlib import Path
 
 import pytest
@@ -159,3 +160,39 @@ def test_formato_desconocido_no_publica(entorno):
     sitio.publicar("formato_desconocido.pdf")           # llega junto a uno bueno
     assert correr("2026-03-20") == vigilar.REVISION
     assert not (carpeta / "cortes_luz_publicado.json").exists()
+
+
+def test_paginas_prioritarias_lee_config():
+    cfg_vig = {"paginas": [{"id": "mae-mantenimientos", "prioridad": True}, {"id": "centrosur"}]}
+    assert vigilar.paginas_prioritarias(cfg_vig) == {"mae-mantenimientos"}
+
+
+def test_fuente_prioritaria_reemplaza_a_las_demas_en_su_canton_y_fecha(tmp_path, monkeypatch):
+    # El Ministerio (prioritaria) y CNEL reportan el mismo cantón+fecha con
+    # sectores distintos: debe ganar el Ministerio, no "el PDF más nuevo".
+    monkeypatch.setattr(vigilar, "DATOS", tmp_path)
+    registros = tmp_path / "vigilancia" / "registros"
+    registros.mkdir(parents=True)
+    (registros / "mae.json").write_text(json.dumps([
+        {"canton": "Quito", "provincia": "PICHINCHA", "fecha": "2026-10-20",
+         "horario": "03:00 a 06:00", "sectores": "Versión del Ministerio"},
+    ]), encoding="utf-8")
+    (registros / "cnel.json").write_text(json.dumps([
+        {"canton": "Quito", "provincia": "PICHINCHA", "fecha": "2026-10-20",
+         "horario": "03:00 a 06:00", "sectores": "Versión de CNEL (texto distinto)"},
+        {"canton": "Cuenca", "provincia": "AZUAY", "fecha": "2026-10-21",
+         "horario": "08:00 a 10:00", "sectores": "Corte que solo reporta CNEL"},
+    ]), encoding="utf-8")
+    estado = {"paginas": {
+        "mae-mantenimientos": {"pdfs": {"a": {"estado": "ok", "sha256": "mae", "visto_en": "2026-10-17T00:00"}}},
+        # "visto_en" más reciente que el del Ministerio: sin prioridad, ganaría por recencia.
+        "cnel-guayaquil": {"pdfs": {"b": {"estado": "ok", "sha256": "cnel", "visto_en": "2026-10-17T05:00"}}},
+    }}
+
+    vigentes = vigilar.armar_vigentes(estado, date(2026, 10, 17), 60, frozenset({"mae-mantenimientos"}))
+
+    quito = [r for r in vigentes if r["canton"] == "Quito"]
+    assert len(quito) == 1
+    assert quito[0]["sectores"] == "Versión del Ministerio"
+    # Un cantón/fecha que el Ministerio no cubre: la otra fuente se conserva.
+    assert any(r["canton"] == "Cuenca" and r["sectores"] == "Corte que solo reporta CNEL" for r in vigentes)

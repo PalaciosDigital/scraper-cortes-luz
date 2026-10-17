@@ -121,8 +121,16 @@ CNEL EP publica cronogramas emergentes de Santa Elena y Esmeraldas en páginas
 WordPress estáticas; el formato del PDF está documentado en `pipeline/fuentes/cnel.py`.
 "Trabajos programados" de CNEL estaba vacío al 2026-10-14.
 
+Fuente oficial (confirmada por Diego el 2026-10-17): el Ministerio de Ambiente
+y Energía publica "Mantenimientos de Contingencia" en
+`https://www.ambienteyenergia.gob.ec/mantenimientoseedprogramados/` (redirige
+siempre, con 301, a la URL del mes vigente). Agrupa un PDF por distribuidora;
+el formato y sus límites (PDF de subestaciones y PDFs escaneados sin
+extractor) están documentados en `pipeline/fuentes/mae.py`. Es la única página
+marcada `prioridad: true`: sus cortes reemplazan a los de las demás fuentes
+para el mismo cantón y fecha (`armar_vigentes` en `pipeline/vigilar.py`).
+
 
 ## Pendientes
 
-La hoja de ruta con casillas está en `docs/PLAN.md`. Lo más urgente:
-**falta la URL del PDF de origen** (`config.yaml → fuente.pdf_url`).
+La hoja de ruta con casillas está en `docs/PLAN.md`.

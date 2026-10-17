@@ -36,6 +36,20 @@ vigilancia:
   # directa: se publican solos (cuando el flujo esté probado).
   publicacion: revision
   paginas:
+    # Ministerio de Ambiente y Energía: fuente oficial (confirmada por Diego el
+    # 2026-10-17). La URL sin mes redirige siempre (301) al mes vigente, p. ej.
+    # …mantenimientoseedprogramadosoct/. Agrupa un PDF por distribuidora (EEQ,
+    # ELEPCO, EEASA, EERSSA, CentroSur…) más uno de subestaciones/transmisión.
+    # `prioridad: true`: sus cortes reemplazan a los de las demás páginas para
+    # el mismo cantón y fecha (ver armar_vigentes en pipeline/vigilar.py).
+    # El PDF de subestaciones y los PDFs escaneados (p. ej. EERSSA) no tienen
+    # extractor: cae a "formato desconocido" y pide revisión humana.
+    - id: mae-mantenimientos
+      tipo: mae_mantenimientos
+      url: "https://www.ambienteyenergia.gob.ec/mantenimientoseedprogramados/"
+      distribuidora: "Ministerio de Ambiente y Energía"
+      patron_pdf: "mantenimiento|crono"
+      prioridad: true
     # CentroSur (Azuay, Cañar, Morona Santiago): tabla GeneXus en su extranet, no PDF.
     # Se lee por HTTP con el user_agent de arriba (ver pipeline/fuentes/centrosur.py).
     - id: centrosur

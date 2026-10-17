@@ -4,9 +4,12 @@ Marca las casillas a medida que avances. El agente puede actualizar este archivo
 
 ## Fase 0 — Preparación
 
-- [ ] Definir la URL del PDF de origen en `config.yaml` (`fuente.pdf_url`).
-      ¿Es un PDF nacional consolidado o uno por distribuidora? Si son varios,
-      usar la lista `fuente.pdfs`.
+- [x] Definir la URL del PDF de origen: resuelto el 2026-10-17 con la fuente
+      oficial del Ministerio de Ambiente y Energía (un PDF por distribuidora,
+      no uno nacional consolidado), vigilada como `mae-mantenimientos` con
+      `prioridad: true`. Ver `docs/FLUJO.md → Fuente prioritaria`. La ruta
+      `fuente.pdf_url`/`fuente.pdfs` de esta sección queda sin usar: el flujo
+      real es el de vigilancia (`pipeline/vigilar.py`), no `pipeline/main.py`.
 - [ ] Descargar la línea base: `bash scripts/descargar_linea_base.sh`.
 - [ ] Guardar un PDF real de ejemplo en `tests/fixtures/ejemplo.pdf`.
 - [ ] Completar `data/cantones_ecuador.csv` con el catálogo oficial del INEC
