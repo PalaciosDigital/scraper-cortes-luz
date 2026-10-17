@@ -906,6 +906,57 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nombre, junto al río, Sector Barabón Chico Alto, Diagonal Comercial Moscoso Vega",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39621",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nombre, junto al río, Sector Barabón Chico Alto, A 300m de Comercial Moscoso Vega",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39622",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nombre, junto al río, Sector Barabón Chico Bajo, A 500m de Comercial Moscoso Vega",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39623",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500040V07",
   "fecha": "2026-10-20",
   "dia": "Martes",
@@ -923,6 +974,40 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500050V02",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "09:00 a 12:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500050V02",
+  "sectores": "De los Manzaneros y Gran Colombia",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39696",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500050V07",
+  "sectores": "Av. Enrique Arízaga",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39653",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500030V02",
   "fecha": "2026-10-20",
   "dia": "Martes",
@@ -935,6 +1020,57 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39663",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V05",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de poste BV",
+  "zona_cortes": "0500080V05",
+  "sectores": "ISABELA CATOLICA Y CARLOS QUINTO",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39668",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle sin nombre y Santiago Quinche",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39704",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V04",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500080V04",
+  "sectores": "Gulalcay",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39708",
   "estado_origen": "PRO"
  },
  {
@@ -986,6 +1122,74 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39667",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nombre, junto Skull Riders, Sector Barabón Chico Alto, Diagonal a Bloques Euroblock",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39624",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nombre, nace de 1ero Mayo y Entrada a Misicata, A 50m de Lokovapes",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39625",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nombre, nace de 1ero Mayo y Entrada a Misicata, Entrada a barrio Jardines del Sur",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39626",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-20",
+  "dia": "Martes",
+  "horario": "13:30 a 15:30",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle sin nombre y Carretero a San Joaquín",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39658",
   "estado_origen": "PRO"
  },
  {
