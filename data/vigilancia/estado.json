@@ -215,7 +215,7 @@
      "sha256": "2da45aeded27c171fb63f53664da86eb53fb2e33bc7db7bb37c74bee2ece9c88",
      "visto_en": "2026-10-17",
      "titulo": "",
-     "registros": 4,
+     "registros": 6,
      "descartes": 0
     },
     "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/Mantenimientos-17-de-octubre-2.pdf": {
@@ -224,16 +224,16 @@
      "sha256": "706f522db6cc7dd606edb97360041f1e3112c73dd8bb77a44aee26282a4c79d8",
      "visto_en": "2026-10-17",
      "titulo": "",
-     "registros": 3,
+     "registros": 4,
      "descartes": 0
     },
     "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/MANTENIMIENTOS-EERSSA.pdf": {
-     "estado": "formato_desconocido",
-     "formato": "desconocido",
+     "estado": "ok",
+     "formato": "mae_mantenimientos",
      "sha256": "4e3a97b5900725cb4abffbacfe981d11e96ffeee619a1884c29e07221d9e4f9a",
      "visto_en": "2026-10-17",
      "titulo": "",
-     "registros": 0,
+     "registros": 6,
      "descartes": 0
     },
     "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/final-crono.pdf": {
@@ -250,8 +250,8 @@
    "vacia": null
   }
  },
- "dataset_sha256": "fa946c3e2c117ae6fbb847c32582f9ee827a931f34c346f7675133e5dca71457",
+ "dataset_sha256": "5636e22d895fd689513519652accde46930c0d67774f4599a99022aeb0cb57ba",
  "rechazado_sha256": "866f65a60107aa5950c7c10066a31d2648928e9e628646f0798dfa6a73bf9e2b",
- "dataset_registros": 35,
+ "dataset_registros": 44,
  "pendiente_aprobacion": false
 }
