@@ -4,3 +4,7 @@ boto3>=1.34
 PyYAML>=6.0
 jsonschema>=4.21
 pytest>=8.0
+# OCR para PDFs escaneados (p. ej. EERSSA en la fuente del Ministerio, ver
+# pipeline/fuentes/mae.py). Necesita el binario tesseract: en Mac, `brew
+# install tesseract tesseract-lang`; en CI, ver .github/workflows/vigilar.yml.
+pytesseract>=0.3

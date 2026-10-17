@@ -21,7 +21,10 @@ Marca las casillas a medida que avances. El agente puede actualizar este archivo
 - [ ] Ajustar `config.yaml → columnas` con los encabezados reales del PDF.
 - [ ] Ejecutar `--local` y comparar contra el JSON de mayo-junio
       (mismo número de registros para el mismo PDF, mismos campos).
-- [ ] Si el PDF es escaneado: añadir OCR (`ocrmypdf` antes de pdfplumber).
+- [x] Si el PDF es escaneado: añadir OCR — implementado el 2026-10-17 en el
+      flujo real (`pipeline/fuentes/mae.py`, con `pytesseract`/Tesseract), no
+      en este `pipeline/main.py` que no se usa. Ver `docs/FLUJO.md → Fuente
+      prioritaria`.
 - [ ] Si las tablas son irregulares: evaluar extracción asistida con la API de
       Claude (una página → JSON con el esquema). Dejarlo como respaldo, no como
       camino principal.

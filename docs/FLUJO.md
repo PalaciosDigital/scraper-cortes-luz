@@ -71,9 +71,13 @@ EERSSA, CentroSur…) más uno de subestaciones/transmisión.
   texto de sectores no coincida—, en vez de aplicar la regla general de "el
   PDF más nuevo gana". Ver `armar_vigentes` y `paginas_prioritarias` en
   `pipeline/vigilar.py`.
-- **No cubre todo**: el PDF de subestaciones (sin "sectores" por barrio) y los
-  PDFs escaneados sin texto (p. ej. EERSSA) no tienen extractor → caen a
-  "formato desconocido" (revisión humana), igual que cualquier otra fuente.
+- **PDFs escaneados (p. ej. EERSSA)**: desde el 2026-10-17 se procesan con OCR
+  (Tesseract, vía `pytesseract`; necesita el paquete `tesseract-ocr` del
+  sistema, ya instalado en `vigilar.yml`). No es perfecto: en el PDF de
+  prueba reconoce 6 de 7 cortes (al otro, Tesseract le lee mal la insignia
+  de horario) — revisa igual el candidato antes de aprobar.
+- **No cubre**: el PDF de subestaciones (sin "sectores" por barrio) no tiene
+  extractor → cae a "formato desconocido" (revisión humana).
 - La URL vigilada (sin el mes) redirige siempre, con 301, a la del mes
   vigente —por eso no hace falta actualizarla cada mes.
 
