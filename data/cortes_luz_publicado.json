@@ -62,6 +62,37 @@
   "distribuidora": "Ministerio de Ambiente y Energía"
  },
  {
+  "provincia": "LOJA",
+  "canton": "Celica",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO PREVENTIVO POREL FENÓMENO DEL NIÑO 2026",
+  "zona_cortes": "CELICA",
+  "sectores": "CANTÓN CELICA Sábado, 17 de octubre de",
+  "cantones": [
+   "Celica"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "LOJA",
+  "canton": "PINDAL / PUYANGO",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO PREVENTIVO POR EL FENÓMENO DEL NIÑO",
+  "zona_cortes": "PINDAL / PUYANGO",
+  "sectores": "CANTONES: PINDAL / PUYANGO / ZAPOTILLO",
+  "cantones": [
+   "PINDAL",
+   "PUYANGO"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
   "provincia": "MORONA SANTIAGO",
   "canton": "SANTIAGO",
   "alimentador": "",
@@ -107,6 +138,36 @@
   "distribuidora": "Ministerio de Ambiente y Energía"
  },
  {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "SUCÚA Y LOGROÑO",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "DE REDES HORARIO P",
+  "zona_cortes": "RÍO BLANCO / SANTA MARIANITA / SUCÚA / HUAMBI / LOGROÑO / SHIMPIS",
+  "sectores": "AMAZÓNICA HASTA EL RÍO SUNGAIME, BARRIO EL TERMINAL DESDE LA AV. TRONCAL AMAZONIA HASTA EL RÍO SUNGAIME, URBANIZACIÓN AMAZONAS, BARRIO LA CRUZ, BARRIO NORTE, BARRIO EL PARAÍSO, BARRIO EL PROGRESO, BARRIO CENTRO, BARRIO 8 DE DICIEMBRE, BARRIO 12 DE FEBRERO, BARRIO SUR, BARRIO AEROPUERTO, BARRIO 4 DE OCTUBRE, BARRIO LOS ARTESANOS, BARRIO EL NAZARENO, ARROQUIA LA ASUNCIÓN Y SUS COMUNIDADES, EL TRIUNFO, HUAMBINIMI, PARROQUIA HUAMBI Y SUS COMUNIDADES, LOGROÑO Y SUS COMUNIDADES, PARROQUIA SHIMPIS Y SUS COMUNIDADES.",
+  "cantones": [
+   "SUCÚA Y LOGROÑO"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "NAPO",
+  "canton": "ARCHIDONA",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "DE AISLADORES EN ESTADO, REEMPLAZO DE EN MAL ESTADO",
+  "zona_cortes": "CANTÓN ARCHIDONA/PARROQUIA ARCHIDONA/HATUN SUMACO-COTUNDO",
+  "sectores": "REEMPLAZO MARGEN IZQUIERDO DE LA VÍA TENA ARCHIDONA MAL DESDE EL CHIMBADERO, BARRIO SAN JACINTO, SECCIONADOR CHAUPISHUNGO, INCHILLAQUI, CÓNDOR MIRADOR, AYAPATA, AGUA MARINA, LA LIBERTAD, SAN AGUSTÍN, ANDALUCIA. SECTORES OESTE DE ARCHIDONA, SINCHI SACHA, CIRCUNVALACIÓN, MARGEN IZQUIERDO DE LA AVENIDA NAPO, PIEDRA GRANDE, CAPOA, , SAN VICENTE, SHICAMA, SANTA RITA, MANDURO, SAN MARCOS, BATANCOCHA, YAHUARI, RUMIPAMBA, RETEN, LA TOTALIDAD DE LAS PARROQUIAS COTUNDO, HATUN SUMACO Y SAN PABLO DE USHPAYACU, ATACAPI, PLANTA DE AGUA POTABLE COLONSO DEL GAD MUNICIPAL DE TENA, UNIVERSIDAD IKIAM",
+  "cantones": [
+   "ARCHIDONA"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
   "provincia": "NAPO",
   "canton": "TENA",
   "alimentador": "",
@@ -116,6 +177,21 @@
   "tipo_trabajo": "REEMPLAZO DE CONDUCTOR Y ESTRUCTURAS",
   "zona_cortes": "CANTÓN TENA-PARROQUIA TENA",
   "sectores": "BARRIOS: PLAN DE SALUD, ELOY ALFARO, SAN JORGE, LAS GUAYUSAS, PALANDACOCHA, GIL RAMÍREZ DÁVALOS, EL PARAÍSO, SAN LUCAS, HUERTOS FAMILIARES 2, SAN PEDRO DE APAYACU, LAS MALVINAS, GUINEA CHIMBANA, LA TOTALIDAD DE LAS PARROQUIAS PANO Y TALAG.",
+  "cantones": [
+   "TENA"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "NAPO",
+  "canton": "TENA",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "REEMPLAZO DE SECCIONADORES Y TRANSFORMADOR",
+  "zona_cortes": "CANTÓN TENA-PARROQUIA TENA",
+  "sectores": "MARGEN DERECHO DE LA VÍA TENA - ARCHIDONA SECTORES 21 DE ENERO, AVATE, SANTA INES MARGEN IZQUIERDO, SECAP, LOS PINOS, AGENCIA NACIONAL DE TRÁNSITO, UGLOPAMBA, SAN LUIS ALTO, DOS RÍOS, TERERE, EL DORADO, PAUSHIYACU BAJO, BELLAVISTA ALTA Y BAJA.",
   "cantones": [
    "TENA"
   ],
@@ -194,6 +270,67 @@
   "cantones": [
    "PELILEO",
    "PATATE"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "ZAMORA CHINCHIPE",
+  "canton": "Yantzaza",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO EMERGENTE 7 DE OPERACIÓN 2026",
+  "zona_cortes": "YANTZAZA ZAMORA CHINCHIPE",
+  "sectores": "SECTOR NORTE DEL ÁREA URBANA DE LA CIUDAD DE VANTZAZA Sábado, 17 de octubre de",
+  "cantones": [
+   "Yantzaza"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "ZAMORA CHINCHIPE",
+  "canton": "Yantzaza / Paquisha",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO EMERGENTE DE OPERACIÓN AA",
+  "zona_cortes": "YANTZAZA / PAQUISHA",
+  "sectores": "PARROQUIA LOS ENCUENTROS Y CHICAÑA DEL CANTÓN YANTZAZA / PARROQUIA BELLAVISTA DEL CANTÓN PAQUISHA",
+  "cantones": [
+   "Yantzaza",
+   "Paquisha"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "ZAMORA CHINCHIPE",
+  "canton": "Zamora",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO EMERGENTE DE OPERACIÓN 2026",
+  "zona_cortes": "ZAMORA ZAMORA CHINCHIPE",
+  "sectores": "PARROQUIA SABANILLA / EL LIMÓN Y ÁREA URBANA DE LA CIUDAD DE ZAMORA Sábado, 17 de octubre de",
+  "cantones": [
+   "Zamora"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "ZAMORA CHINCHIPE",
+  "canton": "Zamora",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO OPERACIÓN EMERGENTE DE 2026",
+  "zona_cortes": "ZAMORA",
+  "sectores": "/ PARROQUIA CUMBARATZA TIMBARA Y ÁREA URBANA DE LA CIUDAD DE ZAMORA Sábado, 17 de octubre de",
+  "cantones": [
+   "Zamora"
   ],
   "distribuidora": "Ministerio de Ambiente y Energía"
  },
