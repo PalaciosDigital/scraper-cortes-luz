@@ -188,10 +188,70 @@
    },
    "inicializada": true,
    "vacia": null
+  },
+  "mae-mantenimientos": {
+   "pdfs": {
+    "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/MANTENIMIENTOS-EEQ-10.pdf": {
+     "estado": "ok",
+     "formato": "mae_mantenimientos",
+     "sha256": "15162ad69a2d177ec1c4131da67e0b91c846fc9f3fa41bd69e3ac9563ff93676",
+     "visto_en": "2026-10-17",
+     "titulo": "",
+     "registros": 2,
+     "descartes": 0
+    },
+    "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/MANTENIMIENTOS-ELEPCO-17-5m-1.pdf": {
+     "estado": "ok",
+     "formato": "mae_mantenimientos",
+     "sha256": "a97453a8c3ccfb23cac6ef32f8c1ac23687c9b1426809d9da1b56fbdf3fe5f06",
+     "visto_en": "2026-10-17",
+     "titulo": "",
+     "registros": 3,
+     "descartes": 0
+    },
+    "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/MANTENIMIENTOS-EEASA-SABADO-17-3.pdf": {
+     "estado": "ok",
+     "formato": "mae_mantenimientos",
+     "sha256": "2da45aeded27c171fb63f53664da86eb53fb2e33bc7db7bb37c74bee2ece9c88",
+     "visto_en": "2026-10-17",
+     "titulo": "",
+     "registros": 4,
+     "descartes": 0
+    },
+    "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/Mantenimientos-17-de-octubre-2.pdf": {
+     "estado": "ok",
+     "formato": "mae_mantenimientos",
+     "sha256": "706f522db6cc7dd606edb97360041f1e3112c73dd8bb77a44aee26282a4c79d8",
+     "visto_en": "2026-10-17",
+     "titulo": "",
+     "registros": 3,
+     "descartes": 0
+    },
+    "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/MANTENIMIENTOS-EERSSA.pdf": {
+     "estado": "formato_desconocido",
+     "formato": "desconocido",
+     "sha256": "4e3a97b5900725cb4abffbacfe981d11e96ffeee619a1884c29e07221d9e4f9a",
+     "visto_en": "2026-10-17",
+     "titulo": "",
+     "registros": 0,
+     "descartes": 0
+    },
+    "https://www.ambienteyenergia.gob.ec/wp-content/uploads/2026/10/final-crono.pdf": {
+     "estado": "formato_desconocido",
+     "formato": "desconocido",
+     "sha256": "12f5f2371143e13a800c475f3e3567369934b9145e2b9d0625605779bbe00bb8",
+     "visto_en": "2026-10-17",
+     "titulo": "",
+     "registros": 0,
+     "descartes": 0
+    }
+   },
+   "inicializada": true,
+   "vacia": null
   }
  },
- "dataset_sha256": "870ff2411918b4d763d966ef8bf8d6189e3d1ddf222f61e03f6bc88ffe5339d1",
+ "dataset_sha256": "523017f9f78c58f7b80bcefe472a78637d184247d43fa04fe23849cb57b08ee2",
  "rechazado_sha256": "866f65a60107aa5950c7c10066a31d2648928e9e628646f0798dfa6a73bf9e2b",
- "dataset_registros": 15,
+ "dataset_registros": 27,
  "pendiente_aprobacion": true
 }

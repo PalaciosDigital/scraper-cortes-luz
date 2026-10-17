@@ -17,6 +17,187 @@
   "estado_origen": "PAR"
  },
  {
+  "provincia": "COTOPAXI",
+  "canton": "La Maná",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Mantenimiento correctivo: cambio de seccionadores y terminales en el pórtico de salida del alimentador.",
+  "zona_cortes": "Subestación La Maná",
+  "sectores": "Chipehamburgo - La Maná Urbano - El Carmen",
+  "cantones": [
+   "La Maná"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "COTOPAXI",
+  "canton": "La Maná",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Montaje e instalación de disyuntor tanque muerto 69KV Central Enermax.",
+  "zona_cortes": "Subestación La Maná",
+  "sectores": "Subestación La Maná, 4 alimentadores Empresa Eléctrica Provincial Cotopaxi S.A.",
+  "cantones": [
+   "La Maná"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "COTOPAXI",
+  "canton": "Latacunga",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Mantenimiento correctivo: cambio de seccionadores y terminales en el pórtico de salida del alimentador.",
+  "zona_cortes": "Subestación La Cocha",
+  "sectores": "Latacunga Norte - Puente Aláquez La FAE - Aeropuerto",
+  "cantones": [
+   "Latacunga"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "SANTIAGO",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO DE ESTRUCTURAS DE SOPORTE",
+  "zona_cortes": "BELLA UNIÓN/CHINGANAZA/CAMBANACA",
+  "sectores": "LA DELICIA, NUEVO TRIUNFO, PLAN GRANDE, AYANCAS",
+  "cantones": [
+   "Santiago"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "SUCÚA",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CAMBIO DE SECCIONADORES Y DE PARARRAYOS",
+  "zona_cortes": "SEIPA / EL TESORO",
+  "sectores": "YUKUTEIS, SEIPA, CAYAMAS LOGROÑO",
+  "cantones": [
+   "Sucúa"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "SUCÚA",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "05:00 a 06:00",
+  "tipo_trabajo": "CAMBIO DE SECCIONADORES Y DE PARARRAYOS",
+  "zona_cortes": "SEIPA / EL TESORO",
+  "sectores": "YUKUTEIS, SEIPA, CAYAMAS LOGROÑO",
+  "cantones": [
+   "Sucúa"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "NAPO",
+  "canton": "TENA",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "REEMPLAZO DE CONDUCTOR Y ESTRUCTURAS",
+  "zona_cortes": "CANTÓN TENA-PARROQUIA TENA",
+  "sectores": "BARRIOS: PLAN DE SALUD, ELOY ALFARO, SAN JORGE, LAS GUAYUSAS, PALANDACOCHA, GIL RAMÍREZ DÁVALOS, EL PARAÍSO, SAN LUCAS, HUERTOS FAMILIARES 2, SAN PEDRO DE APAYACU, LAS MALVINAS, GUINEA CHIMBANA, LA TOTALIDAD DE LAS PARROQUIAS PANO Y TALAG.",
+  "cantones": [
+   "TENA"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "PICHINCHA",
+  "canton": "Quito",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO PERIÓDICO",
+  "zona_cortes": "SANGOLQUÍ",
+  "sectores": "VÍA AMAGUAÑA, SAN JUAN, SAN LUIS",
+  "cantones": [
+   "Quito"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "PICHINCHA",
+  "canton": "Quito",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO EMERGENTE",
+  "zona_cortes": "TUMBACO",
+  "sectores": "TUMBACO, EL CHICHE - AV. OSWALDO GUAYASAMÍN",
+  "cantones": [
+   "Quito"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "TUNGURAHUA",
+  "canton": "PELILEO",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "REEMPLAZO POSTE EN MAL ESTADO",
+  "zona_cortes": "CANTÓN PELILEO",
+  "sectores": "REDONDEL DE LA HUAMBALEÑA",
+  "cantones": [
+   "PELILEO"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "TUNGURAHUA",
+  "canton": "PELILEO",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "REEMPLAZO POSTE EN MAL ESTADO",
+  "zona_cortes": "CANTÓN PELILEO",
+  "sectores": "CALLE PUERTA DEL DORADO VÍA A OLMEDO",
+  "cantones": [
+   "PELILEO"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "TUNGURAHUA",
+  "canton": "PELILEO-PATATE",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES EN BARRAS 69 Y 13.8 KV DE LA SUBESTACIÓN PELILEO, ACORDE A INFORME DE TERMOGRAFÍA",
+  "zona_cortes": "CANTONES PELILEO Y PATATE",
+  "sectores": "AV. CONFRATERNIDAD, AV. JORGE CHACÓN, EL TAMBO. PARROQUIAS: GARCIA MORENO, PELILEO GRANDE, HUAMBALÓ, COTALÓ, BOLÍVAR DEL CANTÓN PELILEO, Y EL CANTÓN PATATE.",
+  "cantones": [
+   "PELILEO",
+   "PATATE"
+  ],
+  "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
   "provincia": "AZUAY",
   "canton": "Nabón",
   "alimentador": "0500140V04",
