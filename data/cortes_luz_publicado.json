@@ -17,6 +17,21 @@
   "estado_origen": "PAR"
  },
  {
+  "provincia": "AZUAY",
+  "canton": "Ponce Enríquez",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES CON REAJUSTE DE CONEXIONES",
+  "zona_cortes": "",
+  "sectores": "Todo el cantón Ponce Enríquez.",
+  "cantones": [
+   "Camilo Ponce Enríquez"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
   "provincia": "COTOPAXI",
   "canton": "La Maná",
   "alimentador": "",
@@ -62,6 +77,186 @@
   "distribuidora": "Ministerio de Ambiente y Energía"
  },
  {
+  "provincia": "EL ORO",
+  "canton": "El Guabo",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES CON REAJUSTE DE CONEXIONES",
+  "zona_cortes": "",
+  "sectores": "Todo el cantón El Guabo",
+  "cantones": [
+   "El Guabo"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "EL ORO",
+  "canton": "Machala",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES CON REAJUSTE DE CONEXIONES",
+  "zona_cortes": "",
+  "sectores": "Todo el cantón Machala.",
+  "cantones": [
+   "Machala"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "EL ORO",
+  "canton": "Pasaje",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES CON REAJUSTE DE CONEXIONES",
+  "zona_cortes": "",
+  "sectores": "Línea de subtransmisión Peaña – La Iberia",
+  "cantones": [
+   "Pasaje"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "ESMERALDAS",
+  "canton": "Esmeraldas",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Reajuste de elementos, limpieza de aislamiento y cambio de seccionadores en alimentadores de la subestación Las Palmas.",
+  "zona_cortes": "",
+  "sectores": "Norte de la ciudad de Esmeraldas: ECU 911, Tercer Piso, Miramar, El Panecillo, El Regocijo, Mina de Piedra, El Faro, todo el sector de Las Palmas, avenida del Pacífico, canal Telecosta, Hospital Naval, COOPNO, Distrito de Esmeraldas del Servicio Nacional de Aduana, Puerto Pesquero Artesanal, avenida Libertad desde la calle Jr Coronel hasta la calle Lavallen, calle Sucre desde la Jr. Coronel hasta la calle Eugenio Espejo, CNT, Unidad Educativa Liceo Naval, Ciudadela Naval y centro comercial Multiplaza.",
+  "cantones": [
+   "Esmeraldas"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Balao",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES CON REAJUSTE DE CONEXIONES",
+  "zona_cortes": "",
+  "sectores": "Todo el cantón Balao.",
+  "cantones": [
+   "Balao"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Durán",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CAMBIO DE SECCIONADOR PORTAFUSIBLES CAMBIO O MANTENIMIENTO DE PUENTES (ESTRUCTURA DE RETENCIÓN",
+  "zona_cortes": "",
+  "sectores": "Sector 28 de Agosto y vía Durán Yaguachi",
+  "cantones": [
+   "Durán"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Guayaquil",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES CON REAJUSTE DE CONEXIONES",
+  "zona_cortes": "",
+  "sectores": "Edificio River Front 1, The Point, River Front 2, Edificio Santa Ana Loft y Edificio Bellini",
+  "cantones": [
+   "Guayaquil"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Guayaquil",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "LIMPIEZA Y LAVADO EN EL POTRICO DE 69KV SUBESTACION PLAYAS.",
+  "zona_cortes": "",
+  "sectores": "Toda la parroquia Posorja",
+  "cantones": [
+   "Guayaquil"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Guayas",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO DE LA SUBESTACIÓN QUEVEDO DE CELEC",
+  "zona_cortes": "",
+  "sectores": "Cantón El Empalme y sus sectores aledaños.",
+  "cantones": [
+   "Guayas"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Milagro",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CAMBIO DE PARARRAYO SUBESTACIÓN",
+  "zona_cortes": "",
+  "sectores": "Cantón el Triunfo, Bucay, Cumanda, zonas urbanas y rurales.",
+  "cantones": [
+   "Milagro"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Playas",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "LIMPIEZA Y LAVADO EN EL POTRICO DE 69KV SUBESTACION POSORJA.",
+  "zona_cortes": "",
+  "sectores": "Todo el cantón Playas",
+  "cantones": [
+   "Playas"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Samborondón",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "• INSTALACION DE HILO DE GUARDA DE LT3 • MANTENIMIENTO DE LA SUBESTACIÓN LOS ARCOS. • CAMBIO DE ESTRUCTURAS • CAMBIO DE REDES",
+  "zona_cortes": "",
+  "sectores": "URB. BOSQUES DE CASTILLA, URB VISTA AL RIO, URB PLAZA REAL, PARQUE HISTORICOS, URB ENTRERIOS (RESIDENCIAS Y CONDOMINIOS), CENTRO COMERCIAL LAS TERRAZAS, TEATRO SANCHEZ AGUILAR, CONDOMINIO ESMERALDA, SAMBORONDON BUSINESS CENTER SBC, OFICCE BUSINESS CENTER OFC, FOOD GARDEN, BANCO BOLIVARIANO, BANCO PACIFICO, MIDTOWN, BOCCA, LA TORRE, LOCALES COMERCIALES IGLESIA SANTA TERESITA, VIVERO SUNDARAM JARDINES, LOCAL COMERCIAL PRISMA, ANTENA DE CNT, HOTEL EL PARQUE, XIMA, ARCOSPLAZA 1 Y 2, VILLAGE, DEL PORTAL, CC ALHAMBRA, UEES, CC RIOCENTRO ENTRERIOS, COLEGIO NUEVO MUNDO, URB SANTA FE, URB PUERTA AL RIO, URB ARRAYANES, URB RIO SOL TOWERS, URB SAN BERNARDO 1, 2 Y 3, URB BALEAREA, URB ENTREOLIVOS, URB RIVERSIDE, URB VILLAREAL, URB IBIZA, URB TORNERO,URB SAN JOSE, URB SANTA MARIA I, URB TERRANOVA, CALLE CELESTE BLACIO, CALLE SANTA MARIA, URB ANAHI, URB VILLA DEL SOL, URB LAS CONDES, URB VERONA I, URB TRIANA, URB BOUGANVILLE, CLUB DIANA QUINTANA, URB SANTA LUCIA, URB ACROPOLIS, LOS PORTONES, INTEGRAL, CONDOMINIO LOS CEDROS. (Del Km 1 al Km 3 de la vía Samborondón, parroquia La Puntilla) TODAS LAS URBANIZACIONES Y CARGAS COMERCIALES DEL CONJUNTO HABITACIONAL CIUDAD CELESTE",
+  "cantones": [
+   "Samborondón"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
   "provincia": "LOJA",
   "canton": "Celica",
   "alimentador": "",
@@ -91,6 +286,81 @@
    "PUYANGO"
   ],
   "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "LOS RÍOS",
+  "canton": "Los Ríos",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO DE LA SUBESTACIÓN QUEVEDO DE CELEC",
+  "zona_cortes": "",
+  "sectores": "Cantones Quevedo, Valencia, Buena Fe, Mocache.",
+  "cantones": [
+   "Los Ríos"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "LOS RÍOS",
+  "canton": "Los Ríos",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "CORRECCIÓN DE ANOMALÍAS TÉRMICAS",
+  "zona_cortes": "",
+  "sectores": "Cantones Babahoyo, Quinsaloma, Montalvo, Baba,Puebloviejo, Urdaneta, Ventanas, Vinces, Palenque de la provincia de Los Ríos y el Cantón Alfredo Baquerizo Moreno de la Provincia del Guayas junto con todos los sectores rurales, parroquias y recintos de los cantones mencionados.",
+  "cantones": [
+   "Los Ríos"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "MANABI",
+  "canton": "Manabi",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "MANTENIMIENTO DE LA SUBESTACIÓN QUEVEDO DE CELEC",
+  "zona_cortes": "",
+  "sectores": "Cantón Pichincha y sus sectores aledaños.",
+  "cantones": [
+   "Manabi"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "MANABÍ",
+  "canton": "Manta",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "INSTALACIÓN DE NUEVAS ESTRUCTURAS",
+  "zona_cortes": "",
+  "sectores": "Barrio la Ensenadita, edificio CNEL, Centro de Manta, Municipio Zona Bancaria, Barrio Jocay Barrio La Victoria, Industrias ALES, Barrio San José, Cementerio de Tarqui, Av. 108, Urbanización MARATEA, Barrio Bellavista #1, Av. 26 desde la calle 7 hasta la calle 20., Barrio La Dolorosa, Barrio Santa Fe, Barrio Santa Mónica, Barrio Los Algarrobos, Colegio Técnico, Parte de la Cdla. Universitaria., Gasolinera Caballo de Troya, Barrio Buenavista.",
+  "cantones": [
+   "Manta"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "MANABÍ",
+  "canton": "Portoviejo TRABAJOS EN LÍNEAS DE SUBTRANSMISIÓN",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "",
+  "zona_cortes": "",
+  "sectores": "Av Universitaria, Barrio San Pablo, Cdl El Maestro, Av Reales Tamarindo, Parque Forestal, Vía al Corozo, Cdl Municpal, Solca, Cdl San Marcos, Vía a Crucita hasta el Tomate, Milagro de Río Chico, Cdl Universitari, Parque la Rotonda, UTM, Cdl San José.",
+  "cantones": [
+   "Portoviejo TRABAJOS EN LÍNEAS DE SUBTRANSMISIÓN"
+  ],
+  "distribuidora": "CNEL EP"
  },
  {
   "provincia": "MORONA SANTIAGO",
@@ -226,6 +496,67 @@
    "Quito"
   ],
   "distribuidora": "Ministerio de Ambiente y Energía"
+ },
+ {
+  "provincia": "SUCUMBIOS",
+  "canton": "Lago Agrio",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "INSTALACIÓN DE INFRAESTRUCTURA ELÉCTRICA",
+  "zona_cortes": "",
+  "sectores": "Las Palmeras, Mariscal Sucre, 11 de Abril, Eloy Alfaro, San Francisco, Nueva Esperanza, El Dorado, Gilson Toledo, Mendieta Falcones Milton Marcos, San Valentin, Nuevo Paraiso, 25 de Diciembre, Las Delicias, Vista Hermosa, Subdivisión Alejandrina Pineda, Segundo Orellana, B, Villaflora, Mirador, Ierac, Del Chofer, Los Almendros, Lot Gonzales, 9 de Octubre, Perla del Oriente, Unión y Progreso, Lot. Luis Salazar, 24 de Julio, Plan Velasco Ibarra, av. 20 de Junio, VConsejo provincial, CNE, CNEL, Consejo de la Judicatura, Ofc, IESS, Parque de la Madre- Rcnto. Perla, Lot Cesar Mena, Lot. Nuevos Hermanos, Lot, Mario Guerrero, Lot, El Jardin, Lot. Mario Guerrero, B. La Floresta, Lot, Nuevo Cariamanga, B. San antonio, Lot. Las Heliconias, Rcnto. Santa Rosa, B, San Miguel, B. La Victoria, B. Santa. Marianita, Santa Cruz, Pre Coop, San Isidro, Pre Coop. Bella Esperanza, Pre Coop Alma Lojana, Rcto. Bella Vista, Pre Coop Recuerdos del Oriente, Pre Coop. 3 Palmas, Sub, Grefa Juan Miguel, Pre Coop. Agropecuaria Cafetalera San Miguel, Rcto, Patria Nueva, Proyecto San Miguel, Pre Coop 10 de Agosto, Santa Marianita, Barrios de General Farfan, Nuevo Mundo, CEBAB. Puente Internacional, Pre Coop, Isidro Ayora, Monterrey, Puerto Camacho, Alma Lojana, Rcto, 5 de Agosto, Nueva Vicentina, Corazón Orense, Pre Coop Río Puno. Luis Bermeo, Pre Coop. Brisas de San Miguel, 18 de Noviembre, Pre Coop Chananga, 24 de Julio, Trampolin del Triunfo, La Charapa, 9 de Marzo, Valle Hermoso, Monterrey, Rey Selva, Flor de Chone 1 y 2, Flores del Oriente, La victoria, Heliconias Amazonicas, B, San Antonio, la Floresta, Sub. Manzano, San Miguel, Buena Fé, Gilson Toledo,- Rcto. La Laguna, Rcnto, La Perla, Puerto ecuador, Rcnto. 23 de Marzo Coop. San Vicente, Puerto Ecuador, Perla del Pacífico, Castillo quevedo Georgina Teresa, Lot. Lago Avanza, San Vicente, Pre Coop Perla del Pacífico, Puerto ecuador, Brisas del Oriente, Pre Coop 10 de Agosto, Pre Coop Nuevo Mundo, Pre Coop Isidro Ayora, Recinto San Andres, Sultana de Oro, El Condor, Reina del Cisne, pre Coop 5 de Marzo. Recinto Salinas, Fronteras del Oriente, Pre Coop Cochas del Betano, Jehova es mi Pastor, Unión campesina, Pre Coop. Orellana, Riveras del Oriente, Pre Coop. Imbabura, Rcnto el Porvenir, Juan Yanez, Pre Coop Carchi, B. Los Colorados, Santa Rosa.",
+  "cantones": [
+   "Lago Agrio"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "SUMCUMBÍOS",
+  "canton": "Cascales y",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Gonzao Pizarro TRABAJOS EN LÍNEA DE SUBTRANSMISIÓN",
+  "zona_cortes": "",
+  "sectores": "El centro poblado de Lumbaquí, Vía al cerro de Lumbaquí, El Progreso, Las Parcelas, Piedra Bola, Nuevo Paraíso, El Cisne, Aguas Turbias, Unión Independiente, San Pablo, Unión Bolivarense, Playas del Río Tigre, Playas del Río Coca, Laguna Shiguacocha, Sardinas Guaydaurco, Recinto Los Tanques, Vía a la central Hidroelectrica Lumbaqui - Batallón de apoyo logístico, Aguarico de Lumbaquí, Vía a la Bonita, Flor del Oriente, Flor del Valle, La Amarilla, Chontayacu, El Cabeno, Sinangoe, San Pedro de los Cofanes, Rancho el Encanto, El Chíparo, Puerto Libre, Recodo Bellavista, El Chingual, El Paraíso, La Barquilla, La Pizarra, Los Shyris, La Playa, La Chispa, Duvino, Bermejo, Sector Sur: Puerto Madero, La Troncal, Los Ángeles, San José del Aguarico, Shayari, Playas Seca, El Arenal Dumbiqui, Mushu Kausay, Pachakutik, Ango Bautista, Rcnto. Cubano Jesús del Gran Poder, Cofán Duvuno, Guacamayo, 9 de octubre, 1ro de Mayo, San Andrés, San José, Cascales, Taruca, La Libertad, San Miguel, Allishunko, Cañaveral, Sevilla, San Carlos, Rcnto. El Salvador, Santa Rosa, Barranca Bermeja, San Martín, Providencia, San Pedrito, San Luis, Abdón Calderón Muñoz, Tres Hermanos, Jesús del Gran Poder, Sardinas, Shuar Betano Kichwa, Kichwa Sumak Pampa, Chari.- Vía Lumbaqui ,Reventador, Gonzalo Pizarro, Dashino, Panduyacu, Ruevo Pareiso, Rcnt. Amazonas, Rcnt. Chuscuyacu, Atenas, Rcnto. Chiguapeña, La Delicia, San Francisco, Reventador, Precooperativa Libertad 6 de Octubre, Alma Ecuatoriana, Campamento Reventador, Campamento San Rafael, Flores del Valle. Rcnt. Simón Bolívar.",
+  "cantones": [
+   "Cascales y"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "SUMCUMBÍOS",
+  "canton": "Cuyabeno y TIPO DE TRABAJO:",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Lago Agrio TRABAJOS EN SUBESTACIÓN",
+  "zona_cortes": "",
+  "sectores": "Comunidad San Pablo de Kantesiya, Las Mercedes, Los Ángeles, Perla del Oriente, Precoperativa Tierras Orientales, San José, Tarapoa, Tigre Grande. 3 de Mayo, Aguas Negras, Aleluya, Bella María, Brisas de Cuyabeno, Buena Vista, Campamento Dygoil, Cantagallo, Centro Unión, Comunidad 16 de Abril, Comuna Tase, Cóndor Mirador, Cuyabeno, El Rosario, Equinoccio, Fuerzas Unidas y Las Mercedes, La Calumeña, La Primavera, Las Palmas, Mirian 10, Mirian 4, Puca Peña, Precooperativa 9 de Octubre, Precooperativa Flor de Oro, Precooperativa Paraíso, Precooperativa Simón Bolívar, Sansahuari, Santa Elena, Sinhue, Tigre Playa, Tipishca, Unión Manabita, Unión Nacional, Virgen del Huaico, Voluntad de Dios. 17 de Abril, 3 Palmas, 5 Ases y Sosoranga, Balsareña, Campo Bello, Campamento Jaime Roldós Aguilera, Centro Secoya, Chananga, Chiritza, Chone 1, Chone 2, Comuna Cofán Dureno, Comuna Ñucanchillacta, Comunidad Ñucanchi Llacta, Cooperativa Flor de los Ríos, Cooperativa Pío Jaramillo, Cristóbal Colón, Dureno, El Triunfo, Estación Pichincha, Flor de los Ríos, Fuerza de los Pobres, Golondrinas, Jesús del Gran Poder, La Libertad, La Milagreña, La Y de Harber, Los Diamantes, Los Tapi, Nueva Juventud, Pacayacu, Palma Seca, Parahuaco, Paz y Bien, Playera Oriental, Poza Honda, Precooperativa 1 de Mayo, Precooperativa de Caráquez, Precooperativa Juan Montalvo, Precooperativa Lucha Bolivarense, Precooperativa Los Vergeles, Precooperativa Pionero del Oriente, Precooperativa Quince de Noviembre, Precooperativa San Francisco, Precooperativa San Juan de Pozul, Precooperativa Santa Ana, Precooperativa Santa Rosa, Precooperativa Santa Teresita, Precooperativa Secoya 1, Precooperativa Sol Naciente, Precomerativa 19 de Marzo, Puerto Nuevo, Puerto Sinaí, Rancho Tauro, Real Villa Nueva, Río Pacayacu, San Jacinto, San José de los Ángeles, San Rafael, San Vicente, Shushuqui, Sol de Oriente y Vía Lago, Unión Bolivarense, Unión Lojana, Ucano, Vía Shuara, Plantaciones Ecuatorianas, Vía Tetetes.",
+  "cantones": [
+   "Cuyabeno",
+   "TIPO DE TRABAJO:"
+  ],
+  "distribuidora": "CNEL EP"
+ },
+ {
+  "provincia": "SUMCUMBÍOS",
+  "canton": "Shushufindi",
+  "alimentador": "",
+  "fecha": "2026-10-17",
+  "dia": "Sábado",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "TRABAJOS EN SUBESTACIÓN",
+  "zona_cortes": "",
+  "sectores": "Centro de Shushufindi, El Oro, Eloy Alfaro, Integración Social, La Pantera, Precooperativa Horizontes, Río Doch, Tahuantinsuyo, Vía La Pantera. 01 de Mayo, 24 de Mayo, 7 de Julio, El Mirador, El Progreso, El Proyecto, El Rocío, Eno Ande, Estación Shushufindi Norte, Jivino Verde, La Fortuna, La Primavera y Vía al Guanta, Los Laureles, Los Ríos, Los Toritos, Nuevo Paraíso, Parte central de Shushufindi vía Jivino, Poza Honda, Precooperativa Atahualpa, Precooperativa Cumandá, Precooperativa El Sudor, Precooperativa Las Cañitas, Precooperativa Unión de Chone, Precooperativa Valle Hermoso, Puerto Eno, Puerto Santa Rosa, San Antonio, Santa Rosa de Enos, Secoya, Shuaras, Unión Lojana, Unión Paltense, Vía Aguarico 3, Miss Ecuador, Vía Shushufindi hasta el Km 17. 18 de Noviembre, Amazonas, Bella Vista, Comuna 29 de Junio, Comuna Indilama, Comuna Kukush, Comuna Río Jivino, Comuna San Pablo de Kantesiya, Comuna Shariam, Comuna Shuara San Pedro, El Belén, El Carmen, El Triunfo, Israel, Juan Montalvo, Lago San Pablo hasta Puerto Providencia, La Florida, La Magdalena, La Victoria, Limoncocha, Palmeras del Ecuador, Playayacu, Pozo 41, Pompeya, Precooperativa Los Olivos, Puerto Largo, San Antonio, San Francisco de Chicta, San José, San Roque, Nueva Vida, San Vicente, Unidos Venceremos, Yamanunka.",
+  "cantones": [
+   "Shushufindi"
+  ],
+  "distribuidora": "CNEL EP"
  },
  {
   "provincia": "TUNGURAHUA",
