@@ -328,8 +328,8 @@
    "vacia": null
   }
  },
- "dataset_sha256": "18bec7300363b52e752319c4a9b5056b588057dd6380e909276be45aab74c4a3",
+ "dataset_sha256": "4ad9748dcb95b22cdb1b9ef2059700c3df884eb733b59697bbe91fbafdfd1093",
  "rechazado_sha256": "866f65a60107aa5950c7c10066a31d2648928e9e628646f0798dfa6a73bf9e2b",
- "dataset_registros": 78,
+ "dataset_registros": 34,
  "pendiente_aprobacion": false
 }
