@@ -576,5 +576,226 @@
   "distribuidora": "CentroSur",
   "consignacion": "39487",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle Sin Nmbre y Entrada a Playas de Misicata, Calle junto a Minimarket Danny",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39627",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "CANTON CHUNCHI Y CANTON MONTUFAR",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39628",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V03",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:30",
+  "tipo_trabajo": "Mejorra de redes BV_MV",
+  "zona_cortes": "0500170V03",
+  "sectores": "Calle sin nombre (Sector Iglesia Rosas Loma)",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39728",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V03",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500040V03",
+  "sectores": "Calle Manuel Antonio Muñoz y de Los Quesitos",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39680",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V01",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejorra de redes BV_MV",
+  "zona_cortes": "0500170V01",
+  "sectores": "César Andrade",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39697",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V04",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500030V04",
+  "sectores": "Cacique chamba y viracochabamba",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39706",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "12:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V05",
+  "sectores": "RIO MALACATUS Y AYAPUNGO P#20953",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39674",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V04",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "13:00 a 16:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500030V04",
+  "sectores": "Jose de la cuadra y humberto fierro",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39707",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Avellaneda y 1ero de Mayo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39629",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "sector Quillosisa, Parroquia Abdón Calderón, Cantón Santa Isabel",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39489",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "CUCHUCUN",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39659",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "12:30 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "CUCHUCUN",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39660",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "GUAYAS",
+  "canton": "Samborondón",
+  "alimentador": "0500050V10",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V10",
+  "sectores": "Cantón Samborondón y 1ero de Mayo",
+  "cantones": [
+   "Samborondón"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39634",
+  "estado_origen": "PRO"
  }
 ]
