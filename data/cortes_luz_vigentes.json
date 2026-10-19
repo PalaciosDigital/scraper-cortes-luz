@@ -648,6 +648,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500120V01",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento correctivo BV",
+  "zona_cortes": "0500120V01",
+  "sectores": "VÍA NULTI - EL ARENAL Y CALLE DE LOS JADES",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39701",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500030V04",
   "fecha": "2026-10-21",
   "dia": "Miércoles",
@@ -661,6 +678,23 @@
   "distribuidora": "CentroSur",
   "consignacion": "39706",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500040V07",
+  "sectores": "Mayancela, Centro",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39729",
+  "estado_origen": "EMM"
  },
  {
   "provincia": "AZUAY",
