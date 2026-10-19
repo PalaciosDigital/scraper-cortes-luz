@@ -766,6 +766,23 @@
  },
  {
   "provincia": "CAÑAR",
+  "canton": "Azogues",
+  "alimentador": "0500090V01",
+  "fecha": "2026-10-21",
+  "dia": "Miércoles",
+  "horario": "12:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500090V01",
+  "sectores": "LLAVAZHI",
+  "cantones": [
+   "Azogues"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39748",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "CAÑAR",
   "canton": "El Tambo",
   "alimentador": "0500180V02",
   "fecha": "2026-10-21",
