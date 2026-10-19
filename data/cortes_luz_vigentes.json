@@ -1,23 +1,6 @@
 [
  {
   "provincia": "AZUAY",
-  "canton": "Nabón",
-  "alimentador": "0500140V04",
-  "fecha": "2026-10-18",
-  "dia": "Domingo",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Mejora de redes MV",
-  "zona_cortes": "0500140V04",
-  "sectores": "SECTOR EL MANZANO",
-  "cantones": [
-   "Nabón"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39547",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
   "canton": "Cuenca",
   "alimentador": "0500030V03",
   "fecha": "2026-10-19",
