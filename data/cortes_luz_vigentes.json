@@ -780,5 +780,192 @@
   "distribuidora": "CentroSur",
   "consignacion": "39634",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V10",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V10",
+  "sectores": "Alfonso María Mora y 1ero de Mayo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39635",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V10",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V10",
+  "sectores": "MANUEL CORDOVA GALARZA Y FRANCISCO CISNEROS",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39636",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V10",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V10",
+  "sectores": "MANUEL CORDOVA GALARZA Y JANUARIO PALACIOS",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39637",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "09:00 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V05",
+  "sectores": "AYAPUNGO Y LUMBAQUI P#447092",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39677",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V03",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500080V03",
+  "sectores": "CHILCATOTORA",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39683",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "11:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500040V07",
+  "sectores": "Mayancela",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39721",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "13:00 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V05",
+  "sectores": "ALCUQUIRO Y LIMBAQUI P#447079",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39711",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Girón",
+  "alimentador": "0500050V02",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V02",
+  "sectores": "Cantón Girón y Cantón Paute",
+  "cantones": [
+   "Girón"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39638",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Gualaceo",
+  "alimentador": "0500050V02",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V02",
+  "sectores": "Cantón Gualaceo y Cantón Paute",
+  "cantones": [
+   "Gualaceo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39640",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "Sector Peña Blanca, Cantón Santa Isabel",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39579",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500050V02",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V02",
+  "sectores": "Cantón Santa Isabel y Cantón Paute",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39639",
+  "estado_origen": "PRO"
  }
 ]
