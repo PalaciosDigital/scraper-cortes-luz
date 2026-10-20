@@ -1,4 +1,4 @@
-# Retomar el proyecto (estado al 15 de octubre de 2026)
+# Retomar el proyecto (estado al 20 de octubre de 2026)
 
 ## Dónde vive
 
@@ -19,7 +19,21 @@
 - **Buscador PRE:** `07_BUSCADOR_CORTES_DE_LUZ/01_HTML/PROTOTIPO_PRE.html` lee
   `data/cortes_luz_publicado.json` desde raw.githubusercontent.com. `PROTOTIPO.html` es la base de diseño:
   sus cambios se replican en _PRE, nunca al revés.
-- 52 tests (`pytest -q`).
+- 68 tests (`pytest -q`).
+
+## Novedades del 16 al 20 de octubre
+
+- **Fuentes del Ministerio de Ambiente y Energía** (17 oct, `prioridad: true`): `mantenimientoseedprogramados/`
+  (`pipeline/fuentes/mae.py`) y `unidades-de-negocio-cnel-ep-2/` (`pipeline/fuentes/cnel_unidades.py`). Se vigilan
+  **las páginas**: cada PDF nuevo que suban entra solo. Los PDF escaneados se leen con OCR (tesseract).
+- **PDF reemplazados con el mismo nombre** (20 oct): cada pasada hace un HEAD a cada PDF listado; si cambia la firma
+  (ETag, fecha, tamaño) se descarga y, si el contenido es otro, se reprocesa y se avisa. La primera vez solo anota la firma.
+- **Fecha de Ecuador** (20 oct): «hoy» se calcula en America/Guayaquil. Antes era UTC y los cortes del día
+  desaparecían del buscador a las 19:00 de Ecuador.
+- **Tesseract en el Mac Intel**: sin Homebrew; instalado con micromamba en `~/.local/tesseract` (PATH en `~/.zshrc`).
+- **CentroSur, calles con nombre de cantón** (pendiente de decisión): en Cuenca hay calles «Cantón Paute»,
+  «Cantón Gualaceo», «Cantón Samborondón»… La regla «el texto "Cantón X" manda» las toma como cantones
+  (p. ej. un corte del 21 oct en Cuenca salió como Samborondón).
 
 ## Novedades del 15 de octubre
 
@@ -48,4 +62,5 @@
 
 ## Entorno
 
-Mac Intel con Python 3.9: `pip install --only-binary=cryptography -r requirements.txt`. El venv va fuera de iCloud.
+Mac Intel con Python 3.9: `pip install --only-binary=cryptography -r requirements.txt`. El venv va fuera de iCloud
+(`~/.venvs/cortes`). Tesseract: `~/.local/tesseract/bin` (micromamba, conda-forge).

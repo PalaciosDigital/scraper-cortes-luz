@@ -1,7 +1,9 @@
 """Flujo de vigilancia con un sitio falso (sin red) y PDFs reales de CNEL."""
+from __future__ import annotations
+
 import json
 import shutil
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pytest
@@ -21,9 +23,18 @@ class SitioFalso:
     def __init__(self):
         self.pdfs: list[dict] = []
         self.html = VACIA
+        self.archivos: dict[str, str] = {}     # URL → fixture que se sirve (para reemplazos)
+        self.firmas: dict[str, str] = {}       # URL → firma HEAD (ETag|Last-Modified|tamaño)
 
-    def publicar(self, fixture: str):
-        self.pdfs.insert(0, {"url": f"https://cnel.test/{fixture}", "titulo": ""})
+    def reemplazar(self, nombre: str, fixture: str, firma: str):
+        """Sube otro contenido con el mismo nombre de archivo."""
+        url = f"https://cnel.test/{nombre}"
+        self.archivos[url], self.firmas[url] = fixture, firma
+
+    def publicar(self, fixture: str, nombre: str | None = None, firma: str = "v1"):
+        url = f"https://cnel.test/{nombre or fixture}"
+        self.pdfs.insert(0, {"url": url, "titulo": ""})
+        self.archivos[url], self.firmas[url] = fixture, firma
         self.html = "<h3>Cronogramas</h3>"
 
     def listar(self, url, ua, patron, timeout, max_paginas=20, htmls=None):
@@ -45,7 +56,8 @@ def entorno(tmp_path, monkeypatch):
     monkeypatch.setattr(cnel, "listar_pdfs", sitio.listar)
     monkeypatch.setattr(vigilar, "descargar_pdf",
                         lambda url, destino, *a: (destino.parent.mkdir(parents=True, exist_ok=True),
-                                                  shutil.copy(FIX / url.rsplit("/", 1)[-1], destino)))
+                                                  shutil.copy(FIX / sitio.archivos[url], destino)))
+    monkeypatch.setattr(vigilar, "firma_remota", lambda url, *a: sitio.firmas.get(url))
 
     def correr(hoy, *extra):
         return vigilar.main(["--hoy", hoy, "--estado", str(tmp_path / "estado.json"), *extra])
@@ -196,3 +208,33 @@ def test_fuente_prioritaria_reemplaza_a_las_demas_en_su_canton_y_fecha(tmp_path,
     assert quito[0]["sectores"] == "Versión del Ministerio"
     # Un cantón/fecha que el Ministerio no cubre: la otra fuente se conserva.
     assert any(r["canton"] == "Cuenca" and r["sectores"] == "Corte que solo reporta CNEL" for r in vigentes)
+
+
+def test_pdf_reemplazado_con_el_mismo_nombre_se_reprocesa(entorno):
+    sitio, correr, carpeta = entorno
+    correr("2026-03-15")
+    sitio.publicar("cnel_santa_elena_2026-03-16_detalle.pdf", nombre="cronograma.pdf")
+    assert correr("2026-03-15") == vigilar.DATOS_NUEVOS
+    correr("2026-03-15", "--aprobar")
+    assert correr("2026-03-15") == vigilar.SIN_NOVEDADES          # misma firma: nada que hacer
+    sitio.reemplazar("cronograma.pdf", "cnel_santa_elena_2026-03-21.pdf", firma="v2")
+    assert correr("2026-03-15") == vigilar.DATOS_NUEVOS
+    datos = json.loads((carpeta / "cortes_luz_vigentes.json").read_text(encoding="utf-8"))
+    assert {r["fecha"] for r in datos} == {"2026-03-21"}          # la versión vieja ya no cuenta
+    assert "mismo nombre" in (carpeta / "alerta.md").read_text(encoding="utf-8")
+
+
+def test_firma_cambia_pero_contenido_igual_no_avisa(entorno):
+    sitio, correr, carpeta = entorno
+    correr("2026-03-20")
+    sitio.publicar("cnel_santa_elena_2026-03-21.pdf")
+    correr("2026-03-20")
+    correr("2026-03-20", "--aprobar")
+    sitio.firmas["https://cnel.test/cnel_santa_elena_2026-03-21.pdf"] = "v2"   # solo cambió la fecha
+    assert correr("2026-03-20") == vigilar.SIN_NOVEDADES
+
+
+def test_hoy_es_la_fecha_de_ecuador_no_la_de_utc():
+    # 00:51 UTC del 18 de octubre = 19:51 del 17 en Ecuador: los cortes del 17 siguen vigentes.
+    assert vigilar.hoy_ecuador(datetime(2026, 10, 18, 0, 51, tzinfo=timezone.utc)) == date(2026, 10, 17)
+    assert vigilar.hoy_ecuador(datetime(2026, 10, 18, 5, 0, tzinfo=timezone.utc)) == date(2026, 10, 18)

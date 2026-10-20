@@ -80,7 +80,8 @@ Datos versionados en `data/` (los escribe GitHub Actions; no editarlos a mano):
 
 - `data/cortes_luz_publicado.json` ← lo que lee el buscador
 - `data/cortes_luz_vigentes.json`  ← candidato pendiente de aprobación
-- `data/vigilancia/estado.json`    ← línea base: PDFs ya vistos por página
+- `data/vigilancia/estado.json`    ← línea base: PDFs ya vistos por página (con su firma HEAD,
+  para detectar reemplazos con el mismo nombre)
 - `data/vigilancia/registros/`     ← registros extraídos de cada PDF (por SHA-256)
 
 ## Reglas para el agente

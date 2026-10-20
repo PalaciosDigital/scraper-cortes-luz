@@ -15,6 +15,18 @@ def sha256(ruta: Path) -> str:
     return h.hexdigest()
 
 
+def firma_remota(url: str, user_agent: str, timeout_s: int = 60) -> str | None:
+    """ETag + Last-Modified + Content-Length del archivo, sin descargarlo (HEAD).
+
+    Sirve para notar que reemplazaron un PDF conservando su nombre. None si el
+    servidor no manda ninguna de esas cabeceras.
+    """
+    r = requests.head(url, headers={"User-Agent": user_agent}, timeout=timeout_s, allow_redirects=True)
+    r.raise_for_status()
+    partes = [r.headers.get(h, "") for h in ("ETag", "Last-Modified", "Content-Length")]
+    return "|".join(partes) if any(partes) else None
+
+
 def descargar_pdf(url: str, destino: Path, user_agent: str, timeout_s: int = 60) -> Path:
     """Descarga el PDF y verifica que realmente sea un PDF."""
     destino.parent.mkdir(parents=True, exist_ok=True)

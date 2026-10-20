@@ -29,11 +29,12 @@ import json
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
 from . import extraer as extractor_generico
-from .descargar import descargar_pdf, sha256
+from .descargar import descargar_pdf, firma_remota, sha256
 from .fuentes import centrosur, cnel, cnel_unidades, mae
 from .main import RAIZ, SALIDA, cargar_config, cargar_env
 from .normalizar import cargar_catalogo, normalizar_todo
@@ -47,6 +48,13 @@ EXTRACTORES = {"cnel_emergentes": cnel, "mae_mantenimientos": mae, "cnel_unidade
 # Fuentes "tabla": no publican PDFs sino una foto de lo programado que cambia a diario.
 # Cada pasada reemplaza la foto anterior; no hay línea base (lo que muestran está vigente).
 TABLAS = {"centrosur_tabla": centrosur}
+# GitHub Actions corre en UTC: sin esto, desde las 19:00 de Ecuador ya es "mañana"
+# y los cortes del día se retiraban del buscador antes de terminar.
+ZONA = ZoneInfo("America/Guayaquil")
+
+
+def hoy_ecuador(ahora: datetime | None = None) -> date:
+    return (ahora or datetime.now(ZONA)).astimezone(ZONA).date()
 
 
 # ---------- configuración ----------
@@ -107,6 +115,35 @@ def procesar_pdf(ruta: Path, pagina: dict, titulo: str, cfg: dict, catalogo) -> 
             if regs:
                 return {"formato": nombre, "registros": regs, "descartes": errs, "crudos": len(crudos)}
     return {"formato": "desconocido", "registros": [], "descartes": [], "crudos": 0}
+
+
+def registrar_pdf(ruta: Path, p: dict, pagina: dict, cfg: dict, catalogo, hoy: date, resumen: dict,
+                  reemplazo: bool = False) -> dict:
+    """Procesa un PDF descargado, guarda sus registros y devuelve su entrada para el estado."""
+    r = procesar_pdf(ruta, pagina, p["titulo"], cfg, catalogo)
+    huella = sha256(ruta)
+    info = {"estado": "ok" if r["registros"] else "formato_desconocido", "formato": r["formato"],
+            "sha256": huella, "visto_en": hoy.isoformat(), "titulo": p["titulo"],
+            "registros": len(r["registros"]), "descartes": len(r["descartes"])}
+    if reemplazo:
+        info["reemplazado_en"] = hoy.isoformat()
+    nota = " (reemplazó a una versión anterior con el mismo nombre)" if reemplazo else ""
+    if r["registros"]:
+        destino = DATOS / "vigilancia" / "registros" / f"{huella}.json"
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        destino.write_text(json.dumps(r["registros"], ensure_ascii=False), encoding="utf-8")
+        fechas = sorted(x["fecha"] for x in r["registros"])
+        resumen["nuevos"].append(f"{pagina['id']}: {ruta.name}{nota} → {len(r['registros'])} registros "
+                                 f"({fechas[0]} → {fechas[-1]}, formato {r['formato']})")
+        if r["descartes"]:
+            resumen["revision"].append(f"{pagina['id']}: {ruta.name} tuvo {len(r['descartes'])} filas "
+                                       f"descartadas: " + "; ".join(r["descartes"][:5]))
+    else:
+        muestra = extractor_generico.inspeccionar(ruta).splitlines()[:12]
+        resumen["revision"].append(
+            f"{pagina['id']}: {p['url']}{nota} tiene un formato que ningún extractor reconoce. "
+            "Inspección:\n```\n" + "\n".join(muestra) + "\n```")
+    return info
 
 
 # ---------- pasada ----------
@@ -227,27 +264,39 @@ def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | No
             except (requests.RequestException, ValueError) as e:
                 resumen["errores"].append(f"{pagina['id']}: no se pudo descargar {p['url']} ({e})")
                 continue
-            r = procesar_pdf(ruta, pagina, p["titulo"], cfg, catalogo)
-            huella = sha256(ruta)
-            info = {"estado": "ok" if r["registros"] else "formato_desconocido", "formato": r["formato"],
-                    "sha256": huella, "visto_en": hoy.isoformat(), "titulo": p["titulo"],
-                    "registros": len(r["registros"]), "descartes": len(r["descartes"])}
-            ep["pdfs"][p["url"]] = info
-            if r["registros"]:
-                destino = DATOS / "vigilancia" / "registros" / f"{huella}.json"
-                destino.parent.mkdir(parents=True, exist_ok=True)
-                destino.write_text(json.dumps(r["registros"], ensure_ascii=False), encoding="utf-8")
-                fechas = sorted(x["fecha"] for x in r["registros"])
-                resumen["nuevos"].append(f"{pagina['id']}: {ruta.name} → {len(r['registros'])} registros "
-                                         f"({fechas[0]} → {fechas[-1]}, formato {r['formato']})")
-                if r["descartes"]:
-                    resumen["revision"].append(f"{pagina['id']}: {ruta.name} tuvo {len(r['descartes'])} filas "
-                                               f"descartadas: " + "; ".join(r["descartes"][:5]))
-            else:
-                muestra = extractor_generico.inspeccionar(ruta).splitlines()[:12]
-                resumen["revision"].append(
-                    f"{pagina['id']}: {p['url']} tiene un formato que ningún extractor reconoce. "
-                    "Inspección:\n```\n" + "\n".join(muestra) + "\n```")
+            ep["pdfs"][p["url"]] = registrar_pdf(ruta, p, pagina, cfg, catalogo, hoy, resumen)
+
+        # ¿Reemplazaron algún PDF ya conocido conservando su nombre? Un HEAD por PDF
+        # listado: si cambia la firma (ETag, fecha, tamaño) se descarga y, si el
+        # contenido es otro, se procesa como nuevo. La primera vez solo se anota la firma.
+        for p in pdfs:
+            info = ep["pdfs"].get(p["url"])
+            if info is None:                          # falló su descarga: se reintenta como nuevo
+                continue
+            try:
+                firma = firma_remota(p["url"], ua, timeout)
+            except requests.RequestException:
+                continue                              # se reintenta en la próxima pasada
+            if firma is None or info.get("firma") == firma:
+                continue
+            if "firma" not in info:
+                info["firma"] = firma
+                continue
+            ruta = CARPETA / "pdfs" / pagina["id"] / p["url"].rsplit("/", 1)[-1]
+            try:
+                descargar_pdf(p["url"], ruta, ua, timeout)
+            except (requests.RequestException, ValueError) as e:
+                resumen["errores"].append(f"{pagina['id']}: cambió {p['url']} pero no se pudo descargar ({e})")
+                continue
+            if sha256(ruta) == info.get("sha256"):    # misma versión (p. ej. el servidor tocó la fecha)
+                info["firma"] = firma
+                continue
+            anterior = info.get("sha256")
+            nuevo = registrar_pdf(ruta, p, pagina, cfg, catalogo, hoy, resumen, reemplazo=True)
+            nuevo["firma"] = firma
+            ep["pdfs"][p["url"]] = nuevo
+            if anterior and anterior != nuevo["sha256"]:
+                (DATOS / "vigilancia" / "registros" / f"{anterior}.json").unlink(missing_ok=True)
     return resumen
 
 
@@ -305,7 +354,7 @@ def armar_vigentes(estado: dict, hoy: date, dias_futuro: int,
 def escribir_alerta(resumen: dict, vigentes: list, res, codigo: int, destino: str) -> str:
     titulo = {SIN_NOVEDADES: "Sin novedades", DATOS_NUEVOS: "Datos nuevos listos",
               REVISION: "Requiere revisión humana", ERROR: "Error"}[codigo]
-    lineas = [f"# Cortes de luz · {titulo}", f"_{datetime.now():%Y-%m-%d %H:%M}_", "",
+    lineas = [f"# Cortes de luz · {titulo}", f"_{datetime.now(ZONA):%Y-%m-%d %H:%M} (Ecuador)_", "",
               f"- Cortes vigentes: **{len(vigentes)}**"]
     if vigentes:
         lineas.append(f"- Rango: {vigentes[0]['fecha']} → {vigentes[-1]['fecha']}")
@@ -344,7 +393,7 @@ def main(argv=None) -> int:
 
     cargar_env()
     cfg = cargar_config()
-    hoy = args.hoy or date.today()
+    hoy = args.hoy or hoy_ecuador()
     ruta_estado = args.estado or (RAIZ / cfg["vigilancia"]["estado"])
     estado = cargar_estado(ruta_estado)
     # revision: los datos nuevos esperan aprobación humana · directa: se publican solos.

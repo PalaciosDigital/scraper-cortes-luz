@@ -13,8 +13,10 @@ candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`
         │
         ▼
  ┌──────────────┐   ¿PDF que no estaba en la línea base?
- │ 2. Detectar  │   ¿Desapareció "no contamos con Trabajos Programados" sin PDF?
- └──────┬───────┘   ¿La página no responde?
+ │ 2. Detectar  │   ¿Reemplazaron un PDF conocido con el mismo nombre? (HEAD:
+ └──────┬───────┘   ETag/fecha/tamaño → si cambian, se descarga y se compara SHA-256)
+                    ¿Desapareció "no contamos con Trabajos Programados" sin PDF?
+                    ¿La página no responde?
         │
         ▼
  ┌──────────────┐   extractor CNEL → si no saca filas, extractor genérico
@@ -22,7 +24,7 @@ candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`
  └──────┬───────┘
         │
         ▼
- ┌──────────────┐   une todos los PDFs procesados, solo fechas de hoy en adelante,
+ ┌──────────────┐   une todos los PDFs procesados, solo fechas de hoy (hora de Ecuador) en adelante,
  │ 4. Armar     │   deduplica (el PDF más nuevo gana, salvo la fuente prioritaria,
  └──────┬───────┘   que siempre gana) y valida con validar.py
         │
