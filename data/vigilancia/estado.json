@@ -365,10 +365,36 @@
    },
    "inicializada": true,
    "vacia": null
+  },
+  "cnel-x-drive": {
+   "pdfs": {
+    "https://drive.google.com/uc?export=download&id=1jo33ktjVQMEASZu6cTWYltCw_Oam9G1z": {
+     "estado": "ok",
+     "formato": "cnel_unidades",
+     "sha256": "e6b089f0d455b7db173597c55ed9f78ae1831e21067244265432a022b38ed327",
+     "visto_en": "2026-10-20",
+     "titulo": "1 LOS RIOS.pdf",
+     "registros": 1,
+     "descartes": 0,
+     "firma": "|Tue, 20 Oct 2026 13:26:51 GMT|544083"
+    },
+    "https://drive.google.com/uc?export=download&id=1UHh-lL5GptZrYICVbLAN39mjvJd1IDNj": {
+     "estado": "ok",
+     "formato": "cnel_unidades",
+     "sha256": "b3b1fed32755efdfd046e57ea17071380c89ed935c0f73554414e65b23b07b0f",
+     "visto_en": "2026-10-20",
+     "titulo": "2 MANABI.pdf",
+     "registros": 1,
+     "descartes": 0,
+     "firma": "|Tue, 20 Oct 2026 13:26:51 GMT|534027"
+    }
+   },
+   "inicializada": true,
+   "vacia": null
   }
  },
- "dataset_sha256": "4607223657fefc61b8d51cb51fbfc80b2b602f2dd7e861f3538d6ac675f968c5",
+ "dataset_sha256": "bdf4bcd1c127c2af017df6f31d6c6be563bca281d03882d8015ce229923826d4",
  "rechazado_sha256": "866f65a60107aa5950c7c10066a31d2648928e9e628646f0798dfa6a73bf9e2b",
- "dataset_registros": 62,
- "pendiente_aprobacion": false
+ "dataset_registros": 64,
+ "pendiente_aprobacion": true
 }
