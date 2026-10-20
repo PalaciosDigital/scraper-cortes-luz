@@ -51,3 +51,12 @@ def test_normalizacion_completa_sin_descartes():
         assert regs, nombre
         assert all(r["fecha"] == "2026-10-17" for r in regs)
         assert all(r["distribuidora"] == "CNEL EP" for r in regs)
+
+
+def test_drive_de_x_cantones_desde_los_sectores():
+    # PDF de @CNEL_EP en X (Google Drive), 22 oct 2026: el encabezado solo dice
+    # "Los Ríos"; los cantones van en los sectores ("Cantón Ventanas: …").
+    filas = extraer_filas(FIX / "cnel_x_los_rios_2026-10-22.pdf")
+    assert [(f["provincia"], f["canton"]) for f in filas] == [("Los Ríos", "Ventanas - Quinsaloma")]
+    filas = extraer_filas(FIX / "cnel_x_manabi_2026-10-22.pdf")
+    assert [(f["provincia"], f["canton"], f["horario"]) for f in filas] == [("Manabí", "Portoviejo", "03:00 a 06:00")]

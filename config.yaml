@@ -61,6 +61,17 @@ vigilancia:
       distribuidora: "CNEL EP"
       patron_pdf: "^[0-9]+-"
       prioridad: true
+    # @CNEL_EP en X publica los cronogramas por unidad de negocio como PDF públicos
+    # de Google Drive (vía bit.ly), a veces antes que la página del Ministerio.
+    # X no se puede leer sin sesión: Claude lo revisa cada hora desde el Chrome de
+    # Diego y anota cada PDF en el CSV; aquí solo se descargan y procesan
+    # (mismo formato que cnel-unidades). Agregada el 2026-10-20 a pedido de Diego.
+    - id: cnel-x-drive
+      tipo: cnel_unidades
+      lista: "data/enlaces_cnel_x.csv"
+      url: "https://x.com/CNEL_EP"
+      distribuidora: "CNEL EP"
+      prioridad: true
     # CentroSur (Azuay, Cañar, Morona Santiago): tabla GeneXus en su extranet, no PDF.
     # Se lee por HTTP con el user_agent de arriba (ver pipeline/fuentes/centrosur.py).
     - id: centrosur

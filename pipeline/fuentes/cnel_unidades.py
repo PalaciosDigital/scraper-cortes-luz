@@ -17,7 +17,8 @@ Variantes reales vistas en los 8 PDF de octubre de 2026:
 - "TIPO DE TRABAJO:" a veces va en su propia línea, ANTES de la línea del
   cantón, en vez de pegado a ella.
 - Algunos bloques no traen cantón, solo la provincia entera (p. ej. un
-  mantenimiento de CELEC que afecta a toda la provincia).
+  mantenimiento de CELEC que afecta a toda la provincia). Si los sectores
+  empiezan por "Cantón X:", esos cantones se usan (separados por « - »).
 - El horario usa "03H00" (con H), no "03:00".
 - Rara vez el nombre del cantón se corta en dos líneas ("cantones Cascales y"
   / "Gonzao Pizarro …"): la segunda línea se pierde del cantón y se cuela en
@@ -39,6 +40,7 @@ import pytesseract
 _RE_FECHA = re.compile(r"\d{1,2}\s+de\s+[a-záéíóúñ]+(?:\s+de\s+\d{4})?", re.I)
 _RE_HORARIO = re.compile(r"[Dd]e\s+(\d{1,2})[Hh](\d{2})\s*a\s*(\d{1,2})[Hh](\d{2})")
 _RE_TIPO_LABEL = re.compile(r"TIPO DE TRABAJO:\s*", re.I)
+_RE_CANTON_EN_SECTORES = re.compile(r"\bcant[oó]n\s+([^:.;,]{2,40}?)\s*:", re.I)
 _RE_PROVINCIA_CANTON = re.compile(r"^(?P<provincia>.+?),?\s*cant(?:ón|ones)\s+(?P<canton>.+)$", re.I)
 
 _OCR_DPI = 300
@@ -105,9 +107,14 @@ def extraer_filas(ruta_pdf: Path, provincia: str = "", fecha_respaldo: str = "")
                 if m_pc:
                     provincia_fila, canton_fila = m_pc["provincia"].strip(), m_pc["canton"].strip()
                 else:
-                    # Bloque sin "cantón X" (afecta a toda la provincia): se usa la
-                    # provincia también como cantón para no dejar la fila sin cantón.
-                    provincia_fila = canton_fila = canton_txt
+                    # Bloque sin "cantón X" en el encabezado. Si los sectores van por
+                    # cantón ("Cantón Ventanas: …; Cantón Quinsaloma: …", UN Los Ríos,
+                    # 22 oct 2026), esos son los cantones; si no (toda la provincia),
+                    # se usa la provincia también como cantón.
+                    provincia_fila = canton_txt
+                    en_sectores = list(dict.fromkeys(
+                        m.group(1).strip() for m in _RE_CANTON_EN_SECTORES.finditer(" ".join(sectores_txt))))
+                    canton_fila = " - ".join(en_sectores) or canton_txt
 
                 filas.append({
                     "provincia": provincia_fila or provincia,

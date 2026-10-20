@@ -24,8 +24,10 @@ revisión humana · 2 = error general.
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import json
+import re
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -146,6 +148,30 @@ def registrar_pdf(ruta: Path, p: dict, pagina: dict, cfg: dict, catalogo, hoy: d
     return info
 
 
+def leer_lista(ruta: Path) -> list[dict]:
+    """Páginas tipo `lista`: los enlaces no salen de una web sino de un CSV del repo.
+
+    Caso de uso: @CNEL_EP publica en X enlaces bit.ly a PDF públicos de Google
+    Drive. Claude revisa X cada hora desde el Chrome de Diego y anota cada PDF en
+    el CSV (drive_id, archivo, unidad, post, publicado); aquí se convierten en
+    URLs de descarga directa. Más nuevo primero, como en las páginas web.
+    """
+    if not ruta.exists():
+        return []
+    with open(ruta, encoding="utf-8") as f:
+        filas = [r for r in csv.DictReader(f) if (r.get("drive_id") or "").strip()]
+    filas.sort(key=lambda r: r.get("publicado", ""), reverse=True)
+    return [{"url": f"https://drive.google.com/uc?export=download&id={r['drive_id'].strip()}",
+             "titulo": (r.get("archivo") or "").strip()} for r in filas]
+
+
+def ruta_local(pagina: dict, url: str) -> Path:
+    """Dónde se guarda el PDF descargado (los de Drive se nombran por su id)."""
+    m = re.search(r"[?&]id=([\w-]+)", url)
+    nombre = f"{m.group(1)}.pdf" if m else url.rsplit("/", 1)[-1]
+    return CARPETA / "pdfs" / pagina["id"] / nombre
+
+
 # ---------- pasada ----------
 
 def registrar_alimentadores(ruta: Path, pendientes: dict[str, list[str]]) -> list[str]:
@@ -231,11 +257,16 @@ def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | No
             procesar_tabla(pagina, cfg, catalogo, ep, hoy, resumen)
             continue
         htmls: list[str] = []
-        try:
-            pdfs = cnel.listar_pdfs(pagina["url"], ua, pagina.get("patron_pdf", "."), timeout, htmls=htmls)
-        except requests.RequestException as e:
-            resumen["errores"].append(f"{pagina['id']}: no se pudo leer {pagina['url']} ({e})")
-            continue
+        if pagina.get("lista"):
+            # Lista curada a mano: todo lo anotado es nuevo y vigente, sin línea base.
+            pdfs = leer_lista(RAIZ / pagina["lista"])
+            ep["inicializada"] = True
+        else:
+            try:
+                pdfs = cnel.listar_pdfs(pagina["url"], ua, pagina.get("patron_pdf", "."), timeout, htmls=htmls)
+            except requests.RequestException as e:
+                resumen["errores"].append(f"{pagina['id']}: no se pudo leer {pagina['url']} ({e})")
+                continue
 
         if not ep["inicializada"]:
             base = pdfs[simular:] if simular else pdfs
@@ -257,7 +288,7 @@ def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | No
             ep["vacia"] = vacia
 
         for p in nuevos:
-            ruta = CARPETA / "pdfs" / pagina["id"] / p["url"].rsplit("/", 1)[-1]
+            ruta = ruta_local(pagina, p["url"])
             try:
                 if not ruta.exists():
                     descargar_pdf(p["url"], ruta, ua, timeout)
@@ -282,7 +313,7 @@ def vigilar(cfg: dict, estado: dict, hoy: date, simular: int = 0, solo: str | No
             if "firma" not in info:
                 info["firma"] = firma
                 continue
-            ruta = CARPETA / "pdfs" / pagina["id"] / p["url"].rsplit("/", 1)[-1]
+            ruta = ruta_local(pagina, p["url"])
             try:
                 descargar_pdf(p["url"], ruta, ua, timeout)
             except (requests.RequestException, ValueError) as e:

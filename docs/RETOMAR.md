@@ -19,10 +19,15 @@
 - **Buscador PRE:** `07_BUSCADOR_CORTES_DE_LUZ/01_HTML/PROTOTIPO_PRE.html` lee
   `data/cortes_luz_publicado.json` desde raw.githubusercontent.com. `PROTOTIPO.html` es la base de diseño:
   sus cambios se replican en _PRE, nunca al revés.
-- 70 tests (`pytest -q`).
+- 72 tests (`pytest -q`).
 
 ## Novedades del 16 al 20 de octubre
 
+- **@CNEL_EP en X → Google Drive** (20 oct): CNEL publica los cronogramas por unidad como PDF públicos de Drive
+  enlazados desde X. Claude revisa X cada hora desde el Chrome de Diego y anota los PDF en
+  `data/enlaces_cnel_x.csv`; la página `cnel-x-drive` (tipo `lista`) los descarga y procesa. Procedimiento:
+  `docs/X_CNEL.md`. Si un bloque de cnel_unidades no trae cantón pero los sectores dicen «Cantón X: …», se usan
+  esos cantones (p. ej. «Ventanas - Quinsaloma»).
 - **Fuentes del Ministerio de Ambiente y Energía** (17 oct, `prioridad: true`): `mantenimientoseedprogramados/`
   (`pipeline/fuentes/mae.py`) y `unidades-de-negocio-cnel-ep-2/` (`pipeline/fuentes/cnel_unidades.py`). Se vigilan
   **las páginas**: cada PDF nuevo que suban entra solo. Los PDF escaneados se leen con OCR (tesseract).

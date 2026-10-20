@@ -238,3 +238,33 @@ def test_hoy_es_la_fecha_de_ecuador_no_la_de_utc():
     # 00:51 UTC del 18 de octubre = 19:51 del 17 en Ecuador: los cortes del 17 siguen vigentes.
     assert vigilar.hoy_ecuador(datetime(2026, 10, 18, 0, 51, tzinfo=timezone.utc)) == date(2026, 10, 17)
     assert vigilar.hoy_ecuador(datetime(2026, 10, 18, 5, 0, tzinfo=timezone.utc)) == date(2026, 10, 18)
+
+
+def test_lista_de_enlaces_de_drive_se_procesa_sin_linea_base(tmp_path, monkeypatch):
+    """Página tipo `lista` (enlaces de @CNEL_EP anotados a mano): entra todo en la primera pasada."""
+    lista = tmp_path / "enlaces.csv"
+    lista.write_text("drive_id,archivo,unidad,post,publicado\n"
+                     "ABC123,1 LOS RIOS.pdf,Los Ríos,https://x.com/CNEL_EP/status/1,2026-10-20T15:19Z\n",
+                     encoding="utf-8")
+    cfg = cargar_config()
+    cfg["vigilancia"] = {"estado": str(tmp_path / "estado.json"), "paginas": [{
+        "id": "cnel-x-drive", "tipo": "cnel_unidades", "lista": str(lista), "url": "https://x.com/CNEL_EP",
+        "distribuidora": "CNEL EP", "prioridad": True}]}
+    cfg["validacion"]["min_registros"] = 1                 # el PDF de prueba trae un solo corte
+    monkeypatch.setattr(vigilar, "cargar_config", lambda: cfg)
+    monkeypatch.setattr(vigilar, "CARPETA", tmp_path / "vigilancia")
+    monkeypatch.setattr(vigilar, "DATOS", tmp_path / "vigilancia")
+    monkeypatch.setattr(vigilar, "firma_remota", lambda url, *a: "v1")
+    descargas = []
+
+    def descargar(url, destino, *a):
+        descargas.append(url)
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy(FIX / "cnel_x_los_rios_2026-10-22.pdf", destino)
+
+    monkeypatch.setattr(vigilar, "descargar_pdf", descargar)
+    assert vigilar.main(["--hoy", "2026-10-20", "--estado", str(tmp_path / "estado.json")]) == vigilar.DATOS_NUEVOS
+    assert descargas == ["https://drive.google.com/uc?export=download&id=ABC123"]
+    datos = json.loads((tmp_path / "vigilancia" / "cortes_luz_vigentes.json").read_text(encoding="utf-8"))
+    assert [(r["canton"], r["cantones"], r["fecha"]) for r in datos] == [
+        ("Ventanas - Quinsaloma", ["Ventanas", "Quinsaloma"], "2026-10-22")]

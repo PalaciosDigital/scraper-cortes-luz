@@ -40,6 +40,11 @@ candidatas** y actúa cuando aparece algo. Comando: `python -m pipeline.vigilar`
  └──────────────┘
 ```
 
+**@CNEL_EP en X:** X no se lee sin sesión. Claude revisa la cuenta cada hora desde Chrome y anota los PDF
+de Google Drive en `data/enlaces_cnel_x.csv`; la página `cnel-x-drive` (tipo `lista`) entra al paso 2 como
+cualquier otra. Ver `docs/X_CNEL.md`.
+
+
 ## Qué significa cada aviso
 
 | Código | Aviso | Qué hacer |
