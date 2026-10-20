@@ -36,6 +36,25 @@ def test_canton_solo_con_nombre_oficial_tras_la_palabra_canton():
     assert canton_en_texto("cantón Santa Isabel cambio de poste siniestrado", CATALOGO)[0] == "Santa Isabel"
 
 
+def test_calles_con_nombre_de_canton_no_cuentan():
+    # Esquinas reales de Cuenca (tabla de CentroSur, 21 y 22 de octubre de 2026).
+    for esquina in ("Cantón Samborondón y 1ero de Mayo", "Cantón Girón y Cantón Paute",
+                    "Cantón Gualaceo y Cantón Paute", "CANTON CHUNCHI Y CANTON MONTUFAR",
+                    "Avellaneda y Cantón Paute"):
+        assert canton_en_texto(esquina, CATALOGO) == ("", ""), esquina
+    # Las referencias de lugar siguen valiendo.
+    assert canton_en_texto("sector Quillosisa, Parroquia Abdón Calderón, Cantón Santa Isabel",
+                           CATALOGO)[0] == "Santa Isabel"
+    assert canton_en_texto("Sector San José. Cantón Santa Isabel", CATALOGO)[0] == "Santa Isabel"
+
+
+def test_esquina_usa_el_canton_del_alimentador():
+    filas = [["1", "21/10/26", "0500050V10", "Cantón Samborondón y 1ero de Mayo", "", "13:00", "17:00",
+              "Cambio de transformador", "MANTENIMIENTO", "VAL", "A", "PRO"]]
+    crudos, pendientes, _ = a_crudos(filas, {"0500050V10": ("Cuenca", "AZUAY")}, CATALOGO)
+    assert [c["canton"] for c in crudos] == ["Cuenca"] and not pendientes
+
+
 def test_tabla_de_alimentadores_y_el_texto_manda():
     alim = {"0500080V01": ("Cuenca", "AZUAY"), "0500140V01": ("Santa Isabel", "AZUAY")}
     crudos, pendientes, _ = a_crudos(FILAS, alim, CATALOGO)

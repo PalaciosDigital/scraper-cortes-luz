@@ -30,8 +30,12 @@ Columnas (nombre GeneXus → contenido):
  11 CONTMA     PRO / EMM / PAR / ANU (ANU se interpreta como anulado: se excluye)
 
 No hay columna de cantón ni provincia. El cantón sale, en este orden, de:
-  1. el texto: "… CANTÓN SANTA ISABEL" en la dirección o la descripción;
-  2. data/alimentadores_centrosur.csv (alimentador → cantón, se llena poco a poco);
+  1. el texto: "… CANTÓN SANTA ISABEL" en la dirección o la descripción. Salvo si
+     forma parte de una esquina ("Cantón Paute y Cantón Gualaceo", "Cantón
+     Samborondón y 1ero de Mayo"): en Cuenca hay calles con nombre de cantón;
+  2. data/alimentadores_centrosur.csv (alimentador → cantón, se llena poco a poco).
+     Una línea que cruza dos cantones lleva los dos separados por guion
+     ("Nabón - Santa Isabel"): el corte aparece al buscar cualquiera de ellos;
   3. si no hay nada: el corte queda pendiente y el aviso pide asignar ese alimentador.
 No se adivina por nombres sueltos ("Santiago", "El Pan" aparecen en nombres de calles).
 """
@@ -142,13 +146,19 @@ def canton_en_texto(texto: str, catalogo: dict) -> tuple[str, str]:
 
     Solo acepta nombres oficiales del catálogo que sigan a la palabra «cantón»
     (el más largo que coincida), para no arrastrar el resto de la frase.
+    Ignora las calles: si "Cantón X" es un lado de una esquina ("Cantón X y …"
+    o "… y Cantón X"), no es una referencia al cantón X.
     """
     for m in _RE_CANTON.finditer(texto or ""):
         tras = clave(m.group(1))
         mejor = max((k for k in catalogo if tras == k or tras.startswith(k + " ") or tras.startswith(k + ",")
                      or tras.startswith(k + ".")), key=len, default=None)
-        if mejor:
-            return catalogo[mejor][0]
+        if not mejor:
+            continue
+        antes = clave(texto[:m.start()])
+        if tras[len(mejor):].startswith(" y ") or antes == "y" or antes.endswith(" y"):
+            continue                                  # es una calle de Cuenca
+        return catalogo[mejor][0]
     return "", ""
 
 

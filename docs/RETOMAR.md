@@ -19,7 +19,7 @@
 - **Buscador PRE:** `07_BUSCADOR_CORTES_DE_LUZ/01_HTML/PROTOTIPO_PRE.html` lee
   `data/cortes_luz_publicado.json` desde raw.githubusercontent.com. `PROTOTIPO.html` es la base de diseño:
   sus cambios se replican en _PRE, nunca al revés.
-- 68 tests (`pytest -q`).
+- 70 tests (`pytest -q`).
 
 ## Novedades del 16 al 20 de octubre
 
@@ -31,9 +31,13 @@
 - **Fecha de Ecuador** (20 oct): «hoy» se calcula en America/Guayaquil. Antes era UTC y los cortes del día
   desaparecían del buscador a las 19:00 de Ecuador.
 - **Tesseract en el Mac Intel**: sin Homebrew; instalado con micromamba en `~/.local/tesseract` (PATH en `~/.zshrc`).
-- **CentroSur, calles con nombre de cantón** (pendiente de decisión): en Cuenca hay calles «Cantón Paute»,
-  «Cantón Gualaceo», «Cantón Samborondón»… La regla «el texto "Cantón X" manda» las toma como cantones
-  (p. ej. un corte del 21 oct en Cuenca salió como Samborondón).
+- **CentroSur, calles con nombre de cantón** (resuelto): en Cuenca hay calles «Cantón Paute», «Cantón Gualaceo»,
+  «Cantón Samborondón»… Si «Cantón X» es un lado de una esquina («Cantón X y …», «… y Cantón X») se ignora y manda
+  el alimentador. Las referencias («…, Cantón Santa Isabel») siguen valiendo.
+- **Alimentadores que cruzan cantones** (decisión de Diego): en el CSV llevan los dos cantones con guion y el corte
+  aparece al buscar cualquiera: 0500140V04 = «Nabón - Santa Isabel», 0500090V01 = «Azogues - Biblián».
+  Agregados 0500500T03 y 0500500T04 = La Troncal. Sin confirmar dónde quedan: 140V02 «Santa Lucía», 140V05
+  «Corraleja», 050V04 «Mirador El Calvario», 050V05 «Paguancay», 080V04 «Gulalcay».
 
 ## Novedades del 15 de octubre
 
