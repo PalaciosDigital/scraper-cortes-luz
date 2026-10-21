@@ -8,7 +8,7 @@
   "horario": "08:00 a 12:00",
   "tipo_trabajo": "Optimizacion de trafo",
   "zona_cortes": "0500050V07",
-  "sectores": "Calle Sin Nmbre y Entrada a Playas de Misicata, Calle junto a Minimarket Danny",
+  "sectores": "Calle Sin Nmbre y Entrada a Playas de Misicata - Calle junto a Minimarket Danny",
   "cantones": [
    "Cuenca"
   ],
@@ -25,7 +25,7 @@
   "horario": "08:00 a 12:00",
   "tipo_trabajo": "Optimizacion de trafo",
   "zona_cortes": "0500050V07",
-  "sectores": "CANTON CHUNCHI Y CANTON MONTUFAR",
+  "sectores": "Canton Chunchi y Canton Montufar",
   "cantones": [
    "Cuenca"
   ],
@@ -93,7 +93,7 @@
   "horario": "09:00 a 13:00",
   "tipo_trabajo": "Mantenimiento correctivo BV",
   "zona_cortes": "0500120V01",
-  "sectores": "VÍA NULTI - EL ARENAL Y CALLE DE LOS JADES",
+  "sectores": "Vía Nulti - El Arenal y Calle de los Jades",
   "cantones": [
    "Cuenca"
   ],
@@ -127,7 +127,7 @@
   "horario": "09:00 a 13:00",
   "tipo_trabajo": "Optimizacion de trafo",
   "zona_cortes": "0500040V07",
-  "sectores": "Mayancela, Centro",
+  "sectores": "Mayancela - Centro",
   "cantones": [
    "Cuenca"
   ],
@@ -144,7 +144,7 @@
   "horario": "12:30 a 15:30",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500030V05",
-  "sectores": "RIO MALACATUS Y AYAPUNGO P#20953",
+  "sectores": "Rio Malacatus y Ayapungo",
   "cantones": [
    "Cuenca"
   ],
@@ -212,7 +212,7 @@
   "horario": "10:00 a 14:00",
   "tipo_trabajo": "Cambio de poste MV",
   "zona_cortes": "0500140V01",
-  "sectores": "sector Quillosisa, Parroquia Abdón Calderón, Cantón Santa Isabel",
+  "sectores": "Sector Quillosisa - Parroquia Abdón Calderón",
   "cantones": [
    "Santa Isabel"
   ],
@@ -229,7 +229,7 @@
   "horario": "12:30 a 15:30",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500090V01",
-  "sectores": "LLAVAZHI",
+  "sectores": "Llavazhi",
   "cantones": [
    "Azogues",
    "Biblián"
@@ -247,7 +247,7 @@
   "horario": "08:30 a 12:00",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500180V02",
-  "sectores": "CUCHUCUN",
+  "sectores": "Cuchucun",
   "cantones": [
    "El Tambo"
   ],
@@ -264,7 +264,7 @@
   "horario": "12:30 a 16:00",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500180V02",
-  "sectores": "CUCHUCUN",
+  "sectores": "Cuchucun",
   "cantones": [
    "El Tambo"
   ],
@@ -298,7 +298,7 @@
   "horario": "08:00 a 12:00",
   "tipo_trabajo": "Optimizacion de trafo",
   "zona_cortes": "0500050V10",
-  "sectores": "MANUEL CORDOVA GALARZA Y FRANCISCO CISNEROS",
+  "sectores": "Manuel Cordova Galarza y Francisco Cisneros",
   "cantones": [
    "Cuenca"
   ],
@@ -315,7 +315,7 @@
   "horario": "08:00 a 12:00",
   "tipo_trabajo": "Optimizacion de trafo",
   "zona_cortes": "0500050V10",
-  "sectores": "MANUEL CORDOVA GALARZA Y JANUARIO PALACIOS",
+  "sectores": "Manuel Cordova Galarza y Januario Palacios",
   "cantones": [
    "Cuenca"
   ],
@@ -332,7 +332,7 @@
   "horario": "09:00 a 12:00",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500030V05",
-  "sectores": "AYAPUNGO Y LUMBAQUI P#447092",
+  "sectores": "Ayapungo y Lumbaqui",
   "cantones": [
    "Cuenca"
   ],
@@ -343,13 +343,30 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500170V03",
+  "fecha": "2026-10-22",
+  "dia": "Jueves",
+  "horario": "09:30 a 13:30",
+  "tipo_trabajo": "Desbroce vegetacion MV",
+  "zona_cortes": "0500170V03",
+  "sectores": "Camino Racar Sinincay",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39810",
+  "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500080V03",
   "fecha": "2026-10-22",
   "dia": "Jueves",
   "horario": "10:00 a 13:00",
   "tipo_trabajo": "Optimizacion de trafo",
   "zona_cortes": "0500080V03",
-  "sectores": "TARQUI - CHILCATOTORA",
+  "sectores": "Tarqui - Chilcatotora",
   "cantones": [
    "Cuenca"
   ],
@@ -366,7 +383,7 @@
   "horario": "10:00 a 14:00",
   "tipo_trabajo": "Mejora de redes MV",
   "zona_cortes": "0500080V03",
-  "sectores": "CHILCATOTORA",
+  "sectores": "Chilcatotora",
   "cantones": [
    "Cuenca"
   ],
@@ -400,7 +417,7 @@
   "horario": "13:00 a 15:30",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500030V05",
-  "sectores": "ALCUQUIRO Y LIMBAQUI P#447079",
+  "sectores": "Alcuquiro y Limbaqui",
   "cantones": [
    "Cuenca"
   ],
@@ -468,7 +485,7 @@
   "horario": "10:00 a 14:00",
   "tipo_trabajo": "Cambio de poste MV",
   "zona_cortes": "0500140V01",
-  "sectores": "Sector Peña Blanca, Cantón Santa Isabel",
+  "sectores": "Sector Peña Blanca",
   "cantones": [
    "Santa Isabel"
   ],
@@ -485,7 +502,7 @@
   "horario": "10:30 a 13:00",
   "tipo_trabajo": "Mejora de redes BV",
   "zona_cortes": "0500130V03",
-  "sectores": "SAN JOSE DE RARANGA",
+  "sectores": "San Jose de Raranga",
   "cantones": [
    "Sigsig"
   ],
@@ -502,7 +519,7 @@
   "horario": "14:00 a 17:00",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500130V03",
-  "sectores": "JIMA",
+  "sectores": "Jima",
   "cantones": [
    "Sigsig"
   ],
@@ -550,7 +567,7 @@
   "horario": "03:00 a 06:00",
   "tipo_trabajo": "Mantenimiento preventivo MV",
   "zona_cortes": "0500070V01",
-  "sectores": "SALIDA DEL ALIMENTADOR 0721 EN RICAURTE",
+  "sectores": "Salida del Alimentador 0721 en Ricaurte",
   "cantones": [
    "Cuenca"
   ],
@@ -601,7 +618,7 @@
   "horario": "09:00 a 12:00",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500030V05",
-  "sectores": "RUMI URCO Y LUMBAQUI P#447096",
+  "sectores": "Rumi Urco y Lumbaqui",
   "cantones": [
    "Cuenca"
   ],
@@ -618,7 +635,7 @@
   "horario": "09:00 a 13:00",
   "tipo_trabajo": "Cambio de poste BV",
   "zona_cortes": "0500080V03",
-  "sectores": "SANTISIMA TRINIDAD",
+  "sectores": "Santisima Trinidad",
   "cantones": [
    "Cuenca"
   ],
@@ -629,13 +646,30 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500070V03",
+  "fecha": "2026-10-23",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500070V03",
+  "sectores": "Av. 25 de marzo y padre María Vázquez",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39768",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500030V02",
   "fecha": "2026-10-23",
   "dia": "Viernes",
   "horario": "09:00 a 15:00",
   "tipo_trabajo": "Cambio de poste MV",
   "zona_cortes": "0500030V02",
-  "sectores": "CALLE BUENOS AIRES Y EL PROGRESO",
+  "sectores": "Calle Buenos Aires y El Progreso",
   "cantones": [
    "Cuenca"
   ],
@@ -652,7 +686,7 @@
   "horario": "13:00 a 15:30",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500030V05",
-  "sectores": "YANA URCO Y PASEO DE LOS CAÑARIS P#447322",
+  "sectores": "Yana Urco y Paseo de los Cañaris",
   "cantones": [
    "Cuenca"
   ],
@@ -703,7 +737,7 @@
   "horario": "10:00 a 13:00",
   "tipo_trabajo": "Mantenimiento correctivo BV",
   "zona_cortes": "0500140V01",
-  "sectores": "Sector. Huascachaca, cantón Santa Isabel",
+  "sectores": "Sector Huascachaca",
   "cantones": [
    "Santa Isabel"
   ],
@@ -720,7 +754,7 @@
   "horario": "10:00 a 14:00",
   "tipo_trabajo": "Cambio de poste MV",
   "zona_cortes": "0500140V01",
-  "sectores": "Sector San José. Cantón Santa Isabel",
+  "sectores": "Sector San José",
   "cantones": [
    "Santa Isabel"
   ],
@@ -737,7 +771,7 @@
   "horario": "09:00 a 13:00",
   "tipo_trabajo": "Mejora de redes BV_MV",
   "zona_cortes": "0500090V01",
-  "sectores": "VIA A NAZON",
+  "sectores": "Via a Nazon",
   "cantones": [
    "Azogues",
    "Biblián"
@@ -755,7 +789,7 @@
   "horario": "08:30 a 12:00",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500180V02",
-  "sectores": "cuchucun",
+  "sectores": "Cuchucun",
   "cantones": [
    "El Tambo"
   ],
@@ -772,7 +806,7 @@
   "horario": "09:00 a 13:00",
   "tipo_trabajo": "Cambio de poste MV",
   "zona_cortes": "0500180V01",
-  "sectores": "HONORATO VASQUEZ",
+  "sectores": "Honorato Vasquez",
   "cantones": [
    "Cañar"
   ],
