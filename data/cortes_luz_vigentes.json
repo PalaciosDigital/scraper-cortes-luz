@@ -629,6 +629,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-10-23",
+  "dia": "Viernes",
+  "horario": "09:00 a 15:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500030V02",
+  "sectores": "CALLE BUENOS AIRES Y EL PROGRESO",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39737",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500030V05",
   "fecha": "2026-10-23",
   "dia": "Viernes",
@@ -744,6 +761,23 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39661",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "Cañar",
+  "alimentador": "0500180V01",
+  "fecha": "2026-10-24",
+  "dia": "Sábado",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500180V01",
+  "sectores": "HONORATO VASQUEZ",
+  "cantones": [
+   "Cañar"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39738",
   "estado_origen": "PRO"
  }
 ]
