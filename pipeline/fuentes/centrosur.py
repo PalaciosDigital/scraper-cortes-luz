@@ -178,6 +178,56 @@ def _titulo(s: str) -> str:
     return " ".join(salida)
 
 
+_MENORES = {"de", "del", "y", "a", "al", "en", "entre"}
+_ARTICULOS = {"el", "la", "las", "los"}         # en minúscula solo tras «de», «a», «entre»
+_ROMANOS = re.compile(r"^(i{1,3}|iv|v|vi{1,3}|ix|x)$", re.I)
+
+
+def _nombre_propio(s: str) -> str:
+    """'VÍA NULTI - EL ARENAL Y CALLE DE LOS JADES' → 'Vía Nulti - El Arenal y Calle de los Jades'."""
+    salida, inicio, previa = [], True, ""
+    for p in s.split():
+        letras = re.sub(r"[^\w]", "", p)
+        if letras.lower() == "av":                   # en una dirección, AV es avenida
+            salida.append("Av.")
+        elif _ROMANOS.match(letras) or re.search(r"\d", p) or "/" in p:
+            salida.append(p.upper())
+        elif not inicio and (p.lower() in _MENORES
+                             or (p.lower() in _ARTICULOS and previa in ("de", "a", "entre"))):
+            salida.append(p.lower())
+        else:
+            salida.append(re.sub(r"\w+", lambda m: m.group(0).capitalize(), p.lower(), count=1))
+        inicio, previa = p in ("-", "–") or p.endswith("("), p.lower()
+    return " ".join(salida)
+
+
+def limpiar_sectores(s: str, catalogo: dict) -> str:
+    """Deja el texto de la zona listo para el buscador, que parte los sectores por coma.
+
+    'sector Quillosisa, Parroquia Abdón Calderón, Cantón Santa Isabel'
+        → 'Sector Quillosisa - Parroquia Abdón Calderón'
+    'RIO MALACATUS Y AYAPUNGO P#20953' → 'Rio Malacatus y Ayapungo'
+
+    - Quita los códigos de poste (P#20953): no le dicen nada al lector.
+    - Quita «, Cantón X» al final cuando es una referencia (el cantón ya se muestra);
+      las esquinas («Cantón Paute y …») son calles y se quedan.
+    - Cambia comas y punto y coma por « - »: cada fila de CentroSur es un solo lugar.
+    - Pasa a nombre propio el texto que llega todo en MAYÚSCULAS o todo en minúsculas.
+    """
+    s = re.sub(r"\s*\bP\s*#\s*\w+", "", _limpio(s))
+    m = re.search(r"[,.]\s*cant[oó]n\s+[^,.]+$", s, re.I)
+    if m and canton_en_texto(s[m.start() + 1:], catalogo)[0]:
+        s = s[:m.start()]
+    s = re.sub(r"^(sector)\.\s*", r"\1 ", s, flags=re.I)
+    s = re.sub(r"\s*[,;]\s*", " - ", s)
+    letras = [c for c in s if c.isalpha()]
+    if letras and (all(c.isupper() for c in letras) or all(c.islower() for c in letras)):
+        s = _nombre_propio(s)
+    elif s[:1].islower():
+        s = s[0].upper() + s[1:]
+    return _limpio(s)
+
+
 def a_crudos(filas: list[list[str]], alimentadores: dict, catalogo: dict,
              excluir: tuple[str, ...] = ("ANU",)):
     """Devuelve (crudos, pendientes, excluidas).
@@ -214,7 +264,7 @@ def a_crudos(filas: list[list[str]], alimentadores: dict, catalogo: dict,
             "hora_fin": fin,
             "tipo_trabajo": _titulo(motivo),
             "zona_cortes": alim,
-            "sectores": sectores,
+            "sectores": limpiar_sectores(sectores, catalogo),
             "consignacion": nro,
             "estado_origen": tma.upper(),
         })

@@ -1,4 +1,4 @@
-# Retomar el proyecto (estado al 20 de octubre de 2026)
+# Retomar el proyecto (estado al 21 de octubre de 2026)
 
 ## Dónde vive
 
@@ -19,7 +19,13 @@
 - **Buscador PRE:** `07_BUSCADOR_CORTES_DE_LUZ/01_HTML/PROTOTIPO_PRE.html` lee
   `data/cortes_luz_publicado.json` desde raw.githubusercontent.com. `PROTOTIPO.html` es la base de diseño:
   sus cambios se replican en _PRE, nunca al revés.
-- 72 tests (`pytest -q`).
+- 73 tests (`pytest -q`).
+
+## Novedades del 21 de octubre
+
+- 0500180V01 = Cañar, 0500070V03 = Cuenca (Diego en la web); 0500140V01 = «Pucará - Santa Isabel».
+- Limpieza de sectores de CentroSur (ver Pendientes, punto 2).
+- El buscador está en el PRE de Xalok, monitoreado y leyendo los datos de GitHub. Falta producción.
 
 ## Novedades del 16 al 20 de octubre
 
@@ -62,8 +68,10 @@
 ## Pendientes
 
 1. **Links nuevos de fuentes** (los traerá Diego): revisar formato → `config.yaml` o un extractor nuevo + fixture + test.
-2. **Limpieza de sectores de CentroSur** (ofrecida, sin respuesta): quitar códigos de poste (`P#13055`) y el
-   «Cantón X», pasar las MAYÚSCULAS a formato normal y evitar que las comas partan un sector.
+2. ~~Limpieza de sectores de CentroSur~~ (hecha el 21 oct, aprobada por Diego): `limpiar_sectores` en
+   `pipeline/fuentes/centrosur.py` quita los códigos de poste (`P#13055`) y el «, Cantón X» final de referencia
+   (las esquinas con nombre de cantón se quedan), cambia comas por « - » (el buscador parte sectores por coma) y
+   pasa a nombre propio lo que llega todo en MAYÚSCULAS o minúsculas. Solo afecta a CentroSur.
 3. ~~Códigos CentroSur~~ (resuelto 2026-10-15, significados aportados por Diego, no oficiales): PRO = programado,
    PAR = parcial (ramal o sector), EMM = emergencia o trabajo técnico → se publican; ANU = anulado → se excluye.
 4. Probar en un borrador real de Xalok (1440 / 992 / 767), decidir si se ve el footer del sitio y mover a

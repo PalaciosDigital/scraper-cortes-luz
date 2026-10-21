@@ -7,7 +7,7 @@ import pytest
 
 from pipeline import vigilar
 from pipeline.fuentes import centrosur
-from pipeline.fuentes.centrosur import _titulo, a_crudos, canton_en_texto
+from pipeline.fuentes.centrosur import _titulo, a_crudos, canton_en_texto, limpiar_sectores
 from pipeline.main import cargar_config
 from tests.test_normalizar import CATALOGO
 
@@ -68,6 +68,34 @@ def test_titulo_y_limpieza():
     assert _titulo("CAMBIO DE POSTE BV") == "Cambio de poste BV"
     assert _titulo("MEJORA DE REDES BV_MV") == "Mejora de redes BV_MV"
     assert _titulo("OPTIMIZACION DE TRAFO                ") == "Optimizacion de trafo"
+
+
+def test_limpieza_de_sectores():
+    # Textos reales de CentroSur (14 y 21 de octubre de 2026). El buscador parte los sectores por coma.
+    casos = {
+        "RIO MALACATUS Y AYAPUNGO P#20953": "Rio Malacatus y Ayapungo",
+        "HUAGRA HUMA Y RIO CUTUCU P#456665R5": "Huagra Huma y Rio Cutucu",
+        "sector Quillosisa, Parroquia Abdón Calderón, Cantón Santa Isabel":
+            "Sector Quillosisa - Parroquia Abdón Calderón",
+        "Sector. Huascachaca, cantón Santa Isabel": "Sector Huascachaca",
+        "Sector San José. Cantón Santa Isabel": "Sector San José",
+        "Mayancela, Centro": "Mayancela - Centro",
+        "VÍA NULTI - EL ARENAL Y CALLE DE LOS JADES": "Vía Nulti - El Arenal y Calle de los Jades",
+        "AV 10 DE AGOSTO Y AV 27 DE FEBRERO": "Av. 10 de Agosto y Av. 27 de Febrero",
+        "- MIRADOR EL CALVARIO": "Mirador El Calvario",
+        "SALIDA DEL ALIMENTADOR 0721 EN RICAURTE": "Salida del Alimentador 0721 en Ricaurte",
+        "cuchucun": "Cuchucun",
+        # Las esquinas con nombre de cantón son calles: se quedan.
+        "Cantón Samborondón y 1ero de Mayo": "Cantón Samborondón y 1ero de Mayo",
+        "CANTON CHUNCHI Y CANTON MONTUFAR": "Canton Chunchi y Canton Montufar",
+        # Texto ya en mayúsculas y minúsculas: no se toca.
+        "1ero de Mayo y Calle S/N (una cuadra antes de Felipe II)":
+            "1ero de Mayo y Calle S/N (una cuadra antes de Felipe II)",
+    }
+    for crudo, limpio in casos.items():
+        assert limpiar_sectores(crudo, CATALOGO) == limpio, crudo
+    crudos, _, _ = a_crudos(FILAS, {}, CATALOGO)
+    assert all("," not in c["sectores"] and "P#" not in c["sectores"] for c in crudos)
 
 
 # ---------- integración con la vigilancia ----------
