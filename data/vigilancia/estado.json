@@ -203,12 +203,12 @@
     "https://extranet.centrosur.gob.ec/PartesDiario/gob.ec.webtrabajosprogramados": {
      "estado": "ok",
      "formato": "centrosur_tabla",
-     "sha256": "71c5294c4c487d34891a27a2544bc941d706216ddf66aad06c70c37b85e790f7",
-     "visto_en": "2026-10-24",
-     "registros": 21,
-     "filas_fuente": 26,
-     "excluidas": 2,
-     "sin_canton": 2
+     "sha256": "e86eaa64f80425747882850ccf01f3b3699790cada630930bfc2736ab9dabaea",
+     "visto_en": "2026-10-25",
+     "registros": 33,
+     "filas_fuente": 39,
+     "excluidas": 4,
+     "sin_canton": 1
     }
    },
    "inicializada": true,
@@ -393,8 +393,8 @@
    "vacia": null
   }
  },
- "dataset_sha256": "71c5294c4c487d34891a27a2544bc941d706216ddf66aad06c70c37b85e790f7",
+ "dataset_sha256": "e86eaa64f80425747882850ccf01f3b3699790cada630930bfc2736ab9dabaea",
  "rechazado_sha256": "866f65a60107aa5950c7c10066a31d2648928e9e628646f0798dfa6a73bf9e2b",
- "dataset_registros": 21,
+ "dataset_registros": 33,
  "pendiente_aprobacion": true
 }
