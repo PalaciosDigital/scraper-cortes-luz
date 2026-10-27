@@ -2,176 +2,6 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "1ero de Mayo y Ciudad de Cuenca",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39769",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Cantón Palta y 1ero de Mayo",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39772",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Calle Sin Nombre y Vía a Soldados",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39773",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V05",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "09:00 a 12:00",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V05",
-  "sectores": "Paseo de los Cañaris y Rumi Urco",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39783",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V05",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "13:00 a 15:30",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V05",
-  "sectores": "Alcuquiru y Fasayñan",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39788",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Vía a Soldados - A 700 metros del Cuenca Tenis y Golf Club",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39774",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Vía a Soldados - Cerca restaurante Campana Huaico",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39775",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Vía a Soldados - Cerca restaurante Doña Rosita",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39780",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "CAÑAR",
-  "canton": "El Tambo",
-  "alimentador": "0500180V02",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "08:30 a 12:00",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500180V02",
-  "sectores": "Cuchucun",
-  "cantones": [
-   "El Tambo"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39756",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "CAÑAR",
-  "canton": "El Tambo",
-  "alimentador": "0500180V02",
-  "fecha": "2026-10-26",
-  "dia": "Lunes",
-  "horario": "12:30 a 16:00",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500180V02",
-  "sectores": "Cuhcucun",
-  "cantones": [
-   "El Tambo"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39757",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
   "alimentador": "0500030V04",
   "fecha": "2026-10-27",
   "dia": "Martes",
@@ -287,6 +117,40 @@
   "distribuidora": "CentroSur",
   "consignacion": "39824",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V03",
+  "fecha": "2026-10-27",
+  "dia": "Martes",
+  "horario": "12:00 a 16:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500040V03",
+  "sectores": "El Cármen - junto a la plaza principal",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39864",
+  "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-27",
+  "dia": "Martes",
+  "horario": "12:30 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Calle Fernando de Aragon y Av. 1 de Mayo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39891",
+  "estado_origen": "PAR"
  },
  {
   "provincia": "AZUAY",
@@ -678,6 +542,57 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39841",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "13:30 a 17:30",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500080V01",
+  "sectores": "Lope de Vega y Los Juglares",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39847",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Posta",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39762",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "12:30 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Posta",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39763",
   "estado_origen": "PRO"
  }
 ]
