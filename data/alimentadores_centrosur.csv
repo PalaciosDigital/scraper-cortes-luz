@@ -37,11 +37,11 @@ alimentador,canton,provincia,ejemplos
 0500500T04,La Troncal,Cañar,NARANJAL SAN CARLOS SECTOR PANCHO NEGRO | VÍA A LAS 40 CUADRAS SECTOR ANA LUISA
 0500180V01,Cañar,Cañar,HONORATO VÁSQUEZ
 0500070V03,Cuenca,Azuay,Av. 25 de marzo y padre María Vázquez
-0500500T06,,,"LA TRONCAL, SECTOR VOLUNTAD DE DIOS, JUNTO AL REDONDEL PASO LATERAL"
-0500210V08,,,Río Blanco
-0500020S03,,,MARISCAL SUCRE Y GENERAL TORRES
-0500050V09,,,Calle Sin Nombre y Av. Enrique Arizaga Toral
-0500210V07,,,Av. Domingo Comin entre Serafin Soliz y Efren Zuñiga | Av. Domingo Comin entre Pastor Bernal y Carlos Olson
-0500180V04,,,TARQUI
-0500210V03,,,Sector el Barranco / Sevilla Don Bosco
-0500150V03,,,Av Los nogales entre la C. Eucaliptos y C. Luis Efrain Vazquez
+0500500T06,La Troncal,Cañar,"LA TRONCAL, SECTOR VOLUNTAD DE DIOS, JUNTO AL REDONDEL PASO LATERAL"
+0500210V08,Morona,Morona Santiago,Río Blanco
+0500020S03,Cuenca,Azuay,MARISCAL SUCRE Y GENERAL TORRES
+0500050V09,Cuenca,Azuay,Calle Sin Nombre y Av. Enrique Arizaga Toral
+0500210V07,Morona,Morona Santiago,Av. Domingo Comin entre Serafin Soliz y Efren Zuñiga | Av. Domingo Comin entre Pastor Bernal y Carlos Olson
+0500180V04,Cuenca,Azuay,TARQUI
+0500210V03,Morona,Morona Santiago,Sector el Barranco / Sevilla Don Bosco
+0500150V03,Gualaceo,Azuay,Av Los nogales entre la C. Eucaliptos y C. Luis Efrain Vazquez
