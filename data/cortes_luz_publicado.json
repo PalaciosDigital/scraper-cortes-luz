@@ -2,543 +2,735 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V10",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "08:00 a 12:00",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:30",
   "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V10",
-  "sectores": "Alfonso María Mora y 1ero de Mayo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 100m del Restaurante Tío Raposo",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39635",
+  "consignacion": "39787",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V10",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "08:00 a 12:00",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:30",
   "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V10",
-  "sectores": "Manuel Cordova Galarza y Francisco Cisneros",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 100 metros del Vivero Sustag",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39636",
+  "consignacion": "39791",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V10",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "08:00 a 12:00",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:30",
   "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V10",
-  "sectores": "Manuel Cordova Galarza y Januario Palacios",
+  "zona_cortes": "0500050V05",
+  "sectores": "Calle Sin Nombre y Vía a Soldados",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39637",
+  "consignacion": "39794",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500030V05",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "09:00 a 12:00",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V05",
-  "sectores": "Ayapungo y Lumbaqui",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:30",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 200 metros del Vivero Sustag",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39677",
+  "consignacion": "39796",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500170V03",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "09:30 a 13:30",
-  "tipo_trabajo": "Desbroce vegetacion MV",
-  "zona_cortes": "0500170V03",
-  "sectores": "Camino Racar Sinincay",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39810",
-  "estado_origen": "PAR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V03",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "10:00 a 13:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500080V03",
-  "sectores": "Tarqui - Chilcatotora",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39765",
-  "estado_origen": "PAR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V03",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "10:00 a 14:00",
+  "alimentador": "0500080V04",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
   "tipo_trabajo": "Mejora de redes MV",
-  "zona_cortes": "0500080V03",
-  "sectores": "Chilcatotora",
+  "zona_cortes": "0500080V04",
+  "sectores": "Via al Valle",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39683",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500040V07",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "11:00 a 13:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500040V07",
-  "sectores": "Mayancela",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39721",
+  "consignacion": "39800",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
   "alimentador": "0500030V05",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
   "horario": "13:00 a 15:30",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500030V05",
-  "sectores": "Alcuquiro y Limbaqui",
+  "sectores": "Av. Hurtado de Mendoza y Huirapungo",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39711",
+  "consignacion": "39822",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V02",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
   "horario": "13:00 a 17:00",
   "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V02",
-  "sectores": "Cantón Girón y Cantón Paute",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 700 metros del Vivero Sustag",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39638",
+  "consignacion": "39797",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V02",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
   "horario": "13:00 a 17:00",
   "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V02",
-  "sectores": "Cantón Santa Isabel y Cantón Paute",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 1 km del Vivero Sustag",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39639",
+  "consignacion": "39798",
   "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V02",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
   "horario": "13:00 a 17:00",
   "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V02",
-  "sectores": "Cantón Gualaceo y Cantón Paute",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 2 km del Vivero Sustag",
   "cantones": [
    "Cuenca"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39640",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Santa Isabel",
-  "alimentador": "0500140V01",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Cambio de poste MV",
-  "zona_cortes": "0500140V01",
-  "sectores": "Sector Peña Blanca",
-  "cantones": [
-   "Santa Isabel"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39579",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Sígsig",
-  "alimentador": "0500130V03",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "10:30 a 13:00",
-  "tipo_trabajo": "Mejora de redes BV",
-  "zona_cortes": "0500130V03",
-  "sectores": "San Jose de Raranga",
-  "cantones": [
-   "Sigsig"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39722",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Sígsig",
-  "alimentador": "0500130V03",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "14:00 a 17:00",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500130V03",
-  "sectores": "Jima",
-  "cantones": [
-   "Sigsig"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39723",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "LOS RÍOS",
-  "canton": "Ventanas - Quinsaloma",
-  "alimentador": "",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "03:00 a 06:00",
-  "tipo_trabajo": "CORRECCIÓN DE ANOMALÍAS TÉRMICAS EN SUBESTACIÓN LA ERCILIA READECUACIÓN DEL SISTEMA DE PROTECCIÓN DEL TRANSFORMADOR DE POTENCIA A NIVEL DE 69 KV.",
-  "zona_cortes": "",
-  "sectores": "Cantón Ventanas: Rctos. San Gerardo, Tarira, El Guineo, Calabí, Guineo de Adentro, Umbe, El Guabito, Vía E25 desde La Ercilia hasta el cruce de Mocache, con sus recintos cercanos, Agroleaginosas Los Ríos Oleorios; Flor de Los Ríos, Achotillo, Estero de Damas, Lechugalito, La Tragedia, Aguas Frías de Mocache, 4 Mangas, Zapotal Nuevo, Zapotal Viejo, Chacarita, Santa Rosa del Laurel, Barranco Colorado, Pasaje A y B, Estero Lindo, Aguacatal, Mina de Piedra, Sibimbe, Pepa de Oro y Los Amarillos. Cantón Quinsaloma: La Ercilia, Loma de Coco, El Paraíso, Vía Quinsaloma - Moraspungo, Estero de Piedra, San Miguel de Los Ríos, Balsería, La Fortuna, Las Palmas y todo el cantón Quinsaloma.",
-  "cantones": [
-   "Ventanas",
-   "Quinsaloma"
-  ],
-  "distribuidora": "CNEL EP"
- },
- {
-  "provincia": "MANABÍ",
-  "canton": "Portoviejo",
-  "alimentador": "",
-  "fecha": "2026-10-22",
-  "dia": "Jueves",
-  "horario": "03:00 a 06:00",
-  "tipo_trabajo": "CORRECCIÓN DE PUNTOS CALIENTES",
-  "zona_cortes": "",
-  "sectores": "Las parroquia Colón, Simón Bolívar, Francisco Pacheco; El Guabito, Los Ángeles, barrio Fátima, todos los Florones, vía a Pachinche, ciudadela Nuevo Portoviejo, ciudadela Los Helechos, ciudadela Rafael Correa, Los Geranios, sector 4 Esquinas, Estancia Vieja, Pachinche, Mapasingue y zonas aledañas.",
-  "cantones": [
-   "Portoviejo"
-  ],
-  "distribuidora": "CNEL EP"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500070V01",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "03:00 a 06:00",
-  "tipo_trabajo": "Mantenimiento preventivo MV",
-  "zona_cortes": "0500070V01",
-  "sectores": "Salida del Alimentador 0721 en Ricaurte",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39743",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V01",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500080V01",
-  "sectores": "Av. 24 de Mayo y las Golondrinas",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39641",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V03",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500030V03",
-  "sectores": "Av. 24 de Mayo y Chaguarchimbana",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39644",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V05",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "09:00 a 12:00",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V05",
-  "sectores": "Rumi Urco y Lumbaqui",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39712",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V03",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Cambio de poste BV",
-  "zona_cortes": "0500080V03",
-  "sectores": "Santisima Trinidad",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39725",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500070V03",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500070V03",
-  "sectores": "Av. 25 de marzo y padre María Vázquez",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39768",
-  "estado_origen": "EMM"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V02",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "09:00 a 15:00",
-  "tipo_trabajo": "Cambio de poste MV",
-  "zona_cortes": "0500030V02",
-  "sectores": "Calle Buenos Aires y El Progreso",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39737",
-  "estado_origen": "EMM"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V05",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "13:00 a 15:30",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V05",
-  "sectores": "Yana Urco y Paseo de los Cañaris",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39754",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V01",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500080V01",
-  "sectores": "Paseo Río Tarqui y Paseo Río Cuenca",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39645",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Girón",
-  "alimentador": "0500140V03",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "10:00 a 12:00",
-  "tipo_trabajo": "Construccion de redes MV",
-  "zona_cortes": "0500140V03",
-  "sectores": "Girón - SHAMANGA",
-  "cantones": [
-   "Girón"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39709",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Santa Isabel",
-  "alimentador": "0500140V01",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "10:00 a 13:00",
-  "tipo_trabajo": "Mantenimiento correctivo BV",
-  "zona_cortes": "0500140V01",
-  "sectores": "Sector Huascachaca",
-  "cantones": [
-   "Santa Isabel"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39572",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Santa Isabel",
-  "alimentador": "0500140V01",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Cambio de poste MV",
-  "zona_cortes": "0500140V01",
-  "sectores": "Sector San José",
-  "cantones": [
-   "Santa Isabel"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39679",
+  "consignacion": "39799",
   "estado_origen": "PRO"
  },
  {
   "provincia": "CAÑAR",
   "canton": "Azogues - Biblián",
   "alimentador": "0500090V01",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "09:00 a 13:00",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "10:00 a 14:00",
   "tipo_trabajo": "Mejora de redes BV_MV",
   "zona_cortes": "0500090V01",
-  "sectores": "Via a Nazon",
+  "sectores": "Papaloma La Nube",
   "cantones": [
    "Azogues",
    "Biblián"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39726",
+  "consignacion": "39819",
   "estado_origen": "PRO"
  },
  {
   "provincia": "CAÑAR",
   "canton": "El Tambo",
   "alimentador": "0500180V02",
-  "fecha": "2026-10-23",
-  "dia": "Viernes",
-  "horario": "08:30 a 12:00",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:30",
   "tipo_trabajo": "Mantenimiento preventivo BV",
   "zona_cortes": "0500180V02",
-  "sectores": "Cuchucun",
+  "sectores": "Posta",
   "cantones": [
    "El Tambo"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39661",
+  "consignacion": "39759",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Correuco",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39792",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-28",
+  "dia": "Miércoles",
+  "horario": "12:30 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Posta",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39761",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes BV_MV",
+  "zona_cortes": "0500030V02",
+  "sectores": "Rafael Galarza y Francisco Tamariz",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39826",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados (sector Soldados Chico)",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39836",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V03",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500030V03",
+  "sectores": "Miguel cordero y Francisco Moscoso",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39853",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "09:30 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500040V07",
+  "sectores": "Av. Del Toril y Del Tapir",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39898",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500070V01",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500070V01",
+  "sectores": "Cdla de Médicos",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39899",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "12:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V05",
+  "sectores": "Av. Hurtado de Mendoza y Rio Palora",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39825",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - A 300m del Comedor Chico Soldados",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39837",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Sendero Cajas Soldados y Vía a Soldados - A 700m de la Vía Soldados",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39838",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - Inicio de Vía a Chaucha",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39841",
   "estado_origen": "PRO"
  },
  {
   "provincia": "CAÑAR",
   "canton": "Cañar",
   "alimentador": "0500180V01",
-  "fecha": "2026-10-24",
-  "dia": "Sábado",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Cambio de poste MV",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "11:00 a 14:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
   "zona_cortes": "0500180V01",
-  "sectores": "Honorato Vasquez",
+  "sectores": "Chorocopte",
   "cantones": [
    "Cañar"
   ],
   "distribuidora": "CentroSur",
-  "consignacion": "39738",
+  "consignacion": "39903",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Mejora de redes BV_MV",
+  "zona_cortes": "0500030V03",
+  "sectores": "Miguel Cordero y Francisco Moscoso",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39870",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V05",
+  "sectores": "Sageo y Guaraynac",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39823",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 12:00",
+  "tipo_trabajo": "Cambio de poste BV",
+  "zona_cortes": "0500170V01",
+  "sectores": "Del Culantro",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39854",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500030V03",
+  "sectores": "Miguel cordero y Francisco Moscoso",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39852",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500120V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500120V01",
+  "sectores": "Cultura Pirincay - Challuabamba",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39865",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500170V01",
+  "sectores": "César Andrade",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39887",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500070V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:30 a 13:30",
+  "tipo_trabajo": "Cambio de trafo",
+  "zona_cortes": "0500070V01",
+  "sectores": "Tiopamba de Ricaurte",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39908",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500070V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "12:00 a 16:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500070V03",
+  "sectores": "Federico Sánchez y Del Cementerio",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39876",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "12:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V05",
+  "sectores": "Av. Hurtado de Mendoza y Rio Palora",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39860",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "13:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento correctivo MV",
+  "zona_cortes": "0500030V05",
+  "sectores": "Llanganatis y Cajas",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39880",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "13:30 a 17:30",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V07",
+  "sectores": "Vía a Barabón-Huishil y Vía a Soldados",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39845",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "13:30 a 17:30",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500080V01",
+  "sectores": "Lope de Vega y Los Juglares",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39847",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Pucará",
+  "alimentador": "0500140V04",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "14:00 a 18:00",
+  "tipo_trabajo": "Cambio de poste BV",
+  "zona_cortes": "0500140V04",
+  "sectores": "La Dolorosa de Chuqui",
+  "cantones": [
+   "Pucará"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39874",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Pucará - Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "Centro Cantano de Pucará",
+  "cantones": [
+   "Pucará",
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39739",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "10:00 a 12:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "Lacay Bajo",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39713",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V02",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500140V02",
+  "sectores": "La Paz",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39863",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "Azogues - Biblián",
+  "alimentador": "0500090V01",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento correctivo MV",
+  "zona_cortes": "0500090V01",
+  "sectores": "Av. Francisco Calderon y Av. El Rocio",
+  "cantones": [
+   "Azogues",
+   "Biblián"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39805",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Posta",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39762",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "12:30 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Posta",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39763",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V04",
+  "fecha": "2026-10-31",
+  "dia": "Sábado",
+  "horario": "08:00 a 14:00",
+  "tipo_trabajo": "Mejora de redes BV_MV",
+  "zona_cortes": "0500030V04",
+  "sectores": "Hospital Vicente Corral Moscoso",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39867",
+  "estado_origen": "PAR"
  }
 ]
