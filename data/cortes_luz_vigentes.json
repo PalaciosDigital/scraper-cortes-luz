@@ -394,6 +394,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500030V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "03:00 a 06:00",
+  "tipo_trabajo": "Mejora de redes BV_MV",
+  "zona_cortes": "0500030V03",
+  "sectores": "Miguel Cordero y Francisco Moscoso",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39870",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500030V05",
   "fecha": "2026-10-30",
   "dia": "Viernes",
@@ -530,6 +547,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500030V05",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "13:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento correctivo MV",
+  "zona_cortes": "0500030V05",
+  "sectores": "Llanganatis y Cajas",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39880",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500050V07",
   "fecha": "2026-10-30",
   "dia": "Viernes",
@@ -559,6 +593,23 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39847",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Pucará",
+  "alimentador": "0500140V04",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "14:00 a 18:00",
+  "tipo_trabajo": "Cambio de poste BV",
+  "zona_cortes": "0500140V04",
+  "sectores": "La Dolorosa de Chuqui",
+  "cantones": [
+   "Pucará"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39874",
   "estado_origen": "PRO"
  },
  {
