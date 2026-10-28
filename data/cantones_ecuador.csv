@@ -1,101 +1,123 @@
 canton,provincia,canton_oficial
-Cuenca,AZUAY,
-Girón,AZUAY,
-Santa Isabel,AZUAY,
-Morona,MORONA SANTIAGO,
+Cuenca,AZUAY,Cuenca
+Girón,AZUAY,Girón
+Santa Isabel,AZUAY,Santa Isabel
+Morona,MORONA SANTIAGO,Morona
 Macas,MORONA SANTIAGO,Morona
-Guaranda,BOLÍVAR,
-Chillanes,BOLÍVAR,
-Echeandía,BOLÍVAR,
-Las Naves,BOLÍVAR,
-San Miguel,BOLÍVAR,
-Riobamba,CHIMBORAZO,
-Guamote,CHIMBORAZO,
-Guano,CHIMBORAZO,
-Penipe,CHIMBORAZO,
-Pujilí,COTOPAXI,
-Salcedo,COTOPAXI,
-Machala,EL ORO,
-Arenillas,EL ORO,
-Atahualpa,EL ORO,
-El Guabo,EL ORO,
-Santa Rosa,EL ORO,
-Zaruma,EL ORO,
-Esmeraldas,ESMERALDAS,
-Muisne,ESMERALDAS,
-Quinindé,ESMERALDAS,
+Guaranda,BOLÍVAR,Guaranda
+Chillanes,BOLÍVAR,Chillanes
+Echeandía,BOLÍVAR,Echeandía
+Las Naves,BOLÍVAR,Las Naves
+San Miguel,BOLÍVAR,San Miguel
+Riobamba,CHIMBORAZO,Riobamba
+Guamote,CHIMBORAZO,Guamote
+Guano,CHIMBORAZO,Guano
+Penipe,CHIMBORAZO,Penipe
+Pujilí,COTOPAXI,Pujilí
+Salcedo,COTOPAXI,Salcedo
+Machala,EL ORO,Machala
+Arenillas,EL ORO,Arenillas
+Atahualpa,EL ORO,Atahualpa
+El Guabo,EL ORO,El Guabo
+Santa Rosa,EL ORO,Santa Rosa
+Zaruma,EL ORO,Zaruma
+Esmeraldas,ESMERALDAS,Esmeraldas
+Muisne,ESMERALDAS,Muisne
+Quinindé,ESMERALDAS,Quinindé
 Quininde,ESMERALDAS,Quinindé
-Guayaquil,GUAYAS,
-Durán,GUAYAS,
-Milagro,GUAYAS,
-Balao,GUAYAS,
-Pedro Carbo,GUAYAS,
-Lomas de Sargentillo,GUAYAS,
+Guayaquil,GUAYAS,Guayaquil
+Durán,GUAYAS,Durán
+Milagro,GUAYAS,Milagro
+Balao,GUAYAS,Balao
+Pedro Carbo,GUAYAS,Pedro Carbo
+Lomas de Sargentillo,GUAYAS,Lomas de Sargentillo
 Lomas de Sargentillos,GUAYAS,Lomas de Sargentillo
-Isidro Ayora,GUAYAS,
-Balzar,GUAYAS,
-Colimes,GUAYAS,
-Santa Lucía,GUAYAS,
-Palestina,GUAYAS,
-Daule,GUAYAS,
-Salitre,GUAYAS,
-Samborondón,GUAYAS,
-Simón Bolívar,GUAYAS,
-Ibarra,IMBABURA,
-Otavalo,IMBABURA,
-Loja,LOJA,
-Babahoyo,LOS RÍOS,
-Baba,LOS RÍOS,
-Buena Fe,LOS RÍOS,
-Montalvo,LOS RÍOS,
-Vinces,LOS RÍOS,
-Puebloviejo,LOS RÍOS,
-Manta,MANABÍ,
-Portoviejo,MANABÍ,
-Quito,PICHINCHA,
-Francisco de Orellana,ORELLANA,
-La Joya de los Sachas,ORELLANA,
+Isidro Ayora,GUAYAS,Isidro Ayora
+Balzar,GUAYAS,Balzar
+Colimes,GUAYAS,Colimes
+Santa Lucía,GUAYAS,Santa Lucía
+Palestina,GUAYAS,Palestina
+Daule,GUAYAS,Daule
+Salitre,GUAYAS,Salitre
+Samborondón,GUAYAS,Samborondón
+Simón Bolívar,GUAYAS,Simón Bolívar
+Ibarra,IMBABURA,Ibarra
+Otavalo,IMBABURA,Otavalo
+Loja,LOJA,Loja
+Babahoyo,LOS RÍOS,Babahoyo
+Baba,LOS RÍOS,Baba
+Buena Fe,LOS RÍOS,Buena Fe
+Montalvo,LOS RÍOS,Montalvo
+Vinces,LOS RÍOS,Vinces
+Puebloviejo,LOS RÍOS,Puebloviejo
+Manta,MANABÍ,Manta
+Portoviejo,MANABÍ,Portoviejo
+Quito,PICHINCHA,Quito
+Francisco de Orellana,ORELLANA,Francisco de Orellana
+La Joya de los Sachas,ORELLANA,La Joya de los Sachas
 Joya de los Sachas,ORELLANA,La Joya de los Sachas
-Santa Elena,SANTA ELENA,
-La Libertad,SANTA ELENA,
+Santa Elena,SANTA ELENA,Santa Elena
+La Libertad,SANTA ELENA,La Libertad
 Libertad,SANTA ELENA,La Libertad
-Salinas,SANTA ELENA,
-Atacames,ESMERALDAS,
-Eloy Alfaro,ESMERALDAS,
-Rioverde,ESMERALDAS,
+Salinas,SANTA ELENA,Salinas
+Atacames,ESMERALDAS,Atacames
+Eloy Alfaro,ESMERALDAS,Eloy Alfaro
+Rioverde,ESMERALDAS,Rioverde
 Río Verde,ESMERALDAS,Rioverde
-San Lorenzo,ESMERALDAS,
+San Lorenzo,ESMERALDAS,San Lorenzo
 Quiniindé,ESMERALDAS,Quinindé
-Gualaceo,AZUAY,
-Nabón,AZUAY,
-Paute,AZUAY,
-Pucará,AZUAY,
-San Fernando,AZUAY,
-Sigsig,AZUAY,
-Oña,AZUAY,
-Chordeleg,AZUAY,
-El Pan,AZUAY,
-Sevilla de Oro,AZUAY,
-Guachapala,AZUAY,
-Camilo Ponce Enríquez,AZUAY,
-Azogues,CAÑAR,
-Biblián,CAÑAR,
-Cañar,CAÑAR,
-La Troncal,CAÑAR,
-El Tambo,CAÑAR,
-Déleg,CAÑAR,
-Suscal,CAÑAR,
-Gualaquiza,MORONA SANTIAGO,
-Limón Indanza,MORONA SANTIAGO,
-Palora,MORONA SANTIAGO,
-Santiago,MORONA SANTIAGO,
-Sucúa,MORONA SANTIAGO,
-Huamboya,MORONA SANTIAGO,
-San Juan Bosco,MORONA SANTIAGO,
-Taisha,MORONA SANTIAGO,
-Logroño,MORONA SANTIAGO,
-Pablo Sexto,MORONA SANTIAGO,
-Tiwintza,MORONA SANTIAGO,
-Saraguro,LOJA,
+Gualaceo,AZUAY,Gualaceo
+Nabón,AZUAY,Nabón
+Paute,AZUAY,Paute
+Pucará,AZUAY,Pucará
+San Fernando,AZUAY,San Fernando
+Sigsig,AZUAY,Sigsig
+Oña,AZUAY,Oña
+Chordeleg,AZUAY,Chordeleg
+El Pan,AZUAY,El Pan
+Sevilla de Oro,AZUAY,Sevilla de Oro
+Guachapala,AZUAY,Guachapala
+Camilo Ponce Enríquez,AZUAY,Camilo Ponce Enríquez
+Azogues,CAÑAR,Azogues
+Biblián,CAÑAR,Biblián
+Cañar,CAÑAR,Cañar
+La Troncal,CAÑAR,La Troncal
+El Tambo,CAÑAR,El Tambo
+Déleg,CAÑAR,Déleg
+Suscal,CAÑAR,Suscal
+Gualaquiza,MORONA SANTIAGO,Gualaquiza
+Limón Indanza,MORONA SANTIAGO,Limón Indanza
+Palora,MORONA SANTIAGO,Palora
+Santiago,MORONA SANTIAGO,Santiago
+Sucúa,MORONA SANTIAGO,Sucúa
+Huamboya,MORONA SANTIAGO,Huamboya
+San Juan Bosco,MORONA SANTIAGO,San Juan Bosco
+Taisha,MORONA SANTIAGO,Taisha
+Logroño,MORONA SANTIAGO,Logroño
+Pablo Sexto,MORONA SANTIAGO,Pablo Sexto
+Tiwintza,MORONA SANTIAGO,Tiwintza
+Saraguro,LOJA,Saraguro
 Ponce Enríquez,AZUAY,Camilo Ponce Enríquez
 Sígsig,AZUAY,Sigsig
+Duran,GUAYAS,Durán
+Samborondon,GUAYAS,Samborondón
+Simon Bolivar,GUAYAS,Simón Bolívar
+Santa Lucia,GUAYAS,Santa Lucía
+Echeandia,BOLÍVAR,Echeandía
+Pujili,COTOPAXI,Pujilí
+Giron,AZUAY,Girón
+Nabon,AZUAY,Nabón
+Pucara,AZUAY,Pucará
+Ona,AZUAY,Oña
+Camilo Ponce Enriquez,AZUAY,Camilo Ponce Enríquez
+Ponce Enriquez,AZUAY,Camilo Ponce Enríquez
+Biblian,CAÑAR,Biblián
+Canar,CAÑAR,Cañar
+Deleg,CAÑAR,Déleg
+Limon Indanza,MORONA SANTIAGO,Limón Indanza
+Sucua,MORONA SANTIAGO,Sucúa
+Logrono,MORONA SANTIAGO,Logroño
+Mendez,MORONA SANTIAGO,Santiago
+Méndez,MORONA SANTIAGO,Santiago
+Coca,ORELLANA,Francisco de Orellana
+El Coca,ORELLANA,Francisco de Orellana
