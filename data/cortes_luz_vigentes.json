@@ -392,6 +392,74 @@
   "estado_origen": "EMM"
  },
  {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V07",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "08:00 a 10:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500210V07",
+  "sectores": "Av. Domingo Comin entre Serafin Soliz y Efren Zuñiga",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39871",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V07",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "10:00 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500210V07",
+  "sectores": "Av. Domingo Comin entre Pastor Bernal y Carlos Olson",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39869",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V07",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "12:00 a 14:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500210V07",
+  "sectores": "Av. Domingo Comin y calle 12 de Febrero",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39868",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V07",
+  "fecha": "2026-10-29",
+  "dia": "Jueves",
+  "horario": "14:00 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500210V07",
+  "sectores": "Av. 3 de Noviembre entre Edmundo Crvajal y Av. Domingo Comin",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39866",
+  "estado_origen": "EMM"
+ },
+ {
   "provincia": "AZUAY",
   "canton": "Cuenca",
   "alimentador": "0500030V03",
@@ -407,6 +475,23 @@
   "distribuidora": "CentroSur",
   "consignacion": "39870",
   "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V09",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V09",
+  "sectores": "Calle Sin Nombre y Av. Enrique Arizaga Toral",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39843",
+  "estado_origen": "PRO"
  },
  {
   "provincia": "AZUAY",
@@ -441,6 +526,23 @@
   "distribuidora": "CentroSur",
   "consignacion": "39854",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500180V04",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500180V04",
+  "sectores": "Tarqui",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39771",
+  "estado_origen": "EMM"
  },
  {
   "provincia": "AZUAY",
@@ -717,6 +819,57 @@
   "estado_origen": "PRO"
  },
  {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500210V03",
+  "sectores": "Sector el Barranco / Sevilla Don Bosco",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39896",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "11:30 a 12:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500210V03",
+  "sectores": "Sector el Barranco / Sevilla Don Bosco",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39897",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V03",
+  "fecha": "2026-10-30",
+  "dia": "Viernes",
+  "horario": "12:00 a 16:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500210V03",
+  "sectores": "Sector el Barranco / Sevilla Don Bosco",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39900",
+  "estado_origen": "EMM"
+ },
+ {
   "provincia": "AZUAY",
   "canton": "Cuenca",
   "alimentador": "0500030V04",
@@ -732,5 +885,22 @@
   "distribuidora": "CentroSur",
   "consignacion": "39867",
   "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Gualaceo",
+  "alimentador": "0500150V03",
+  "fecha": "2026-10-31",
+  "dia": "Sábado",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500150V03",
+  "sectores": "Av Los nogales entre la C. Eucaliptos y C. Luis Efrain Vazquez",
+  "cantones": [
+   "Gualaceo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39764",
+  "estado_origen": "PRO"
  }
 ]
