@@ -222,5 +222,331 @@
   "distribuidora": "CentroSur",
   "consignacion": "39958",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "05:00 a 11:00",
+  "tipo_trabajo": "Mejora de redes BV",
+  "zona_cortes": "0500050V07",
+  "sectores": "San Pedro de Yumate Molleturo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39955",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500020S05",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "08:00 a 14:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500020S05",
+  "sectores": "Agustín Cueva e Inés Salcedo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39938",
+  "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 12:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V02",
+  "sectores": "General Jose de San Martin y Alfredo Pareja",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39930",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - Cerca Hacienca Pucan",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39883",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - Frente a la Hacienda Pucan",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39892",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V02",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mejora de redes MV",
+  "zona_cortes": "0500050V02",
+  "sectores": "Inés Salcedo y Agustín Cueva",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39936",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V07",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:30 a 13:30",
+  "tipo_trabajo": "Construccion de redes BV",
+  "zona_cortes": "0500050V07",
+  "sectores": "Calle sin nombre",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39945",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500070V03",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:45 a 13:45",
+  "tipo_trabajo": "Desbroce vegetacion BV",
+  "zona_cortes": "0500070V03",
+  "sectores": "San José de Bayandel",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39954",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mejorra de redes BV_MV",
+  "zona_cortes": "0500040V07",
+  "sectores": "Ochoa León",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39968",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "13:00 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V02",
+  "sectores": "Av.max Uhle y Cesar Vallejo",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39933",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V05",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500050V05",
+  "sectores": "Vía a Soldados - Pasando la Hacienda Josefina",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39893",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Gualaceo",
+  "alimentador": "0500150V03",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500150V03",
+  "sectores": "Av. los nogales y C. Sigsales",
+  "cantones": [
+   "Gualaceo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39904",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V05",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500140V05",
+  "sectores": "Sector Peña Blanca",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39755",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Sígsig",
+  "alimentador": "0500130V03",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de poste BV",
+  "zona_cortes": "0500130V03",
+  "sectores": "San Pedro de Cumbe",
+  "cantones": [
+   "Sigsig"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39878",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Sígsig",
+  "alimentador": "0500130V03",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Desbroce vegetacion BV",
+  "zona_cortes": "0500130V03",
+  "sectores": "Victoria de Portete - Pucarloma",
+  "cantones": [
+   "Sigsig"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39937",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Sígsig",
+  "alimentador": "0500130V03",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500130V03",
+  "sectores": "Rambram",
+  "cantones": [
+   "Sigsig"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39882",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "Azogues - Biblián",
+  "alimentador": "0500090V01",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500090V01",
+  "sectores": "La Vaqueria",
+  "cantones": [
+   "Azogues",
+   "Biblián"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39931",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "Azogues - Biblián",
+  "alimentador": "0500090V01",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Construccion de redes MV",
+  "zona_cortes": "0500090V01",
+  "sectores": "Av. Francisco Calderon y Av. El Rocio",
+  "cantones": [
+   "Azogues",
+   "Biblián"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39940",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "Azogues - Biblián",
+  "alimentador": "0500090V01",
+  "fecha": "2026-11-05",
+  "dia": "Jueves",
+  "horario": "12:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500090V01",
+  "sectores": "La Vaqueria",
+  "cantones": [
+   "Azogues",
+   "Biblián"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39932",
+  "estado_origen": "EMM"
  }
 ]
