@@ -736,5 +736,22 @@
   "distribuidora": "CentroSur",
   "consignacion": "39960",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Gualaceo",
+  "alimentador": "0500150V03",
+  "fecha": "2026-11-07",
+  "dia": "Sábado",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento correctivo MV",
+  "zona_cortes": "0500150V03",
+  "sectores": "Av. los nogales",
+  "cantones": [
+   "Gualaceo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39911",
+  "estado_origen": "PRO"
  }
 ]
