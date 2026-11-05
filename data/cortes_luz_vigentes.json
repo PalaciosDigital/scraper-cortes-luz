@@ -670,6 +670,23 @@
  },
  {
   "provincia": "AZUAY",
+  "canton": "Gualaceo",
+  "alimentador": "0500150V03",
+  "fecha": "2026-11-06",
+  "dia": "Viernes",
+  "horario": "11:00 a 15:00",
+  "tipo_trabajo": "Cambio de poste BV",
+  "zona_cortes": "0500150V03",
+  "sectores": "Zharban CEntro",
+  "cantones": [
+   "Gualaceo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39985",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
   "canton": "Sígsig",
   "alimentador": "0500130V03",
   "fecha": "2026-11-06",
