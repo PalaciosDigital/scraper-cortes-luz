@@ -206,6 +206,23 @@
  },
  {
   "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V03",
+  "fecha": "2026-11-07",
+  "dia": "Sábado",
+  "horario": "09:00 a 14:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500170V03",
+  "sectores": "Calle sin nombre y Camino a Racar",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39998",
+  "estado_origen": "PAR"
+ },
+ {
+  "provincia": "AZUAY",
   "canton": "Gualaceo",
   "alimentador": "0500150V03",
   "fecha": "2026-11-07",
@@ -254,6 +271,23 @@
   "distribuidora": "CentroSur",
   "consignacion": "39909",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500120V01",
+  "fecha": "2026-11-09",
+  "dia": "Lunes",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500120V01",
+  "sectores": "Panamericana Norte",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40020",
+  "estado_origen": "PAR"
  },
  {
   "provincia": "AZUAY",
