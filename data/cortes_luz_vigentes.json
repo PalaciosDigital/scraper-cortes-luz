@@ -2,40 +2,6 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500170V03",
-  "fecha": "2026-11-07",
-  "dia": "Sábado",
-  "horario": "09:00 a 14:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500170V03",
-  "sectores": "Calle sin nombre y Camino a Racar",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39998",
-  "estado_origen": "PAR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Gualaceo",
-  "alimentador": "0500150V03",
-  "fecha": "2026-11-07",
-  "dia": "Sábado",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Mantenimiento correctivo MV",
-  "zona_cortes": "0500150V03",
-  "sectores": "Av. los nogales",
-  "cantones": [
-   "Gualaceo"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39911",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
   "alimentador": "0500050V07",
   "fecha": "2026-11-09",
   "dia": "Lunes",
@@ -389,6 +355,159 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39710",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V01",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500080V01",
+  "sectores": "Av. 24 de Mayo y las Golondrinas",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39921",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V03",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500030V03",
+  "sectores": "Av. 24 de Mayo y Chaguarchimbana",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39922",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "09:00 a 12:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V02",
+  "sectores": "Charapoto y Huanta Huasi",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39981",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500070V03",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "09:00 a 15:00",
+  "tipo_trabajo": "Desbroce vegetacion mv/bv",
+  "zona_cortes": "0500070V03",
+  "sectores": "Santa Maria",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40002",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "13:00 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500030V02",
+  "sectores": "Union Nacional de Educadores y Victor Gerardo Aguilar",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39982",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V01",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500080V01",
+  "sectores": "Paseo Río Tarqui y Paseo Río Cuenca",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39923",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "Sector san José",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39678",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Quilloac",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40012",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-11-11",
+  "dia": "Miércoles",
+  "horario": "12:30 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Quilloac",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40013",
   "estado_origen": "PRO"
  }
 ]
