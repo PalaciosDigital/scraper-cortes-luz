@@ -21,6 +21,11 @@
   sus cambios se replican en _PRE, nunca al revés.
 - 73 tests (`pytest -q`).
 
+## Avisos pausados (9 de noviembre)
+
+Diego pidió cancelar las notificaciones hasta nuevo aviso: el paso «Avisar» de `vigilar.yml` está con `if: false`
+(la condición original quedó comentada encima). La vigilancia y el candidato siguen; publicar sigue siendo manual.
+
 ## Novedades del 21 de octubre
 
 - 0500180V01 = Cañar, 0500070V03 = Cuenca (Diego en la web); 0500140V01 = «Pucará - Santa Isabel».

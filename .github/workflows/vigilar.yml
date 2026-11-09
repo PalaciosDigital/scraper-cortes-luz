@@ -62,7 +62,9 @@ jobs:
           fi
 
       - name: Avisar (un solo issue abierto; los avisos siguientes van como comentario)
-        if: steps.vigilar.outputs.codigo == '10' || steps.vigilar.outputs.codigo == '20'
+        # PAUSADO a pedido de Diego (2026-11-09) hasta nuevo aviso. Para reactivar, volver a:
+        # if: steps.vigilar.outputs.codigo == '10' || steps.vigilar.outputs.codigo == '20'
+        if: false
         env:
           GH_TOKEN: ${{ github.token }}
           # Usuario(s) de GitHub a mencionar para que les llegue la notificación (correo y campana).
