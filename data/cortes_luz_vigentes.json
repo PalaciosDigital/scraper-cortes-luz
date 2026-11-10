@@ -2,160 +2,6 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Calle Sin Nombre y Entrada a Playas de Misicata",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39907",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Cantón Chunchi y Cantón Montufar",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39909",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500120V01",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "08:00 a 12:00",
-  "tipo_trabajo": "Mantenimiento preventivo MV",
-  "zona_cortes": "0500120V01",
-  "sectores": "Panamericana Norte",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40020",
-  "estado_origen": "PAR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V02",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "09:00 a 12:30",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V02",
-  "sectores": "Pablo Neruda y Constancio Vigil",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39969",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V02",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "13:00 a 15:30",
-  "tipo_trabajo": "Mantenimiento preventivo BV",
-  "zona_cortes": "0500030V02",
-  "sectores": "Dario Ruben y Carlos Mariategui",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39970",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V07",
-  "sectores": "Avellaneda y 1ero de Mayo",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39910",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V10",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Optimizacion de trafo",
-  "zona_cortes": "0500050V10",
-  "sectores": "Cantón Samborondón y 1ero de Mayo",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39914",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Santa Isabel",
-  "alimentador": "0500140V04",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Cambio de poste MV",
-  "zona_cortes": "0500140V04",
-  "sectores": "Sector Cañaribamba",
-  "cantones": [
-   "Santa Isabel"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39760",
-  "estado_origen": "PRO"
- },
- {
-  "provincia": "CAÑAR",
-  "canton": "Azogues - Biblián",
-  "alimentador": "0500090V01",
-  "fecha": "2026-11-09",
-  "dia": "Lunes",
-  "horario": "10:00 a 12:00",
-  "tipo_trabajo": "Mejora de redes BV_MV",
-  "zona_cortes": "0500090V01",
-  "sectores": "Pizhumaza",
-  "cantones": [
-   "Azogues",
-   "Biblián"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "39983",
-  "estado_origen": "EMM"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
   "alimentador": "0500050V10",
   "fecha": "2026-11-10",
   "dia": "Martes",
@@ -699,6 +545,23 @@
  },
  {
   "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500170V01",
+  "fecha": "2026-11-12",
+  "dia": "Jueves",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Cambio de postes bajo voltaje/medio voltaje",
+  "zona_cortes": "0500170V01",
+  "sectores": "Av. Ordoñez Lasso y del Culantro",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40049",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
   "canton": "Girón",
   "alimentador": "0500140V03",
   "fecha": "2026-11-12",
@@ -713,6 +576,23 @@
   "distribuidora": "CentroSur",
   "consignacion": "39984",
   "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V02",
+  "fecha": "2026-11-12",
+  "dia": "Jueves",
+  "horario": "09:30 a 13:30",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500140V02",
+  "sectores": "Chunazana",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40053",
+  "estado_origen": "EMM"
  },
  {
   "provincia": "AZUAY",
@@ -746,6 +626,193 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "39801",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V01",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "08:00 a 12:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500080V01",
+  "sectores": "Bernardo de Legarda y Av. 27 de Febrero. Atrás del Colegio Bilingüe",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40028",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500050V10",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "09:00 a 12:00",
+  "tipo_trabajo": "Cambio de transformador",
+  "zona_cortes": "0500050V10",
+  "sectores": "Rafael Fajardo y Pasaje Miguel Cordero",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40050",
+  "estado_origen": "EMM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V01",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento preventivo medio voltaje",
+  "zona_cortes": "0500030V01",
+  "sectores": "Sector de Monay - parroquia El Valle",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40038",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500080V03",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mantenimiento preventivo MV",
+  "zona_cortes": "0500080V03",
+  "sectores": "Punta Corral",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40017",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V02",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "11:00 a 16:00",
+  "tipo_trabajo": "Mejora de redes bajo voltaje/medio voltaje",
+  "zona_cortes": "0500040V02",
+  "sectores": "La independencia y Av. del Toril",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40000",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V01",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "13:00 a 17:00",
+  "tipo_trabajo": "Optimizacion de trafo",
+  "zona_cortes": "0500030V01",
+  "sectores": "Av. Pumapungo y Max Uhle",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40029",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Gualaceo",
+  "alimentador": "0500150V03",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento correctivo medio voltaje",
+  "zona_cortes": "0500150V03",
+  "sectores": "Av. los Nogales",
+  "cantones": [
+   "Gualaceo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40037",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "10:00 a 13:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "La Unión",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40004",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Santa Isabel",
+  "alimentador": "0500140V01",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Cambio de poste MV",
+  "zona_cortes": "0500140V01",
+  "sectores": "Sector Quillosisa - Parroquia Abdón Calderón",
+  "cantones": [
+   "Santa Isabel"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "39795",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "08:30 a 12:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Quilloac",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40014",
+  "estado_origen": "PRO"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-11-13",
+  "dia": "Viernes",
+  "horario": "12:30 a 16:00",
+  "tipo_trabajo": "Mantenimiento preventivo BV",
+  "zona_cortes": "0500180V02",
+  "sectores": "Quilloac",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40015",
   "estado_origen": "PRO"
  }
 ]
