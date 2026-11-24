@@ -29,7 +29,7 @@ con los avisos pausados nadie se enteró. Arreglado el 24-nov. Además, la colum
 1PR/1EM/1LE/1PC (significado de LE y PC sin confirmar); se excluye lo que empiece por AN tras el dígito.
 Alimentadores nuevos sin cantón ese día: 0500020S04, 0500080V02, 0500180V03, 0500150V02, 0500170V02, 0500050V01.
 
-## Avisos pausados (9 de noviembre)
+## Avisos pausados (9 de noviembre) — REACTIVADOS el 24 de noviembre
 
 Diego pidió cancelar las notificaciones hasta nuevo aviso: el paso «Avisar» de `vigilar.yml` está con `if: false`
 (la condición original quedó comentada encima). La vigilancia y el candidato siguen; publicar sigue siendo manual.
