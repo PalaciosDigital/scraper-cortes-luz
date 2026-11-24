@@ -41,4 +41,4 @@ Campos de trazabilidad (opcionales, el buscador no los usa):
 | Campo | Ejemplo | Notas |
 |---|---|---|
 | `consignacion` | `39504` | Número de consignación de CentroSur. |
-| `estado_origen` | `PRO` | Estado en CentroSur: PRO, EMM o PAR (ANU se excluye). |
+| `estado_origen` | `PRO` | Estado en CentroSur: PRO, EMM o PAR (ANU se excluye). Desde nov. 2026 llega como 1PR, 1EM, 1LE o 1PC; lo que empiece por AN tras el dígito se excluye. |

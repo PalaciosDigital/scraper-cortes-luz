@@ -1,4 +1,4 @@
-# Retomar el proyecto (estado al 21 de octubre de 2026)
+# Retomar el proyecto (estado al 24 de noviembre de 2026)
 
 ## Dónde vive
 
@@ -20,6 +20,14 @@
   `data/cortes_luz_publicado.json` desde raw.githubusercontent.com. `PROTOTIPO.html` es la base de diseño:
   sus cambios se replican en _PRE, nunca al revés.
 - 73 tests (`pytest -q`).
+
+## CentroSur cambió la página (detectado el 24 de noviembre)
+
+Del 11 al 24 de noviembre CentroSur no se leyó: la página añadió `data-gtm-ignore='true'` entre `name="GXState"` y
+`value`, y el regex fallaba («ya no trae GXState»). Las corridas salían en verde porque el error queda en el estado, y
+con los avisos pausados nadie se enteró. Arreglado el 24-nov. Además, la columna CONTMA cambió de PRO/EMM/PAR/ANU a
+1PR/1EM/1LE/1PC (significado de LE y PC sin confirmar); se excluye lo que empiece por AN tras el dígito.
+Alimentadores nuevos sin cantón ese día: 0500020S04, 0500080V02, 0500180V03, 0500150V02, 0500170V02, 0500050V01.
 
 ## Avisos pausados (9 de noviembre)
 

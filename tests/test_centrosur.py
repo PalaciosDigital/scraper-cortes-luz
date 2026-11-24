@@ -160,3 +160,20 @@ def test_cambio_de_aplicacion_pide_revision(entorno, monkeypatch):
 
     monkeypatch.setattr(centrosur, "leer_tabla", roto)
     assert correr() == vigilar.REVISION
+
+
+def test_gxstate_con_atributos_entre_name_y_value():
+    # Desde noviembre de 2026 la página añade data-gtm-ignore entre name y value.
+    pagina = ("<input type=\"hidden\" name=\"GXState\" data-gtm-ignore='true' "
+              "value='{\"AJAX_SECURITY_TOKEN\":\"x\"}'/>")
+    assert centrosur._estado_gx(pagina) == {"AJAX_SECURITY_TOKEN": "x"}
+
+
+def test_codigos_de_estado_con_formato_nuevo():
+    # Noviembre de 2026: CONTMA llega como 1PR / 1EM / 1LE / 1PC.
+    base = ["1", "24/11/26", "0500050V10", "Daniel Muñoz y Rafael Fajardo", "", "08:00", "12:00",
+            "Cambio de estructuras", "MANTENIMIENTO", "VAL", "A"]
+    filas = [base[:0] + [str(i)] + base[1:] + [c] for i, c in enumerate(["1PR", "1EM", "1LE", "1PC", "1AN"])]
+    crudos, _, excluidas = a_crudos(filas, {"0500050V10": ("Cuenca", "AZUAY")}, CATALOGO)
+    assert excluidas == 1
+    assert [c["estado_origen"] for c in crudos] == ["1PR", "1EM", "1LE", "1PC"]

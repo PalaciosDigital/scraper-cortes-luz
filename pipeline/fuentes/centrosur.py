@@ -27,7 +27,9 @@ Columnas (nombre GeneXus → contenido):
   8 CONMOTTAB  motivo (p. ej. MANTENIMIENTO PREVENTIVO BV)
   9 CONESA     VAL
  10 CONEST     Activo / Deshabilitado
- 11 CONTMA     PRO / EMM / PAR / ANU (ANU se interpreta como anulado: se excluye)
+ 11 CONTMA     PRO / EMM / PAR / ANU (ANU se interpreta como anulado: se excluye).
+               Desde nov. 2026 llega con otro formato: 1PR / 1EM / 1LE / 1PC. Se compara sin
+               el dígito inicial; lo que empiece por AN (ANU, 1AN…) se excluye.
 
 No hay columna de cantón ni provincia. El cantón sale, en este orden, de:
   1. el texto: "… CANTÓN SANTA ISABEL" en la dirección o la descripción. Salvo si
@@ -66,7 +68,8 @@ FILAS_POR_PAGINA = 100
 
 
 def _estado_gx(html_pagina: str) -> dict:
-    m = re.search(r"name=\"GXState\" value='(.*?)'(?=\s*/?>)", html_pagina, re.S)
+    # Tolera atributos entre name y value (desde nov. 2026 la página añade data-gtm-ignore).
+    m = re.search(r"name=\"GXState\"[^>]*?\svalue='(.*?)'(?=\s*/?>)", html_pagina, re.S)
     if not m:
         raise RuntimeError("CentroSur: la página ya no trae GXState (¿cambió la aplicación?).")
     return json.loads(html.unescape(m.group(1)))
@@ -238,7 +241,9 @@ def a_crudos(filas: list[list[str]], alimentadores: dict, catalogo: dict,
     for f in filas:
         nro, fecha, alim, zona, zona_pub, ini, fin, desc, motivo, _esa, est, tma = [_limpio(c) for c in f]
         # CONEST llega como "A"/"D" por HTTP y como "Activo"/"Deshabilitado" en pantalla.
-        if tma.upper() in excluir or clave(est) in ("d", "deshabilitado"):
+        codigo = re.sub(r"^\d+", "", tma.upper())
+        if (tma.upper() in excluir or any(codigo.startswith(x[:2]) for x in excluir)
+                or clave(est) in ("d", "deshabilitado")):
             excluidas += 1
             continue
         alim = alim.upper()
