@@ -686,6 +686,23 @@
   "alimentador": "0500500T03",
   "fecha": "2026-11-25",
   "dia": "Miércoles",
+  "horario": "11:00 a 15:00",
+  "tipo_trabajo": "Mejora de redes bajo voltaje/medio voltaje",
+  "zona_cortes": "0500500T03",
+  "sectores": "Av. Alfonso Andrade y El Maestro- Mi Comisariato- Trafo 42527P",
+  "cantones": [
+   "La Troncal"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40290",
+  "estado_origen": "1PC"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "La Troncal",
+  "alimentador": "0500500T03",
+  "fecha": "2026-11-25",
+  "dia": "Miércoles",
   "horario": "13:00 a 15:30",
   "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
   "zona_cortes": "0500500T03",
@@ -903,6 +920,41 @@
   "estado_origen": "1EM"
  },
  {
+  "provincia": "CAÑAR",
+  "canton": "Azogues - Biblián",
+  "alimentador": "0500090V01",
+  "fecha": "2026-11-26",
+  "dia": "Jueves",
+  "horario": "12:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo medio voltaje",
+  "zona_cortes": "0500090V01",
+  "sectores": "Biblián",
+  "cantones": [
+   "Azogues",
+   "Biblián"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40277",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-11-26",
+  "dia": "Jueves",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de postes bajo voltaje/medio voltaje",
+  "zona_cortes": "0500180V02",
+  "sectores": "Panamericana Tambo",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40278",
+  "estado_origen": "1EM"
+ },
+ {
   "provincia": "AZUAY",
   "canton": "Cuenca",
   "alimentador": "0500040V02",
@@ -1007,6 +1059,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500070V03",
+  "fecha": "2026-11-27",
+  "dia": "Viernes",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Desbroce de vegetación bajo voltaje",
+  "zona_cortes": "0500070V03",
+  "sectores": "Sector El Rocio",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40301",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500040V02",
   "fecha": "2026-11-27",
   "dia": "Viernes",
@@ -1088,5 +1157,56 @@
   "distribuidora": "CentroSur",
   "consignacion": "40275",
   "estado_origen": "1PR"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "El Tambo",
+  "alimentador": "0500180V02",
+  "fecha": "2026-11-27",
+  "dia": "Viernes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de postes bajo voltaje/medio voltaje",
+  "zona_cortes": "0500180V02",
+  "sectores": "Quilloac",
+  "cantones": [
+   "El Tambo"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40279",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V07",
+  "fecha": "2026-11-27",
+  "dia": "Viernes",
+  "horario": "09:00 a 10:00",
+  "tipo_trabajo": "Cambio de poste de medio voltaje",
+  "zona_cortes": "0500210V07",
+  "sectores": "Vía al Miriumi",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40287",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "MORONA SANTIAGO",
+  "canton": "Morona",
+  "alimentador": "0500210V08",
+  "fecha": "2026-11-27",
+  "dia": "Viernes",
+  "horario": "11:00 a 12:00",
+  "tipo_trabajo": "Cambio de poste de medio voltaje",
+  "zona_cortes": "0500210V08",
+  "sectores": "Calle Santa Beatriz de Silva",
+  "cantones": [
+   "Morona"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40289",
+  "estado_origen": "1EM"
  }
 ]
