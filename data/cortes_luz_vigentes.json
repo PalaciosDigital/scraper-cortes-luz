@@ -462,6 +462,23 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
+  "alimentador": "0500170V01",
+  "fecha": "2026-11-26",
+  "dia": "Jueves",
+  "horario": "10:00 a 14:00",
+  "tipo_trabajo": "Mejora de redes medio voltaje",
+  "zona_cortes": "0500170V01",
+  "sectores": "Av. Ordoñez Lasso y Calle del Tejar",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40312",
+  "estado_origen": "1LE"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
   "alimentador": "0500040V07",
   "fecha": "2026-11-26",
   "dia": "Jueves",
