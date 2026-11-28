@@ -2,278 +2,6 @@
  {
   "provincia": "AZUAY",
   "canton": "Cuenca",
-  "alimentador": "0500040V02",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "08:30 a 10:30",
-  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
-  "zona_cortes": "0500040V02",
-  "sectores": "Av. España y de Retorno Poste 515509",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40252",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500120V01",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "09:00 a 12:00",
-  "tipo_trabajo": "Mantenimiento preventivo medio voltaje",
-  "zona_cortes": "0500120V01",
-  "sectores": "El Molle - Chaullabamba",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40255",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V01",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Mejora de redes bajo voltaje",
-  "zona_cortes": "0500080V01",
-  "sectores": "Virgen de la nube",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40234",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V03",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Optimización de tranformador",
-  "zona_cortes": "0500030V03",
-  "sectores": "Av. 10 de Agosto y Manuel Agustín Landivar. Frrente a SOLCA",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40268",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500120V01",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "09:00 a 15:00",
-  "tipo_trabajo": "Mantenimiento correctivo medio voltaje",
-  "zona_cortes": "0500120V01",
-  "sectores": "Tablón - Nulti",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40251",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V01",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
-  "zona_cortes": "0500030V01",
-  "sectores": "Carmen de jadan",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40266",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500070V03",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Desbroce de vegetación bajo voltaje",
-  "zona_cortes": "0500070V03",
-  "sectores": "Sector El Rocio",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40301",
-  "estado_origen": "1EM"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500050V07",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "10:00 a 14:00",
-  "tipo_trabajo": "Mejora de redes medio voltaje",
-  "zona_cortes": "0500050V07",
-  "sectores": "Calle sin nombre",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40337",
-  "estado_origen": "1LE"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500040V02",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "10:30 a 12:30",
-  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
-  "zona_cortes": "0500040V02",
-  "sectores": "San Pablo del Lago y Av. de las Americas - Poste 332826",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40253",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500040V02",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "10:30 a 12:30",
-  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
-  "zona_cortes": "0500040V02",
-  "sectores": "Castellana y Granada - Poste 502266R1",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40270",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500040V02",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "12:30 a 15:30",
-  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
-  "zona_cortes": "0500040V02",
-  "sectores": "Av. de las Americas E Independencia - Poste 288842",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40254",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500030V05",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "13:00 a 15:30",
-  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
-  "zona_cortes": "0500030V05",
-  "sectores": "Av. Gonzalez Suarez y Gonzalo Zaldumbide - Poste 330972",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40273",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
-  "alimentador": "0500080V03",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "13:00 a 17:00",
-  "tipo_trabajo": "Cambio de poste de bajo voltaje",
-  "zona_cortes": "0500080V03",
-  "sectores": "Chilcatotora",
-  "cantones": [
-   "Cuenca"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40275",
-  "estado_origen": "1PR"
- },
- {
-  "provincia": "CAÑAR",
-  "canton": "El Tambo",
-  "alimentador": "0500180V02",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "09:00 a 13:00",
-  "tipo_trabajo": "Cambio de postes bajo voltaje/medio voltaje",
-  "zona_cortes": "0500180V02",
-  "sectores": "Quilloac",
-  "cantones": [
-   "El Tambo"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40279",
-  "estado_origen": "1EM"
- },
- {
-  "provincia": "MORONA SANTIAGO",
-  "canton": "Morona",
-  "alimentador": "0500210V07",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "09:00 a 10:00",
-  "tipo_trabajo": "Cambio de poste de medio voltaje",
-  "zona_cortes": "0500210V07",
-  "sectores": "Vía al Miriumi",
-  "cantones": [
-   "Morona"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40287",
-  "estado_origen": "1EM"
- },
- {
-  "provincia": "MORONA SANTIAGO",
-  "canton": "Morona",
-  "alimentador": "0500210V08",
-  "fecha": "2026-11-27",
-  "dia": "Viernes",
-  "horario": "11:00 a 12:00",
-  "tipo_trabajo": "Cambio de poste de medio voltaje",
-  "zona_cortes": "0500210V08",
-  "sectores": "Calle Santa Beatriz de Silva",
-  "cantones": [
-   "Morona"
-  ],
-  "distribuidora": "CentroSur",
-  "consignacion": "40289",
-  "estado_origen": "1EM"
- },
- {
-  "provincia": "AZUAY",
-  "canton": "Cuenca",
   "alimentador": "0500040V06",
   "fecha": "2026-11-29",
   "dia": "Domingo",
@@ -354,6 +82,193 @@
   ],
   "distribuidora": "CentroSur",
   "consignacion": "40282",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "08:30 a 10:30",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500030V02",
+  "sectores": "ERNESTO GUEVARA Y AV. GONZALEZ SUAREZ 1560 - poste 616494",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40283",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "09:00 a 11:00",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500040V07",
+  "sectores": "Sector del Cementerio de Checa",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40334",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V01",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "09:00 a 13:00",
+  "tipo_trabajo": "Cambio de transformador",
+  "zona_cortes": "0500030V01",
+  "sectores": "El valle",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40308",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "10:30 a 12:30",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500030V02",
+  "sectores": "COLLASUYO Y DUCHICELA AUTACHI 13337 - poste 22288",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40284",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "11:00 a 13:00",
+  "tipo_trabajo": "Construcción de redes bajo voltaje",
+  "zona_cortes": "0500040V07",
+  "sectores": "Sector del Cementaerio de Checa",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40335",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500040V07",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "13:00 a 15:00",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500040V07",
+  "sectores": "Cementerio de Checa",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40336",
+  "estado_origen": "1EM"
+ },
+ {
+  "provincia": "AZUAY",
+  "canton": "Cuenca",
+  "alimentador": "0500030V02",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "13:00 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500030V02",
+  "sectores": "JOSEPH DE JUSSIEU Y GENARO SERRANO LEDESMA 6791 - poste 356639",
+  "cantones": [
+   "Cuenca"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40285",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "La Troncal",
+  "alimentador": "0500500T03",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "08:30 a 10:30",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500500T03",
+  "sectores": "San Gabriel y Tercera Sur Trafo 37718",
+  "cantones": [
+   "La Troncal"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40250",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "La Troncal",
+  "alimentador": "0500500T04",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "09:00 a 11:00",
+  "tipo_trabajo": "Cambio de postes bajo voltaje/medio voltaje",
+  "zona_cortes": "0500500T04",
+  "sectores": "La Troncal - Sector Pancho Negro - Referencia Local Tuti",
+  "cantones": [
+   "La Troncal"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40324",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "La Troncal",
+  "alimentador": "0500500T03",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "11:00 a 13:00",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500500T03",
+  "sectores": "7 Oeste y San Gabriel Trafo 29711",
+  "cantones": [
+   "La Troncal"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40257",
+  "estado_origen": "1PR"
+ },
+ {
+  "provincia": "CAÑAR",
+  "canton": "La Troncal",
+  "alimentador": "0500500T03",
+  "fecha": "2026-12-01",
+  "dia": "Martes",
+  "horario": "13:30 a 15:30",
+  "tipo_trabajo": "Mantenimiento preventivo bajo voltaje",
+  "zona_cortes": "0500500T03",
+  "sectores": "7 Oeste y 6 Sur Trafo 29713",
+  "cantones": [
+   "La Troncal"
+  ],
+  "distribuidora": "CentroSur",
+  "consignacion": "40258",
   "estado_origen": "1PR"
  }
 ]
